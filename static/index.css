@@ -77,4 +77,9 @@ li a {
     top: 284px;
     border-radius: 10px 40px;
     background-color: #fff;
+    box-shadow: 0px 38px 72px rgba(68, 68, 68, 0.18), 
+    0px 13.8706px 26.2812px rgba(68, 68, 68, 0.124197), 
+    0px 6.73393px 12.759px rgba(68, 68, 68, 0.100132), 
+    0px 3.3011px 6.25471px rgba(68, 68, 68, 0.0798677), 
+    0px 1.30526px 2.47312px rgba(68, 68, 68, 0.0558033);
 }
