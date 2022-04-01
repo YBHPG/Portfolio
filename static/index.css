@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Shanti&display=swap");
+
+body {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #FFEEC4;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.navbar {
+    padding: 30px;
+}
+
+.logo {
+    float: left;
+    width: 52px;
+    height: 52px;
+}
+
+.navbar ul {
+    font-family: 'Cormorant Garamond', sans-serif;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.navbar li {
+    float: right;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+li a {
+    text-align: center;
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header {
+    font-family: 'Bree Serif', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    position: absolute;
+    color: #444;
+}
+
+#landing-header {
+    position: absolute;
+    left: 398px;
+    top: 355px;
+}
+
+.content {
+    font-family: 'Shanti', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+    color: #444;
+}
+
+#landing-content {
+    position: absolute;
+    width: 452px;
+    left: 398px;
+    top: 465px;
+}
+
+#landing-photo {
+    position: absolute;
+    width: 456px;
+    height: 456px;
+    left: 890px;
+    top: 284px;
+    border-radius: 10px 40px;
+    background-color: #fff;
+}
