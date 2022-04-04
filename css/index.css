@@ -55,6 +55,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    background: linear-gradient(to bottom, #FFEEC4, #FFDC83, #FFDA7A, #FFBE16, #FFCF54);
 }
 
 /* ============================================ */
@@ -98,7 +99,7 @@ body {
     top: 0;
     left: 0;
     z-index: 50;
-    background-color: #FFEEC4;
+    /* background-color: #FFEEC4; */
 }
 
 .header__container {
@@ -272,7 +273,7 @@ body {
 /* BLOCK-1 CODE */
 
 .block-1 {
-    background-color: #FFEEC4;
+    /* background-color: #FFEEC4; */
     padding: 255px 0px 0px 0px;
 }
 
@@ -342,7 +343,7 @@ body {
 /* ============================================ */
 
 .block-2 {
-    background-color: #FFEEC4;
+    /* background-color: #FFEEC4; */
     padding: 281px 0 0 0;
 }
 
@@ -413,13 +414,12 @@ body {
 /* ============================================ */
 
 .block-3 {
-    background-color: #FFEEC4;
+    /* background-color: #FFEEC4; */
     padding: 300px 0 0 0;
 }
 
 .block-3__container {
     display: block;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 0px 111px;
@@ -431,16 +431,16 @@ body {
 
 .block-3__text-block {
     max-width: 800px;
-    margin: 50px auto;
+    margin: 0px auto;
 }
 
 .block-3__carousel {
     display: block;
     margin: 0px auto;
-    padding: 50px 0 0 0;
-    max-width: 746px;
+    margin-top: 50px;
+    width: 746px;
     height: 500px;
-    background: #fafafa;
+    background-color: #fafafa;
 }
 
 /* .block-3__carousel img {
@@ -471,14 +471,61 @@ body {
 
 /* ============================================ */
 
-.block-4 {}
+.block-4 {
+    /* background-color: #FFEEC4; */
+    padding: 300px 0 50px 0;
+}
 
-.block-4__container {}
+.block-4__container {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 111px;
+}
 
-.block-4__content {}
+.block-4__content {
+    margin: 0px auto;
+}
 
-.block-4__text-block {}
+.block-4__text-block {
+    max-width: 800px;
+    margin: 0px auto;
+}
 
-.block-4__buttons {}
+.block-4__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 125px;
+}
+
+.block-4__buttons:not(:last-child) {
+    margin: 5px;
+    margin-top: 80px;
+}
+
+.buttons-1 {
+    flex: 0 1 100%;
+}
+
+.buttons-2 {
+    flex: 0 1 100%;
+    padding-top: 30px;
+}
+
+.button-small {
+    padding: 80px;
+    background-color: #FBFBFB;
+    box-shadow: 0px 6px 80px rgba(108, 108, 108, 0.15), 0px 2.50666px 33.4221px rgba(108, 108, 108, 0.107828), 0px 0.751293px 10.0172px rgba(108, 108, 108, 0.075), 0px 0.399006px 5.32008px rgba(108, 108, 108, 0.0605839), 0px 0.166035px 2.21381px rgba(108, 108, 108, 0.0421718);
+    border-radius: 35px;
+}
+
+.button-big {
+    padding: 80px 180px;
+    background-color: #fbfbfb;
+    box-shadow: 0px 6px 80px rgba(108, 108, 108, 0.15), 0px 2.50666px 33.4221px rgba(108, 108, 108, 0.107828), 0px 0.751293px 10.0172px rgba(108, 108, 108, 0.075), 0px 0.399006px 5.32008px rgba(108, 108, 108, 0.0605839), 0px 0.166035px 2.21381px rgba(108, 108, 108, 0.0421718);
+    border-radius: 35px;
+}
 
 .footer {}
