@@ -528,4 +528,62 @@ body {
     border-radius: 35px;
 }
 
+/* ============================================ */
+
+.block-5 {
+    padding: 300px 0 0 0;
+}
+
+.block-5__container {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 11px;
+}
+
+.block-5__content {
+    margin: 0px auto;
+}
+
+.block-5__text-block {
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+.block-5__carousel {
+    display: block;
+    margin: 0px auto;
+    margin-top: 80px;
+    width: 845px;
+    height: 469px;
+}
+
+.carousel-picture {
+    width: 845px;
+    height: 469px;
+    background-color: #444444;
+    border: 2px solid #fbfbfb;
+    box-shadow: 0px 42px 63px rgba(0, 0, 0, 0.05), 0px 17.5466px 26.3199px rgba(0, 0, 0, 0.0359427), 0px 9.38125px 14.0719px rgba(0, 0, 0, 0.0298054), 0px 5.25905px 7.88858px rgba(0, 0, 0, 0.025), 0px 2.79304px 4.18956px rgba(0, 0, 0, 0.0201946), 0px 1.16225px 1.74337px rgba(0, 0, 0, 0.0140573);
+}
+
+.button-small__block-5 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-small__block-5 a {
+    padding: 20px 90px;
+    margin: 0px auto;
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120.4%;
+
+    text-align: justify;
+
+    color: #444;
+}
+
 .footer {}
