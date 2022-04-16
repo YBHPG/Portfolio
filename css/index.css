@@ -45,6 +45,18 @@ body {
     color: #444;
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        top: 10px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0px;
+    }
+}
+
 /* ============================================ */
 /* WHOLE CONTENT WRAPPER CODE */
 
@@ -54,6 +66,7 @@ body {
     flex-direction: column;
     min-height: 100%;
     background: linear-gradient(180deg, #FFEEC4 0%, #FFDC83 21.79%, #FFDA7A 36.55%, #FFBE16 54.19%, #FEDE8B 71.67%, #FFADAD 87.9%, #FFADAD 94.44%, #FFEEC4 100%);
+    animation: fadeIn 3s;
 }
 
 /* ============================================ */
@@ -834,6 +847,11 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end;
+}
+
+.footer__social .social-links {
+    display: flex;
+    gap: 15px;
 }
 
 .footer__social .social-links__link {
