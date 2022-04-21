@@ -1,873 +1,352 @@
+@charset "UTF-8";
+/* Переменные */
 /* Обнуление */
-
+/* line 16, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 *,
 *::before,
 *::after {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
+/* line 25, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
+/* line 29, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 ul,
 ol,
 li {
-    list-style: none;
+  list-style: none;
 }
 
+/* line 35, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 img {
-    vertical-align: top;
+  vertical-align: top;
 }
 
+/* line 39, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-weight: inherit;
-    font-size: inherit;
+  font-weight: inherit;
+  font-size: inherit;
 }
 
+/* line 49, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 html,
 body {
-    height: 100%;
-    line-height: 1;
+  height: 100%;
+  line-height: 1;
 }
 
+/* line 55, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 body {
-    font-family: 'Shanti';
-    font-size: 20px;
-    color: #444;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        top: 10px;
-    }
-
-    100% {
-        opacity: 1;
-        top: 0px;
-    }
+  font-family: "Red Hat Text";
+  font-size: 16px;
+  color: #1b1c24;
+  background-color: #fafafa;
 }
 
 /* ============================================ */
 /* WHOLE CONTENT WRAPPER CODE */
-
+/* line 65, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .wrapper {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    background: linear-gradient(180deg, #FFEEC4 0%, #FFDC83 21.79%, #FFDA7A 36.55%, #FFBE16 54.19%, #FEDE8B 71.67%, #FFADAD 87.9%, #FFADAD 94.44%, #FFEEC4 100%);
-    animation: fadeIn 3s;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 /* ============================================ */
-/* HEADER CODE */
-
-.main {
-    flex: 1 1 auto;
-}
-
+/* CONTAINERS */
+/* line 75, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 [class*="__container"] {
-    max-width: 1320px;
-    margin: 0px auto;
-    padding: 0px 15px;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* PC */
-@media (max-width: 1290px) {
+/* @media (max-width: 1290) {
     [class*="__container"] {
-        max-width: 970px;
+        max-width: px;
     }
-}
-
+} */
 /* TABLET */
 @media (max-width: 991.98px) {
-    [class*="__container"] {
-        max-width: 750px;
-    }
+  /* line 90, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+  [class*="__container"] {
+    max-width: 822px;
+  }
 }
 
 /* MOBILE */
 @media (max-width: 767.98px) {
-    [class*="__container"] {
-        max-width: none;
-    }
-}
-
-.header {
-    position: absolute;
-    /* изменять для динамической шапки */
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 50;
-    /* background-color: #FFEEC4; */
-}
-
-.header__container {
-    display: flex;
-    min-height: 124px;
-    align-items: center;
-}
-
-.header__logo {
-    position: relative;
-    z-index: 5;
-}
-
-.header__menu {
-    flex: 1 1 auto;
-}
-
-.menu {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.menu__list {
-    display: flex;
-    gap: 48px;
-}
-
-.menu__item {
-    padding: 0px 24px;
-}
-
-.menu__link {
-    font-family: 'Cormorant Garamond';
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 2.4;
-    color: #444;
-}
-
-.menu__link:hover {
-    text-decoration: underline;
-}
-
-.header__button {
-    display: none;
-    text-transform: uppercase;
-    padding: 0px;
-}
-
-/* BURGER BUTTON DISPLAY SMALL PC */
-
-@media (max-width: 991.98px) {
-    .menu__item {
-        padding: 0px 14px;
-    }
-
-    .header__container {
-        min-height: 90px;
-    }
-}
-
-/* BURGER BUTTON DISPLAY TABLET */
-
-@media (max-width: 767.98px) {
-    .header__menu {
-        display: none;
-        max-height: 90px;
-    }
-
-    .menu__body {
-        position: fixed;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background-color: #ffe5a3;
-        padding: 200px 15px 30px;
-    }
-
-    .menu__body:target {
-        left: 100%;
-    }
-
-    .menu__list {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .menu__link {
-        color: #000;
-        font-size: 30px;
-    }
-
-    .menu__item {
-        padding: 0px 1px;
-    }
+  /* line 97, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+  [class*="__container"] {
+    max-width: 648px;
+  }
 }
 
 /* ============================================ */
-/* BURGER MENU BUTTON */
-
-.icon-menu {
-    display: none;
+/* HEADER CODE */
+/* line 105, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
 }
 
-@media (max-width: 767.98px) {
-    .icon-menu {
-        display: flex;
-        position: relative;
-        height: 18px;
-        width: 30px;
-        flex: 0 0 30px;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 0 0 0 20px;
-    }
+/* line 112, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.header .header__container {
+  display: flex;
+  padding: 35px 15px;
+  align-items: center;
+}
 
-    .icon-menu::before,
-    .icon-menu::after {
-        content: '';
-        background-color: #444;
-        height: 2px;
-    }
+/* line 117, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.header .header__container .header__logo {
+  position: relative;
+  z-index: 5;
+}
 
-    .icon-menu span {
-        height: 2px;
-        background-color: #444;
-    }
+/* line 122, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.header .header__container .header__menu {
+  flex: 1 1 auto;
+}
 
+/* line 125, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.header .header__container .header__menu .menu__body {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 129, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.header .header__container .header__menu .menu__body .menu__list {
+  display: flex;
+  gap: 50px;
+}
+
+/* line 133, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.header .header__container .header__menu .menu__body .menu__list .menu__link {
+  font-family: "Mulish";
+  font-weight: 700;
+  line-height: 2.4;
+  color: #1b1c24;
+  transition: color 300ms ease-in-out;
+}
+
+/* line 140, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.header .header__container .header__menu .menu__body .menu__list .menu__link:hover {
+  color: #00c69f;
+  transition: color 300ms ease-in-out;
 }
 
 /* ============================================ */
 /* TEXT CODE */
-
-
-.text-block {
-    margin: 20px 40px;
+/* line 154, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.text__title {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 120%;
+  color: #1b1c24;
 }
 
-.text-block__center {
-    text-align: center;
+/* line 163, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.text__header {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  color: #1b1c24;
 }
 
-.text-block__title {
-    font-family: 'Bree Serif';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 65px;
-    color: #444;
-    text-transform: uppercase;
+/* line 172, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.text__text {
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 120%;
+  text-align: center;
+  color: #1b1c24;
 }
 
-.text-block__title:not(:last-child) {
-    margin: 0px 0px 25px 0px;
+/* line 182, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.text__link {
+  text-decoration: underline;
+  color: #1b1c24;
+  transition: color 300ms ease-in-out;
 }
 
-.text-block__text {
-    font-family: 'Shanti';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-    text-align: justify;
-    color: #444444;
+/* line 187, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.text__link:hover {
+  color: #00c69f;
+  transition: color 300ms ease-in-out;
 }
 
-.title-white,
-.text-white {
-    color: #fafafa;
+/* line 193, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.work__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  max-width: 165px;
+  max-height: 54px;
+  background-color: #7cf4dd;
+  box-shadow: 0 36px 63px rgba(71, 71, 71, 0.0196802), 0 15.0399px 26.3199px rgba(71, 71, 71, 0.0282725), 0 8.04107px 14.0719px rgba(71, 71, 71, 0.035), 0 4.50776px 7.88858px rgba(71, 71, 71, 0.0417275), 0 2.39404px 4.18956px rgba(71, 71, 71, 0.0503198), 0 0.99621px 1.74337px rgba(71, 71, 71, 0.07);
+  border-radius: 10px;
+  transition: background-color 300ms ease-in-out;
+}
+
+/* line 206, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.work__button:hover {
+  background-color: #00c69f;
+  transition: background-color 300ms ease-in-out;
+}
+
+/* line 211, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.work__button .work__button-text {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #1b1c24;
+  transition: color 300ms ease-in-out;
+}
+
+/* line 223, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.work__button .work__button-text:hover {
+  color: #fafafa;
+  transition: color 300ms ease-in-out;
+}
+
+/* ============================================ */
+/* MAIN CODE */
+/* line 233, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.main {
+  flex: 1 1 auto;
 }
 
 /* ============================================ */
 /* BLOCK-1 CODE */
-
+/* line 240, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .block-1 {
-    /* background-color: #FFEEC4; */
-    padding: 255px 0px 0px 0px;
+  padding-top: 199px;
 }
 
-.block-1__container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 111px;
+/* line 243, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.block-1 .block-1__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.block-1__content {
-    flex: 0 1 52%;
+/* line 249, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.block-1 .block-1__container .block-1__content {
+  text-align: center;
 }
 
-.block-1__text-block {
-    max-width: 514px;
+/* line 252, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.block-1 .block-1__container .block-1__content .block-1__title {
+  padding: 0 0 16px 0;
 }
 
-.block-1__image {
-    flex: 0 1 48%;
-    padding: 0;
-}
-
-.block-1__image img {
-    max-width: 100%;
-    box-shadow: 0px 38px 72px rgba(68, 68, 68, 0.18), 0px 13.8706px 26.2812px rgba(68, 68, 68, 0.124197);
-    border-radius: 10px 40px;
-}
-
-/* ============================================ */
-
-@media (max-width: 991.98px) {
-    .block-1__container {
-        padding: 0 15px;
-    }
-
-    .block-1__image img {
-        max-width: 70%;
-        max-height: 70%;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .block-1 {
-        padding: 150px 0 0 0;
-    }
-
-    .block-1__content {
-        flex: 0 1 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .block-1__image {
-        flex: 0 1 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .block-1__image img {
-        max-width: 80%;
-        max-height: 80%;
-    }
-}
-
-/* ============================================ */
-
+/* line 259, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .block-2 {
-    /* background-color: #FFEEC4; */
-    padding: 281px 0 0 0;
+  padding-top: 75px;
 }
 
-.block-2__container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 111px;
+/* line 262, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.block-2 .block-2__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.block-2__content {
-    flex: 0 1 51%;
+/* line 267, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.block-2 .block-2__container .block-2__content {
+  text-align: center;
+  align-items: center;
 }
 
-.block-2__text-block {
-    max-width: 625px;
+/* line 271, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.block-2 .block-2__container .block-2__content .block-2__separator {
+  width: 57.5rem;
+  height: 2px;
+  background-color: #1b1c24;
+  margin: 0 0 75px 0;
 }
 
-.block-2__image {
-    flex: 0 1 40%;
-    padding: 0px;
+/* line 281, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.work-block {
+  padding: 50px 0 0 0;
 }
 
-.block-2__image img {
-    max-width: 100%;
-    box-shadow: 0px 38px 72px rgba(68, 68, 68, 0.18), 0px 13.8706px 26.2812px rgba(68, 68, 68, 0.124197);
-    border-radius: 200px 0px;
+/* line 285, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.work-block .work-block__container .work-block__content {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding-bottom: 100px;
 }
 
-@media (max-width: 991.98px) {
-    .block-2__container {
-        padding: 0 15px;
-    }
-
-    .block-2__image img {
-        max-width: 115%;
-        max-height: 115%;
-        border-radius: 150px 0px;
-    }
+/* line 292, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.work-block .work-block__container .work-block__content .work-block__image {
+  border-radius: 20px;
+  flex: 1 1 49%;
+  max-width: 543px;
+  max-height: 407px;
+  overflow: hidden;
 }
 
-@media (max-width: 767.98px) {
-    .block-2 {
-        padding: 150px 0 0 0;
-    }
-
-    .block-2__content {
-        flex: 0 1 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .block-2__image {
-        flex: 0 1 100%;
-        order: 2;
-        display: flex;
-        justify-content: center;
-    }
-
-    .block-2__image img {
-        max-width: 70%;
-        max-height: 70%;
-        border-radius: 75px 0px;
-    }
+/* line 299, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.work-block .work-block__container .work-block__content .work-block__image .work-block__image-content {
+  flex: 1 0 49%;
+  max-width: 543px;
+  max-height: 407px;
+  object-fit: cover;
+  transition: 0.5s all ease-in-out;
 }
 
-/* ============================================ */
-
-.block-3 {
-    /* background-color: #FFEEC4; */
-    padding: 300px 0 0 0;
+/* line 307, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.work-block .work-block__container .work-block__content .work-block__image .work-block__image-content:hover {
+  /* transform: scale(1.2); */
+  -webkit-transform: scale(1.2, 1.2);
 }
 
-.block-3__container {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 111px;
+/* line 314, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.work-block .work-block__container .work-block__content .block-3__text {
+  flex: 1 0 51%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.block-3__content {
-    margin: 0px auto;
+/* line 320, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.work-block .work-block__container .work-block__content .block-3__text .text__title,
+.work-block .work-block__container .work-block__content .block-3__text .text__text {
+  text-align: left;
 }
 
-.block-3__text-block {
-    max-width: 800px;
-    margin: 0px auto;
-}
-
-.block-3__carousel {
-    display: block;
-    margin: 0px auto;
-    margin-top: 50px;
-    width: 746px;
-    height: 500px;
-    background-color: #fafafa;
-}
-
-/* .block-3__carousel img {
-    max-width: 746px;
-    max-height: 500px;
-    justify-content: center;
-} */
-
-@media (max-width: 991.98px) {
-    .block-3__carousel {
-        max-width: 528px;
-        max-height: 354px;
-    }
-
-    /*     .block-3__carousel img {} */
-}
-
-@media (max-width: 767.98px) {
-    .block-3__carousel {
-        max-width: calc(120px + (746 - 120) * ((100vw - 320px) / (1290 - 320)));
-        max-height: 365px;
-    }
-
-    /*     .block-3__carousel img {
-        display: inherit;
-    } */
-}
-
-/* ============================================ */
-
-.block-4 {
-    /* background-color: #FFEEC4; */
-    padding: 300px 0 50px 0;
-}
-
-.block-4__container {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 111px;
-}
-
-.block-4__content {
-    margin: 0px auto;
-}
-
-.block-4__text-block {
-    max-width: 800px;
-    margin: 0px auto;
-}
-
-.block-4__buttons {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0px 100px;
-}
-
-.block-4__buttons:not(:last-child) {
-    margin-top: 80px;
-}
-
-.buttons-1 {
-    flex: 0 1 100%;
-    padding: 0px;
-    justify-content: center;
-    gap: 30px;
-}
-
-.buttons-2 {
-    flex: 0 1 100%;
-    padding: 0;
-    padding-top: 30px;
-    justify-content: center;
-    gap: 30px;
-
-}
-
-.button-small {
-    padding: 80px;
-    background-color: #FBFBFB;
-    box-shadow: 0px 6px 80px rgba(108, 108, 108, 0.15), 0px 2.50666px 33.4221px rgba(108, 108, 108, 0.107828), 0px 0.751293px 10.0172px rgba(108, 108, 108, 0.075), 0px 0.399006px 5.32008px rgba(108, 108, 108, 0.0605839), 0px 0.166035px 2.21381px rgba(108, 108, 108, 0.0421718);
-    border-radius: 35px;
-}
-
-.button-big {
-    padding: 80px 180px;
-    background-color: #fbfbfb;
-    box-shadow: 0px 6px 80px rgba(108, 108, 108, 0.15), 0px 2.50666px 33.4221px rgba(108, 108, 108, 0.107828), 0px 0.751293px 10.0172px rgba(108, 108, 108, 0.075), 0px 0.399006px 5.32008px rgba(108, 108, 108, 0.0605839), 0px 0.166035px 2.21381px rgba(108, 108, 108, 0.0421718);
-    border-radius: 35px;
-}
-
-@media (max-width: 1290.98px) {
-    .block-4__buttons {
-        padding: 0px 20px;
-        gap: 20px;
-    }
-}
-
-@media (max-width: 991.98px) {
-    .block-4 {
-        padding: 150px 0 0 0;
-    }
-
-    .block-4__buttons {
-        padding: 0px 20px;
-        gap: 20px;
-        justify-content: space-around;
-    }
-
-    .block-4__buttons:not(:last-child) {
-        margin: 0px;
-        margin-top: 80px;
-    }
-
-    .button-small {
-        padding: 60px;
-        border-radius: 27px;
-    }
-
-    .button-big {
-        padding: 60px 135px;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .block-4__container {
-        padding: 0px 50px;
-    }
-
-    .block-4__buttons {
-        justify-content: center;
-        gap: 20px;
-    }
-}
-
-@media (max-width: 589.98px) {
-    .button-small {
-        padding: 60px 180px;
-        border-radius: 32px;
-    }
-
-    .button-big {
-        padding: 60px 180px;
-        border-radius: 32px;
-    }
-}
-
-/* ============================================ */
-
-.block-5 {
-    padding: 300px 0 0 0;
-}
-
-.block-5__container {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 11px;
-}
-
-.block-5__content {
-    margin: 0px auto;
-}
-
-.block-5__text-block {
-    max-width: 800px;
-    margin: 0px auto;
-}
-
-.block-5__carousel {
-    display: block;
-    margin: 0px auto;
-    margin-top: 30px;
-    max-width: 845px;
-    max-height: 469px;
-}
-
-.carousel-picture {
-    max-width: 845px;
-    height: 469px;
-    background-color: #ffaafa;
-    border: 2px solid #fbfbfb;
-    box-shadow: 0px 42px 63px rgba(0, 0, 0, 0.05), 0px 17.5466px 26.3199px rgba(0, 0, 0, 0.0359427), 0px 9.38125px 14.0719px rgba(0, 0, 0, 0.0298054), 0px 5.25905px 7.88858px rgba(0, 0, 0, 0.025), 0px 2.79304px 4.18956px rgba(0, 0, 0, 0.0201946), 0px 1.16225px 1.74337px rgba(0, 0, 0, 0.0140573);
-}
-
-.button-small__block-5 {
-    display: block;
-    text-align: center;
-    margin: 60px 0px;
-}
-
-.button-small__block-5 a {
-    padding: 20px 50px;
-    font-family: 'Shanti';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 120.4%;
-    text-align: justify;
-
-    background-color: #FBFBFB;
-    color: #444;
-    border-radius: 12px;
-}
-
-@media (max-width: 991.98px) {
-    .block-5__carousel {
-        max-width: 728px;
-        max-height: 405px;
-    }
-
-    .block-5__container {
-        padding: 0px 50px;
-    }
-
-    .button-small__block-5 {
-        padding: 60px 0px;
-    }
-}
-
-/* ============================================ */
-
-.block-6 {
-    padding: 300px 0 0 0;
-}
-
-.block-6__container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 0px 0px 20px;
-}
-
-.block-6__content {
-    flex: 0 1 44%;
-}
-
-.block-6__text-block {
-    max-width: 552px;
-}
-
-.block-6__mail {
-    margin: 30px 0 0 0;
-}
-
-.block-6__mail form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
-}
-
-/* .mail-box {
-    flex: 0 1 65%;
-    width: 352px;
-    height: 40px;
-    padding-left: 17px;
-    background: #FBFBFB;
-
-    box-shadow: 0px 6px 80px rgba(210, 210, 210, 0.15), 0px 2.50666px 33.4221px rgba(210, 210, 210, 0.107828), 0px 0.751293px 10.0172px rgba(210, 210, 210, 0.075), 0px 0.399006px 5.32008px rgba(210, 210, 210, 0.0605839), 0px 0.166035px 2.21381px rgba(210, 210, 210, 0.0421718);
-    border-radius: 10px;
-
-    font-family: 'Shanti';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 120.4%;
-    text-align: start;
-    color: #C4C4C4;
-} */
-
-.mail-button {
-    flex: 0 1 100%;
-    max-width: 157px;
-    height: 40px;
-
-    background: #FF4893;
-    box-shadow: 0px 6px 80px rgba(210, 210, 210, 0.15), 0px 2.50666px 33.4221px rgba(210, 210, 210, 0.107828), 0px 0.751293px 10.0172px rgba(210, 210, 210, 0.075), 0px 0.399006px 5.32008px rgba(210, 210, 210, 0.0605839), 0px 0.166035px 2.21381px rgba(210, 210, 210, 0.0421718);
-    border-radius: 10px;
-
-    font-family: 'Shanti';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 120.4%;
-    text-align: center;
-    color: #FBFBFB;
-}
-
-.block-6__social {
-    margin: 30px 40px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.block-6__social .text-white {
-    flex: 0 1 100%;
-    padding: 0 0 12px 0;
-}
-
-.block-6__social .social-links {
-    display: flex;
-    justify-content: start;
-    gap: 15px;
-}
-
-.social-links__link {
-    color: #FF4893;
-}
-
-.block-6__illustration {
-    flex: 0 1 56%;
-}
-
-.block-6__illustration img {
-    max-width: 700px;
-    max-height: 700px;
-}
-
-@media (max-width: 1290.98px) {
-    .block-6__illustration img {
-        max-width: 485px;
-        max-height: 485px;
-    }
-}
-
-@media (max-width: 991.98px) {
-    .block-6__illustration img {
-        max-width: 375px;
-        max-height: 375px;
-    }
-}
-
-@media (max-width: 689.98px) {
-    .block-6__content {
-        flex: 0 1 100%;
-    }
-
-    .block-6__illustration {
-        flex: 0 1 100%;
-        text-align: center;
-    }
-
-    .block-6__illustration img {
-        max-width: 375px;
-        max-height: 375px;
-    }
-}
-
-/* ============================================ */
-
-.footer {
-    margin: 30px 0 0 0;
-    height: 200px;
-    background-color: #fbfbfb;
-}
-
-.footer__container {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 150px 50px;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer__logo {
-    grid-column-start: 1;
-    grid-column-end: 2;
-
-}
-
-.footer__menu {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer__social {
-    color: #444;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.footer__social .social-links {
-    display: flex;
-    gap: 15px;
-}
-
-.footer__social .social-links__link {
-    color: #444;
-}
-
-.footer__bottom-text {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    display: flex;
-    justify-content: center;
-}
-
-.bottom-text__link {
-    color: #222;
-    text-decoration: underline;
-}
+/*# sourceMappingURL=index.css.map */

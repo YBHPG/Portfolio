@@ -5,269 +5,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bulbadyshka's world</title>
-    <link rel="shortcut icon" href="images/ribbon_black_favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Shanti&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Mulish:wght@400;700&family=Red+Hat+Text&display=swap"
         rel="stylesheet">
+
+    <title>Vladislav Ledashchev</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="header__container">
-                <a href="" class="header__logo">
-                    <img src="images/ribbon_black.png" alt="Логотип">
-                </a>
-                <div class="header__menu menu">
-                    <nav id="menu" class="menu__body">
-                        <ul class="menu__list">
-                            <li class="menu__item"><a href="#about_me" class="menu__link">ABOUT ME</a></li>
-                            <li class="menu__item"><a href="#programming" class="menu__link">PROGRAMMING</a></li>
-                            <li class="menu__item"><a href="#design" class="menu__link">DESIGN</a></li>
-                            <li class="menu__item"><a href="#vp" class="menu__link">VP</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header__button">
-                    <a href="#menu" class="icon-menu"><span></span></a>
+    <header class="header">
+        <div class="header__container">
+            <a href="" class="header__logo">
+                <img src="images/logo.svg" alt="Логотип">
+            </a>
+            <div class="header__menu">
+                <nav id="menu" class="menu__body">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#about_me" class="menu__link">Work</a></li>
+                        <li class="menu__item"><a href="#programming" class="menu__link">About</a></li>
+                        <li class="menu__item"><a href="#design" class="menu__link">Resume</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__button">
+                <a href="#menu" class="icon-menu"><span></span></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="block-1">
+            <div class="block-1__container">
+                <div class="block-1__content">
+                    <h1 class="block-1__title text__title">
+                        Hi, I'm Vlad!
+                    </h1>
+                    <div class="block-1__text">
+                        <p class="text__text">
+                            A designer, a student, a programmer.
+                        </p>
+                        <p class="text__text">
+                            Currently studing CAD systems and web development in BMSTU.
+                        </p>
+                        <p class="text__text">
+                            Designed <a class="text__link" href="#">Dicty</a> iOS app and this site.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </header>
-        <main class="main">
-            <section class="block-1">
-                <div class="block-1__container">
-                    <div class="block-1__content">
-                        <div class="block-1__text-block text-block">
-                            <h1 class="text-block__title">
-                                Hi, I'm Vlad!
-                            </h1>
-                            <div class="text-block__text">
-                                It's nice to meet You here! Rigth now You are looking at a portfolio of a young student,
-                                web-designer and programming enthusiast. If You want to know more, scroll down for
-                                additional info and projects :)
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block-1__image">
-                        <img src="images/block-1/block-1_photo.png" alt="">
-                    </div>
-                </div>
-            </section>
-            <section class="block-2">
-                <div class="block-2__container">
-                    <div class="block-2__image">
-                        <img id="about_me" src="images/block-2/block-2__image_2.jpg" alt="">
-                    </div>
-                    <div class="block-2__content">
-                        <div class="block-2__text-block text-block">
-                            <h1 class="text-block__title">
-                                ABOUT ME
-                            </h1>
-                            <div class="text-block__text">
-                                <p>I am a third-year student in BMSTU named after Bauman. My main focus in university
-                                    is on CAD systems and programming. I gained knowledge about working with C/C++, SQL,
-                                    Python and HTML/CSS languages recently.</p>
-                                <p>When it comes to after class activities, I try to spend most of my studying time on
-                                    web
-                                    development and design. The second is my main focus and I try to bring any new ideas
-                                    to Figma most of the time.</p>
-                                <p>I also like Minecraft and Forza because everyone needs some rest sometime XD</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="block-3">
-                <div class="block-3__container">
-                    <div class="block-3__content">
-                        <div class="block-3__text-block text-block text-block__center">
-                            <h1 id="design" class="text-block__title">
-                                DESIGN
-                            </h1>
-                            <div class="text-block__text">
-                                Design has always been my main priority. It has been the industry I've wanted to work in
-                                since 2019. I have some experience in web-design and mobile apps design. You can see all
-                                my web-design works on Behance or on a dedicated page. <br>
-                                Talking about mobile apps design, I've been the only designer for the “Dicty” iOS app.
-                                The application is a discionary with translator - it helps you remember new words that
-                                can be translated without opening a dedicated translator. My mane goal was to draw all
-                                app's screens and help devs to recreate them inside the app.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block-3__carousel"></div>
-                    <div class="button-small__block-5">
-                        <a href="" class="">
-                            VIEW ALL
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section class="block-4">
-                <div class="block-4__container">
-                    <div class="block-4__content">
-                        <div class="block-4__text-block text-block text-block__center">
-                            <h1 id="programming" class="text-block__title">
-                                PROGRAMMING
-                            </h1>
-                            <div class="text-block__text">
-                                <p>In programming, I undertake a lot and have not yet fully mastered anything 😅 From
-                                    the
-                                    experience of what I have tried:<br>
-                                    • C/C++<br>
-                                    • Python<br>
-                                    • Swift<br>
-                                    • Web-development (without frameworks, pure HTML/CSS)<br>
-                                    • Development on Ren'Py.<br>
-                                    At the moment I am developing a modification for a visual novel on Ren'Py and
-                                    studying
-                                    web programming to create a portfolio website.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block-4__buttons">
-                        <div class="block-4__buttons buttons-1">
-                            <a href="" class="button-small">
-                                <img src="" alt="">
-                            </a>
-                            <a href="" class="button-big">
-                                <img src="" alt="">
-                            </a>
-                        </div>
-                        <div class="block-4__buttons buttons-2">
-                            <a href="" class="button-big">
-                                <img src="" alt="">
-                            </a>
-                            <a href="" class="button-small">
-                                <img src="" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="block-5">
-                <div class="block-5__container">
-                    <div class="block-5__content">
-                        <div class="block-5__text-block text-block__center">
-                            <h1 id="vp" class="text-block__title">
-                                Photography
-                            </h1>
-                            <div class="text-block__text">
-                                <p>Most of us like taking photos. Without that we would not be able to remember good
-                                    moments of our life so well. But sometimes you don't shoot your life, you want to
-                                    remember a good, beautiful scenery. That's what this part is dedicated to. The
-                                    photos in the gallery are devided into two parts - real and virtual photoraphy. For
-                                    those who is unfamiliar with the term, Virtual photography (VP) is when you take
-                                    pictures in games that have “Photo mode”. So you can take a look at what I
-                                    considered beautiful both irl and in games.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block-5__carousel">
-                        <div class=".block-5__carousel carousel-picture"></div>
-                        <!--                         <div class="carousel-picture"></div>
-                        <div class="carousel-picture"></div>
-                        <div class="carousel-picture"></div>
-                        <div class="carousel-picture"></div> -->
-                    </div>
-                    <div class="button-small__block-5">
-                        <a href="" class="">
-                            VIEW ALL
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section class="block-6">
-                <div class="block-6__container">
-                    <div class="block-6__content">
-                        <div class="block-6__text-block text-block">
-                            <h1 class="text-block__title title-white">
-                                Wow, you made it!
-                            </h1>
-                            <div class="text-block__text text-white">
-                                Thank you so much for visiting my portfolio! It is a pleasure for me to see you at this
-                                point. If you have any suggestion, job offers or you just want to say hi, feel free to
-                                text me via mail:
-                            </div>
-                            <div class="block-6__mail">
-                                <form action="mailto:ybhpg@icloud.com">
-                                    <input type="submit" value="Send a letter" class="mail-button"></input>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="block-6__social">
-                            <div class="text-block__text text-white">
-                                You can also contact me on social networks:
-                            </div>
-                            <div class="social-links">
-                                <a href="https://youtube.com/c/YBHPG" target="_blank" class="social-links__link">
-                                    <img src="images/block-6/iconYouTube.png" alt="">
-                                </a>
-                                <a href="https://vk.com/cosmos_cosmicheskii" target="_blank" class="social-links__link">
-                                    <img src="images/block-6/iconVK.png" alt="">
-                                </a>
-                                <a href="https://twitter.com/gphby_gaming" target="_blank" class="social-links__link">
-                                    <img src="images/block-6/iconTwitter.png" alt="">
-                                </a>
-                                <a href="https://m.facebook.com/bulbadyshka" target="_blank" class="social-links__link">
-                                    <img src="images/block-6/iconFB.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block-6__illustration">
-                        <img src="images/block-6/thanks-illust-english.png" alt="">
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="footer__container">
-                <a href="" class="footer__logo">
-                    <img src="images/ribbon_black.png" alt="Логотип">
-                </a>
-                <div class="footer__menu menu">
-                    <nav class="menu__body">
-                        <ul class="menu__list">
-                            <li class="menu__item"><a href="#about_me" class="menu__link">ABOUT ME</a></li>
-                            <li class="menu__item"><a href="#programming" class="menu__link">PROGRAMMING</a></li>
-                            <li class="menu__item"><a href="#design" class="menu__link">DESIGN</a></li>
-                            <li class="menu__item"><a href="#vp" class="menu__link">VP</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header__button">
-                    <a href="#menu" class="icon-menu"><span></span></a>
-                </div>
-                <div class="footer__social">
-                    <div class="social-links">
-                        <a href="https://youtube.com/c/YBHPG" target="_blank" class="social-links__link">
-                            <img src="images/block-6/iconYouTube.png" alt="">
-                        </a>
-                        <a href="https://vk.com/cosmos_cosmicheskii" target="_blank" class="social-links__link">
-                            <img src="images/block-6/iconVK.png" alt="">
-                        </a>
-                        <a href="https://twitter.com/gphby_gaming" target="_blank" class="social-links__link">
-                            <img src="images/block-6/iconTwitter.png" alt="">
-                        </a>
-                        <a href="https://m.facebook.com/bulbadyshka" target="_blank" class="social-links__link">
-                            <img src="images/block-6/iconFB.png" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="footer__bottom-text">
-                    <p>Some of page elements have been made by other people. You can see information about that on a <a
-                            href="#" class="bottom-text__link">special page</a></p>
+        </div>
+        <div class="block-2">
+            <div class="block-2__container">
+                <div class="block-2__content">
+                    <div class="block-2__separator"></div>
+                    <p class="block-2__text text__header">
+                        Works by me
+                    </p>
                 </div>
             </div>
+        </div>
+        <div class="work-block">
+            <div class="work-block__container">
+                <div class="work-block__content">
+                    <div class="work-block__image">
+                        <img class="work-block__image-content" src="images/dicty_mockup.png" alt="a Dicty app mockup">
+                    </div>
+                    <div class="block-3__text">
+                        <h1 class="text__title">Dicty iOS app design</h1>
+                        <p class="text__text">2-in-1: dictionary and translator in one app</p>
+                        <div class="work__button">
+                            <a href="" class="work__button-text">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="work-block">
+            <div class="work-block__container">
+                <div class="work-block__content">
+                    <div class="work-block__image">
+                        <img class="work-block__image-content" src="images/rezolut-mockup.png" alt="a Dicty app mockup">
+                    </div>
+                    <div class="block-3__text">
+                        <h1 class="text__title">Dicty iOS app design</h1>
+                        <p class="text__text">2-in-1: dictionary and translator in one app</p>
+                        <div class="work__button">
+                            <a href="" class="work__button-text">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
 
-        </footer>
+    </footer>
 </body>
 
 </html>
