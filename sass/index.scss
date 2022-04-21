@@ -141,7 +141,52 @@ body {
     }
 }
 
-.work__button {
+.work-button {
+    max-width: 220px;
+    max-height: 54px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    .button {
+        font-family: 'Mulish';
+        display: flex;
+        text-decoration: none;
+        font-size: 1.25rem;
+        position: relative;
+    }
+
+    .button-green {
+        padding: 15px 29px;
+        background-color: $secondary;
+        color: $primary-black;
+        border-radius: 10px;
+        transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+
+        &:hover {
+            background-color: $secondary-hover;
+            color: $primary-white;
+            transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+        }
+    }
+
+    .button-blue {
+        padding: 15px 48px;
+        background-color: $tertiary;
+        color: $primary-black;
+        border-radius: 10px;
+        transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+
+        &:hover {
+            background-color: $tertiary-hover;
+            color: $primary-white;
+            transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+        }
+    }
+}
+
+/* .work__buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -176,7 +221,7 @@ body {
             transition: $hover-transition;
         }
     }
-}
+} */
 
 .other-works {
     padding: 50px 0 0 0;
