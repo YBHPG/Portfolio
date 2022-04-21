@@ -186,43 +186,6 @@ body {
     }
 }
 
-/* .work__buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    max-width: 165px;
-    max-height: 54px;
-    background-color: $secondary;
-    box-shadow: 0 36px 63px rgba(71, 71, 71, 0.0196802), 0 15.0399px 26.3199px rgba(71, 71, 71, 0.0282725), 0 8.04107px 14.0719px rgba(71, 71, 71, 0.035), 0 4.50776px 7.88858px rgba(71, 71, 71, 0.0417275), 0 2.39404px 4.18956px rgba(71, 71, 71, 0.0503198), 0 0.996212px 1.74337px rgba(71, 71, 71, 0.07);
-    border-radius: 10px;
-    transition: background-color 300ms ease-in-out;
-
-    &:hover {
-        background-color: $secondary-hover;
-        transition: background-color 300ms ease-in-out;
-    }
-
-    .work__button-text {
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 120%;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        color: $primary-black;
-        transition: $hover-transition;
-
-        &:hover {
-            color: $primary-white;
-            transition: $hover-transition;
-        }
-    }
-} */
-
 .other-works {
     padding: 50px 0 0 0;
 
@@ -232,37 +195,6 @@ body {
             flex-wrap: nowrap;
             justify-content: center;
             align-items: center;
-
-            .other-works__button {
-                padding: 15px 48px;
-                max-width: 220px;
-                max-height: 54px;
-                background-color: $tertiary;
-                box-shadow: 0 36px 63px rgba(71, 71, 71, 0.0196802), 0 15.0399px 26.3199px rgba(71, 71, 71, 0.0282725), 0 8.04107px 14.0719px rgba(71, 71, 71, 0.035), 0 4.50776px 7.88858px rgba(71, 71, 71, 0.0417275), 0 2.39404px 4.18956px rgba(71, 71, 71, 0.0503198), 0 0.996212px 1.74337px rgba(71, 71, 71, 0.07);
-                border-radius: 10px;
-                transition: background-color 300ms ease-in-out;
-
-                &:hover {
-                    background-color: $tertiary-hover;
-                    transition: background-color 300ms ease-in-out;
-                }
-
-                .other-works__button-text {
-                    font-family: 'Mulish';
-                    font-size: 1.25rem;
-                    font-weight: 600;
-                    line-height: 120%;
-                    display: flex;
-                    align-items: center;
-                    text-align: center;
-                    color: $primary-black;
-
-                    &:hover {
-                        color: $primary-white;
-                        transition: color 300ms ease-in-out;
-                    }
-                }
-            }
         }
     }
 }
@@ -384,6 +316,9 @@ body {
                 max-width: 543px;
                 max-height: 407px;
                 overflow: hidden;
+
+                /* fixes border-radius bug in webkit */
+                -webkit-mask-image: -webkit-radial-gradient(white, black);
 
                 .work-block__image-content {
                     flex: 1 0 49%;
