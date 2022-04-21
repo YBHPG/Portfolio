@@ -1,5 +1,7 @@
 .sass-cache/
+*.map
 *.css.map
 *.sass.map
 *.scss.map
 prepros.config
+.DS_Store
