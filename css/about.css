@@ -221,21 +221,74 @@ body {
 
 /* ============================================ */
 /* BLOCK-1 CODE */
+/* line 216, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.block-1 {
+  padding: 187px 0 0 0;
+}
+
+/* line 221, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.block-1 .block-1__container .block-1__content {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* line 228, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.block-1 .block-1__container .block-1__content .block-1__image {
+  flex: 1 0 41%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+}
+
+/* line 236, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.block-1 .block-1__container .block-1__content .block-1__image .block-1__image-header {
+  flex: 1 0 100%;
+  text-align: inherit;
+}
+
+/* line 241, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.block-1 .block-1__container .block-1__content .block-1__image .block-1__image-image {
+  max-height: 458px;
+  max-width: 320px;
+  margin: 30px 0 0 0;
+  overflow: hidden;
+  filter: drop-shadow(0px 31.6728px 55.4274px rgba(250, 250, 250, 0.0196802)) drop-shadow(0px 13.2321px 23.1562px rgba(250, 250, 250, 0.0282725)) drop-shadow(0px 7.07453px 12.3804px rgba(250, 250, 250, 0.035)) drop-shadow(0px 3.96592px 6.94037px rgba(250, 250, 250, 0.0417275)) drop-shadow(0px 2.10627px 3.68598px rgba(250, 250, 250, 0.0503198)) drop-shadow(0px 0.87647px 1.53382px rgba(250, 250, 250, 0.07));
+  border-radius: 20px;
+}
+
+/* line 249, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.block-1 .block-1__container .block-1__content .block-1__image .block-1__image-image img {
+  max-height: 458px;
+  width: auto;
+  object-fit: cover;
+}
+
+/* line 257, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.block-1 .block-1__container .block-1__content .block-1__text {
+  max-width: 545px;
+  text-align: left;
+}
+
 /* ============================================ */
 /* BLOCK-2 CODE */
-/* line 220, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+/* line 268, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .block-2 {
   padding: 200px 0 0 0;
 }
 
-/* line 225, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+/* line 273, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .block-2 .block-2__container .block-2__content {
   display: flex;
   justify-content: space-between;
   text-align: start;
 }
 
-/* line 230, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+/* line 278, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .block-2 .block-2__container .block-2__content .block-2__card {
   flex: 1 0 33%;
   display: flex;
@@ -246,7 +299,7 @@ body {
   max-height: 557px;
 }
 
-/* line 239, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+/* line 287, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .block-2 .block-2__container .block-2__content .block-2__card .block-2__card-picture {
   flex: 1 0 100%;
   overflow: hidden;
@@ -256,42 +309,42 @@ body {
   border-radius: 20px;
 }
 
-/* line 247, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+/* line 295, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .block-2 .block-2__container .block-2__content .block-2__card .block-2__card-picture img {
   width: auto;
   max-height: 100%;
-  object-fit: cover;
-  object-position: 80% 40%;
 }
 
-/* line 255, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+/* line 300, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.block-2 .block-2__container .block-2__content .block-2__card .block-2__card-picture .height-auto-image {
+  max-height: none;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* line 308, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .block-2 .block-2__container .block-2__content .block-2__card .block-2__card-text {
   flex: 1 0 100%;
   max-width: 300px;
   text-align: left;
 }
 
-/* line 265, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
-.block-2 .block-2__container .card-2 .block-2__card-picture img {
-  max-width: 100%;
-  height: auto;
-}
-
 /* ============================================ */
 /* FOOTER CODE */
-/* line 279, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+/* line 325, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 footer .footer__container {
   padding: 150px 0 0 0;
 }
 
-/* line 282, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+/* line 328, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 footer .footer__container .footer__content {
   display: flex;
   flex-wrap: wrap;
   padding: 0 0 50px 0;
 }
 
-/* line 287, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+/* line 333, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 footer .footer__container .footer__content .footer__main-block {
   flex: 1 0 48%;
   display: flex;
@@ -299,24 +352,24 @@ footer .footer__container .footer__content .footer__main-block {
   gap: 15px;
 }
 
-/* line 293, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+/* line 339, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 footer .footer__container .footer__content .footer__main-block .footer__greetings {
   flex: 1 0 90%;
 }
 
-/* line 297, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+/* line 343, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 footer .footer__container .footer__content .footer__main-block .footer__copyrights {
   flex: 1 0 10%;
 }
 
-/* line 302, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+/* line 348, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 footer .footer__container .footer__content .footer__socials {
   flex: 1 0 52%;
   justify-content: flex-end;
   display: flex;
 }
 
-/* line 307, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+/* line 353, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 footer .footer__container .footer__content .footer__socials .footer__socials-list {
   display: flex;
   flex-direction: row;
@@ -325,7 +378,7 @@ footer .footer__container .footer__content .footer__socials .footer__socials-lis
   gap: 20px;
 }
 
-/* line 315, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+/* line 361, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 footer .footer__container .footer__content .footer__socials .footer__socials-list .socials-variant .social_link {
   font-family: "Red Hat Text";
   font-style: normal;
@@ -337,7 +390,7 @@ footer .footer__container .footer__content .footer__socials .footer__socials-lis
   transition: color 300ms ease-in-out;
 }
 
-/* line 325, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+/* line 371, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 footer .footer__container .footer__content .footer__socials .footer__socials-list .socials-variant .social_link:hover {
   color: #007dc3;
   transition: color 300ms ease-in-out;
