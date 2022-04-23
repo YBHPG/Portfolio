@@ -1,0 +1,346 @@
+@charset "UTF-8";
+/* Переменные */
+/* Обнуление */
+/* line 16, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* line 25, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 29, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+/* line 35, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+img {
+  vertical-align: top;
+}
+
+/* line 39, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+/* line 49, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+
+/* line 55, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+body {
+  font-family: "Red Hat Text";
+  font-size: 16px;
+  color: #fafafa;
+  background-color: #1b1c24;
+}
+
+/* ============================================ */
+/* WHOLE CONTENT WRAPPER CODE */
+/* line 65, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* ============================================ */
+/* CONTAINERS */
+/* line 75, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+[class*="__container"] {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* PC */
+/* @media (max-width: 1290) {
+    [class*="__container"] {
+        max-width: px;
+    }
+} */
+/* TABLET */
+@media (max-width: 991.98px) {
+  /* line 90, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+  [class*="__container"] {
+    max-width: 822px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 767.98px) {
+  /* line 97, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+  [class*="__container"] {
+    max-width: 648px;
+  }
+}
+
+/* ============================================ */
+/* TEXT CODE */
+/* line 105, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.text-white {
+  color: #fafafa;
+}
+
+/* line 109, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.text__title {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 120%;
+  color: #fafafa;
+}
+
+/* line 118, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.text__header {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  color: #fafafa;
+}
+
+/* line 127, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.text__header2 {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #fafafa;
+}
+
+/* line 136, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.text__text {
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 120%;
+  text-align: center;
+  color: #fafafa;
+}
+
+/* line 146, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.text__link {
+  text-decoration: underline;
+  color: #fafafa;
+  transition: color 300ms ease-in-out;
+}
+
+/* line 151, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.text__link:hover {
+  color: #00c69f;
+  transition: color 300ms ease-in-out;
+}
+
+/* ============================================ */
+/* HEADER CODE */
+/* line 160, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+/* line 167, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.header .header__container {
+  display: flex;
+  padding: 35px 15px;
+  align-items: center;
+}
+
+/* line 172, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.header .header__container .header__logo {
+  position: relative;
+  z-index: 5;
+}
+
+/* line 177, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.header .header__container .header__menu {
+  flex: 1 1 auto;
+}
+
+/* line 180, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.header .header__container .header__menu .menu__body {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 184, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.header .header__container .header__menu .menu__body .menu__list {
+  display: flex;
+  gap: 50px;
+}
+
+/* line 188, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.header .header__container .header__menu .menu__body .menu__list .menu__link {
+  font-family: "Mulish";
+  font-weight: 700;
+  line-height: 2.4;
+  color: #fafafa;
+  transition: color 300ms ease-in-out;
+}
+
+/* line 195, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.header .header__container .header__menu .menu__body .menu__list .menu__link:hover {
+  color: #00c69f;
+  transition: color 300ms ease-in-out;
+}
+
+/* ============================================ */
+/* MAIN CODE */
+/* line 209, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.main {
+  flex: 1 1 auto;
+}
+
+/* ============================================ */
+/* BLOCK-1 CODE */
+/* ============================================ */
+/* BLOCK-2 CODE */
+/* line 220, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.block-2 {
+  padding: 200px 0 0 0;
+}
+
+/* line 225, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.block-2 .block-2__container .block-2__content {
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+}
+
+/* line 230, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.block-2 .block-2__container .block-2__content .block-2__card {
+  flex: 1 0 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  flex-wrap: nowrap;
+  max-width: 300px;
+  max-height: 557px;
+}
+
+/* line 239, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.block-2 .block-2__container .block-2__content .block-2__card .block-2__card-picture {
+  flex: 1 0 100%;
+  overflow: hidden;
+  max-width: 300px;
+  max-height: 300px;
+  filter: drop-shadow(0 36px 63px rgba(250, 250, 250, 0.0196802)) drop-shadow(0 15.0399px 26.3199px rgba(250, 250, 250, 0.0282725)) drop-shadow(0 8.04107px 14.0719px rgba(250, 250, 250, 0.035)) drop-shadow(0 4.50776px 7.88858px rgba(250, 250, 250, 0.0417275)) drop-shadow(0 2.39404px 4.18956px rgba(250, 250, 250, 0.0503198)) drop-shadow(0 0.99621px 1.74337px rgba(250, 250, 250, 0.07));
+  border-radius: 20px;
+}
+
+/* line 247, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.block-2 .block-2__container .block-2__content .block-2__card .block-2__card-picture img {
+  width: auto;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: 80% 40%;
+}
+
+/* line 255, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.block-2 .block-2__container .block-2__content .block-2__card .block-2__card-text {
+  flex: 1 0 100%;
+  max-width: 300px;
+  text-align: left;
+}
+
+/* line 265, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+.block-2 .block-2__container .card-2 .block-2__card-picture img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ============================================ */
+/* FOOTER CODE */
+/* line 279, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+footer .footer__container {
+  padding: 150px 0 0 0;
+}
+
+/* line 282, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+footer .footer__container .footer__content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 50px 0;
+}
+
+/* line 287, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+footer .footer__container .footer__content .footer__main-block {
+  flex: 1 0 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* line 293, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+footer .footer__container .footer__content .footer__main-block .footer__greetings {
+  flex: 1 0 90%;
+}
+
+/* line 297, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+footer .footer__container .footer__content .footer__main-block .footer__copyrights {
+  flex: 1 0 10%;
+}
+
+/* line 302, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+footer .footer__container .footer__content .footer__socials {
+  flex: 1 0 52%;
+  justify-content: flex-end;
+  display: flex;
+}
+
+/* line 307, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+footer .footer__container .footer__content .footer__socials .footer__socials-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* line 315, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+footer .footer__container .footer__content .footer__socials .footer__socials-list .socials-variant .social_link {
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 120%;
+  text-align: center;
+  color: #fafafa;
+  transition: color 300ms ease-in-out;
+}
+
+/* line 325, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
+footer .footer__container .footer__content .footer__socials .footer__socials-list .socials-variant .social_link:hover {
+  color: #007dc3;
+  transition: color 300ms ease-in-out;
+}
+
+/*# sourceMappingURL=about.css.map */
