@@ -160,7 +160,7 @@ body {
     color: $primary-black;
     transition: $hover-transition;
     
-    &:hover {
+    &:focus, &:hover {
         color: $secondary-hover;
         transition: $hover-transition;
     }
@@ -193,7 +193,7 @@ body {
         border-radius: 10px;
         transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
         
-        &:hover {
+        &:focus, &:hover {
             background-color: $secondary-hover;
             color: $primary-white;
             transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
@@ -207,7 +207,7 @@ body {
         border-radius: 10px;
         transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
         
-        &:hover {
+        &:focus, &:hover {
             background-color: $tertiary-hover;
             color: $primary-white;
             transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
@@ -272,7 +272,7 @@ body {
                         color: $primary-black;
                         transition: $hover-transition;
                         
-                        &:hover {
+                        &:focus, &:hover {
                             color: $secondary-hover;
                             transition: $hover-transition;
                         }
@@ -365,17 +365,29 @@ body {
         .work-block__content {
             padding: 20px 20px 20px 20px;
             
-            &:hover {
+            &:focus, &:hover {
                 border-radius: 20px;
                 background: #efefef;
                 box-shadow:  19px 19px 41px #c8c8c8,
                 -19px -19px 41px #fefefe;
                 transition: all 500ms ease;
+
+                .work-block__image {
+                    /* fixes border-radius bug in webkit */
+                    mask-image: radial-gradient(white, black);
+                    -webkit-mask-image: -webkit-radial-gradient(white, black);
+                    
+                    .work-block__image-content {
+                        transition: 0.5s all ease-in-out;
+                        -webkit-transform: scale(1.2, 1.2);
+                        transform: scale(1.2);
+                    }
+                }
             }
             
             display: flex;
             border-radius: 20px;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             justify-content: center;
             align-items: flex-start;
             gap: 100px;
@@ -400,7 +412,7 @@ body {
                     object-fit: cover;
                     transition: 0.5s all ease-in-out;
                     
-                    &:hover {
+                    &:focus, &:hover {
                         -webkit-transform: scale(1.2, 1.2);
                         transform: scale(1.2);
                     }
@@ -422,7 +434,7 @@ body {
     }
 }
 
-@media (min-width: 320px) and (max-width: 599.98px) {
+@media (min-width: 320px) and (max-width: 767.98px) {
     .work-block {
         padding: 20px 0;
         .work-block__container {
@@ -442,6 +454,10 @@ body {
                 }
             }
         }
+    }
+
+    .work-button {
+        margin: 0 auto;
     }
 }
 
@@ -474,12 +490,13 @@ footer {
             }
             
             .footer__socials {
-                flex: 1 0 52%;
+                flex: 1 1 52%;
                 justify-content: flex-end;
                 display: flex;
                 
                 .footer__socials-list {
                     display: flex;
+                    flex-wrap: nowrap;
                     flex-direction: row;
                     justify-content: flex-end;
                     align-items: flex-start;
@@ -496,7 +513,7 @@ footer {
                             color: $primary-black;
                             transition: color 300ms ease-in-out;
                             
-                            &:hover {
+                            &:focus, &:hover {
                                 color: $tertiary-hover;
                                 transition: color 300ms ease-in-out;
                             }
@@ -527,6 +544,24 @@ footer {
                 flex-direction: column;
                 gap: 30px;
                 align-items: flex-start;
+            }
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    footer {
+        .footer__container {
+            .footer__content {
+                .footer__socials {
+                    .footer__socials-list {
+                        flex-direction: column;
+
+                        :nth-child(even) {
+                            display: none;
+                        }
+                    }
+                }
             }
         }
     }

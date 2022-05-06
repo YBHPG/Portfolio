@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* Переменные */
 /* Обнуление */
-/* line 16, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 *,
 *::before,
 *::after {
@@ -11,24 +10,20 @@
   box-sizing: border-box;
 }
 
-/* line 25, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 a {
   text-decoration: none;
 }
 
-/* line 29, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 ul,
 ol,
 li {
   list-style: none;
 }
 
-/* line 35, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 img {
   vertical-align: top;
 }
 
-/* line 39, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 h1,
 h2,
 h3,
@@ -39,24 +34,21 @@ h6 {
   font-size: inherit;
 }
 
-/* line 49, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 html,
 body {
   height: 100%;
   line-height: 1;
 }
 
-/* line 55, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 body {
   font-family: "Red Hat Text";
   font-size: 16px;
-  color: #1b1c24;
-  background-color: #fafafa;
+  color: rgb(27, 28, 36);
+  background-color: rgb(250, 250, 250);
 }
 
 /* ============================================ */
 /* WHOLE CONTENT WRAPPER CODE */
-/* line 65, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .wrapper {
   overflow: hidden;
   display: flex;
@@ -66,8 +58,7 @@ body {
 
 /* ============================================ */
 /* CONTAINERS */
-/* line 75, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
-[class*="__container"] {
+[class*=__container] {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 20px;
@@ -81,71 +72,60 @@ body {
 } */
 /* TABLET */
 @media (max-width: 991.98px) {
-  /* line 90, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
-  [class*="__container"] {
+  [class*=__container] {
     max-width: 822px;
     margin: 0 auto;
     padding: 0 20px;
   }
 }
-
 /* MOBILE */
 @media (max-width: 767.98px) {
-  /* line 99, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
-  [class*="__container"] {
+  [class*=__container] {
     max-width: 648px;
     margin: 0 auto;
     padding: 0 20px;
   }
 }
-
 @media (min-width: 320px) and (max-width: 599.98px) {
-  /* line 107, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
-  [class*="__container"] {
+  [class*=__container] {
     max-width: 540px;
     margin: 0 auto;
     padding: 0 20px;
   }
 }
-
 /* ============================================ */
 /* TEXT CODE */
-/* line 117, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .text-white {
-  color: #fafafa;
+  color: rgb(250, 250, 250);
 }
 
-/* line 121, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .text__title {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 3rem;
   line-height: 120%;
-  color: #1b1c24;
+  color: rgb(27, 28, 36);
 }
 
-/* line 130, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .text__header {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 120%;
-  color: #1b1c24;
+  color: rgb(27, 28, 36);
 }
 
-/* line 139, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .text__header2 {
-  font-family: 'Mulish';
+  font-family: "Mulish";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
-  color: #fafafa;
+  color: rgb(250, 250, 250);
 }
 
-/* line 148, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .text__text {
   font-family: "Red Hat Text";
   font-style: normal;
@@ -153,28 +133,23 @@ body {
   font-size: 1rem;
   line-height: 120%;
   text-align: center;
-  color: #1b1c24;
+  color: rgb(27, 28, 36);
 }
 
-/* line 158, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .text__link {
   text-decoration: underline;
-  color: #1b1c24;
+  color: rgb(27, 28, 36);
+  transition: color 300ms ease-in-out;
+}
+.text__link:focus, .text__link:hover {
+  color: rgb(0, 198, 159);
   transition: color 300ms ease-in-out;
 }
 
-/* line 163, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
-.text__link:hover {
-  color: #00c69f;
-  transition: color 300ms ease-in-out;
-}
-
-/* line 169, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .text__italic {
   font-style: italic;
 }
 
-/* line 173, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .work-button {
   max-width: 220px;
   max-height: 54px;
@@ -183,54 +158,41 @@ body {
   align-items: center;
   justify-content: flex-start;
 }
-
-/* line 181, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .work-button .button {
-  font-family: 'Mulish';
+  font-family: "Mulish";
   display: flex;
   text-decoration: none;
   font-size: 1.25rem;
   position: relative;
 }
-
-/* line 189, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .work-button .button-green {
   padding: 15px 29px;
-  background-color: #7cf4dd;
-  color: #1b1c24;
+  background-color: rgb(124, 244, 221);
+  color: rgb(27, 28, 36);
   border-radius: 10px;
   transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
-
-/* line 196, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
-.work-button .button-green:hover {
-  background-color: #00c69f;
-  color: #fafafa;
+.work-button .button-green:focus, .work-button .button-green:hover {
+  background-color: rgb(0, 198, 159);
+  color: rgb(250, 250, 250);
   transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
-
-/* line 203, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .work-button .button-blue {
   padding: 15px 48px;
-  background-color: #7cc9f4;
-  color: #1b1c24;
+  background-color: rgb(124, 201, 244);
+  color: rgb(27, 28, 36);
   border-radius: 10px;
   transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
-
-/* line 210, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
-.work-button .button-blue:hover {
-  background-color: #007dc3;
-  color: #fafafa;
+.work-button .button-blue:focus, .work-button .button-blue:hover {
+  background-color: rgb(0, 125, 195);
+  color: rgb(250, 250, 250);
   transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
 
-/* line 218, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .other-works {
   padding: 50px 0 0 0;
 }
-
-/* line 222, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .other-works .other-works__container .other-works__content {
   display: flex;
   flex-wrap: nowrap;
@@ -239,15 +201,12 @@ body {
 }
 
 @media (max-width: 599.98px) {
-  /* line 232, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
   .text__title {
     font-size: 2rem;
   }
 }
-
 /* ============================================ */
 /* HEADER CODE */
-/* line 240, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .header {
   position: absolute;
   width: 100%;
@@ -255,160 +214,127 @@ body {
   left: 0;
   z-index: 50;
 }
-
-/* line 247, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .header .header__container {
   display: flex;
   padding: 35px 15px;
   align-items: center;
 }
-
-/* line 252, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .header .header__container .header__logo {
   position: relative;
   z-index: 5;
 }
-
-/* line 257, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .header .header__container .header__menu {
   flex: 1 1 auto;
 }
-
-/* line 260, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .header .header__container .header__menu .menu__body {
   display: flex;
   justify-content: flex-end;
 }
-
-/* line 264, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .header .header__container .header__menu .menu__body .menu__list {
   display: flex;
   gap: 50px;
 }
-
-/* line 268, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .header .header__container .header__menu .menu__body .menu__list .menu__link {
   font-family: "Mulish";
   font-weight: 700;
   line-height: 2.4;
-  color: #1b1c24;
+  color: rgb(27, 28, 36);
   transition: color 300ms ease-in-out;
 }
-
-/* line 275, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
-.header .header__container .header__menu .menu__body .menu__list .menu__link:hover {
-  color: #00c69f;
+.header .header__container .header__menu .menu__body .menu__list .menu__link:focus, .header .header__container .header__menu .menu__body .menu__list .menu__link:hover {
+  color: rgb(0, 198, 159);
   transition: color 300ms ease-in-out;
 }
 
 @media (max-width: 500px) {
-  /* line 290, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
   .header .header__container .header__menu .menu__body {
     display: none;
   }
 }
-
 /* ============================================ */
 /* MAIN CODE */
-/* line 301, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .main {
   flex: 1 1 auto;
 }
 
 /* ============================================ */
 /* BLOCK-1 CODE */
-/* line 308, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .block-1 {
   padding-top: 199px;
 }
-
-/* line 311, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .block-1 .block-1__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-
-/* line 317, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .block-1 .block-1__container .block-1__content {
   text-align: center;
 }
-
-/* line 320, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .block-1 .block-1__container .block-1__content .block-1__title {
   padding: 0 0 16px 0;
 }
 
-/* line 327, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .block-2 {
   padding-top: 75px;
 }
-
-/* line 330, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .block-2 .block-2__container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-/* line 335, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .block-2 .block-2__container .block-2__content {
   text-align: center;
   align-items: center;
 }
-
-/* line 339, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .block-2 .block-2__container .block-2__content .block-2__separator {
   width: 57.5rem;
   height: 2px;
-  background-color: #1b1c24;
+  background-color: rgb(27, 28, 36);
   margin: 0 0 75px 0;
 }
 
 @media (max-width: 991.98px) {
-  /* line 350, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
   .block-2__content {
     max-width: 80%;
     margin: 0 auto;
   }
-  /* line 354, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
   .block-2__content .block-2__separator {
     max-width: 100%;
   }
 }
-
-/* line 360, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .work-block {
   padding: 30px 0 50px 0;
 }
-
-/* line 363, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .work-block .work-block__container {
   padding-top: 50px;
 }
-
-/* line 365, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .work-block .work-block__container .work-block__content {
   padding: 20px 20px 20px 20px;
   display: flex;
   border-radius: 20px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: flex-start;
   gap: 100px;
   transition: all 300ms ease-in-out;
 }
-
-/* line 368, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
-.work-block .work-block__container .work-block__content:hover {
+.work-block .work-block__container .work-block__content:focus, .work-block .work-block__container .work-block__content:hover {
   border-radius: 20px;
   background: #efefef;
   box-shadow: 19px 19px 41px #c8c8c8, -19px -19px 41px #fefefe;
   transition: all 500ms ease;
 }
-
-/* line 384, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+.work-block .work-block__container .work-block__content:focus .work-block__image, .work-block .work-block__container .work-block__content:hover .work-block__image {
+  /* fixes border-radius bug in webkit */
+  mask-image: radial-gradient(white, black);
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
+.work-block .work-block__container .work-block__content:focus .work-block__image .work-block__image-content, .work-block .work-block__container .work-block__content:hover .work-block__image .work-block__image-content {
+  transition: 0.5s all ease-in-out;
+  -webkit-transform: scale(1.2, 1.2);
+  transform: scale(1.2);
+}
 .work-block .work-block__container .work-block__content .work-block__image {
   border-radius: 20px;
   flex: 1 0 49%;
@@ -420,8 +346,6 @@ body {
   mask-image: radial-gradient(white, black);
   -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
-
-/* line 396, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .work-block .work-block__container .work-block__content .work-block__image .work-block__image-content {
   flex: 1 0 49%;
   max-width: 543px;
@@ -429,98 +353,77 @@ body {
   object-fit: cover;
   transition: 0.5s all ease-in-out;
 }
-
-/* line 403, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
-.work-block .work-block__container .work-block__content .work-block__image .work-block__image-content:hover {
+.work-block .work-block__container .work-block__content .work-block__image .work-block__image-content:focus, .work-block .work-block__container .work-block__content .work-block__image .work-block__image-content:hover {
   -webkit-transform: scale(1.2, 1.2);
   transform: scale(1.2);
 }
-
-/* line 410, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .work-block .work-block__container .work-block__content .work-block__text {
   flex: 1 1 51%;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-
-/* line 416, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 .work-block .work-block__container .work-block__content .work-block__text .text__title,
 .work-block .work-block__container .work-block__content .work-block__text .text__text {
   text-align: left;
 }
 
-@media (min-width: 320px) and (max-width: 599.98px) {
-  /* line 426, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
+@media (min-width: 320px) and (max-width: 767.98px) {
   .work-block {
     padding: 20px 0;
   }
-  /* line 430, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
   .work-block .work-block__container .work-block__content {
     flex-direction: column;
     gap: 30px;
     align-items: center;
   }
-  /* line 435, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
   .work-block .work-block__container .work-block__content .work-block__image {
     width: 100%;
   }
-  /* line 438, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
   .work-block .work-block__container .work-block__content .work-block__image .work-block__image-content {
     width: 100%;
     height: auto;
   }
-}
 
+  .work-button {
+    margin: 0 auto;
+  }
+}
 /* ============================================ */
 /* FOOTER CODE */
-/* line 453, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 footer .footer__container {
   padding-top: 150px;
 }
-
-/* line 456, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 footer .footer__container .footer__content {
   display: flex;
   flex-wrap: wrap;
   padding: 0 0 50px 0;
 }
-
-/* line 461, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 footer .footer__container .footer__content .footer__main-block {
   flex: 1 0 48%;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-
-/* line 467, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 footer .footer__container .footer__content .footer__main-block .footer__greetings {
   flex: 1 0 90%;
 }
-
-/* line 471, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 footer .footer__container .footer__content .footer__main-block .footer__copyrights {
   flex: 1 0 10%;
 }
-
-/* line 476, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 footer .footer__container .footer__content .footer__socials {
-  flex: 1 0 52%;
+  flex: 1 1 52%;
   justify-content: flex-end;
   display: flex;
 }
-
-/* line 481, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 footer .footer__container .footer__content .footer__socials .footer__socials-list {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-start;
   gap: 20px;
 }
-
-/* line 489, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
 footer .footer__container .footer__content .footer__socials .footer__socials-list .socials-variant .social_link {
   font-family: "Red Hat Text";
   font-style: normal;
@@ -528,31 +431,34 @@ footer .footer__container .footer__content .footer__socials .footer__socials-lis
   font-size: 1rem;
   line-height: 120%;
   text-align: center;
-  color: #1b1c24;
+  color: rgb(27, 28, 36);
   transition: color 300ms ease-in-out;
 }
-
-/* line 499, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
-footer .footer__container .footer__content .footer__socials .footer__socials-list .socials-variant .social_link:hover {
-  color: #007dc3;
+footer .footer__container .footer__content .footer__socials .footer__socials-list .socials-variant .social_link:focus, footer .footer__container .footer__content .footer__socials .footer__socials-list .socials-variant .social_link:hover {
+  color: rgb(0, 125, 195);
   transition: color 300ms ease-in-out;
 }
 
 @media (max-width: 767.98px) {
-  /* line 514, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
   footer .footer__container .footer__content {
     flex-direction: column;
     gap: 30px;
     align-items: flex-start;
   }
 }
-
 @media (min-width: 320px) and (max-width: 599.98px) {
-  /* line 526, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/index.scss */
   footer .footer__container .footer__content {
     flex-direction: column;
     gap: 30px;
     align-items: flex-start;
+  }
+}
+@media (max-width: 430px) {
+  footer .footer__container .footer__content .footer__socials .footer__socials-list {
+    flex-direction: column;
+  }
+  footer .footer__container .footer__content .footer__socials .footer__socials-list :nth-child(even) {
+    display: none;
   }
 }
 

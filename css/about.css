@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* Переменные */
 /* Обнуление */
-/* line 16, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 *,
 *::before,
 *::after {
@@ -11,24 +10,20 @@
   box-sizing: border-box;
 }
 
-/* line 25, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 a {
   text-decoration: none;
 }
 
-/* line 29, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 ul,
 ol,
 li {
   list-style: none;
 }
 
-/* line 35, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 img {
   vertical-align: top;
 }
 
-/* line 39, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 h1,
 h2,
 h3,
@@ -39,24 +34,21 @@ h6 {
   font-size: inherit;
 }
 
-/* line 49, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 html,
 body {
   height: 100%;
   line-height: 1;
 }
 
-/* line 55, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 body {
   font-family: "Red Hat Text";
   font-size: 16px;
-  color: #fafafa;
-  background-color: #1b1c24;
+  color: rgb(250, 250, 250);
+  background-color: rgb(27, 28, 36);
 }
 
 /* ============================================ */
 /* WHOLE CONTENT WRAPPER CODE */
-/* line 65, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .wrapper {
   overflow: hidden;
   display: flex;
@@ -66,8 +58,7 @@ body {
 
 /* ============================================ */
 /* CONTAINERS */
-/* line 75, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
-[class*="__container"] {
+[class*=__container] {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
@@ -81,58 +72,49 @@ body {
 } */
 /* TABLET */
 @media (max-width: 991.98px) {
-  /* line 90, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
-  [class*="__container"] {
+  [class*=__container] {
     max-width: 822px;
   }
 }
-
 /* MOBILE */
 @media (max-width: 767.98px) {
-  /* line 97, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
-  [class*="__container"] {
+  [class*=__container] {
     max-width: 648px;
   }
 }
-
 /* ============================================ */
 /* TEXT CODE */
-/* line 105, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .text-white {
-  color: #fafafa;
+  color: rgb(250, 250, 250);
 }
 
-/* line 109, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .text__title {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 3rem;
   line-height: 120%;
-  color: #fafafa;
+  color: rgb(250, 250, 250);
 }
 
-/* line 118, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .text__header {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 120%;
-  color: #fafafa;
+  color: rgb(250, 250, 250);
 }
 
-/* line 127, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .text__header2 {
-  font-family: 'Mulish';
+  font-family: "Mulish";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
-  color: #fafafa;
+  color: rgb(250, 250, 250);
 }
 
-/* line 136, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .text__text {
   font-family: "Red Hat Text";
   font-style: normal;
@@ -140,25 +122,21 @@ body {
   font-size: 1rem;
   line-height: 120%;
   text-align: center;
-  color: #fafafa;
+  color: rgb(250, 250, 250);
 }
 
-/* line 146, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .text__link {
   text-decoration: underline;
-  color: #fafafa;
+  color: rgb(250, 250, 250);
   transition: color 300ms ease-in-out;
 }
-
-/* line 151, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .text__link:hover {
-  color: #00c69f;
+  color: rgb(0, 198, 159);
   transition: color 300ms ease-in-out;
 }
 
 /* ============================================ */
 /* HEADER CODE */
-/* line 160, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .header {
   position: absolute;
   width: 100%;
@@ -166,67 +144,49 @@ body {
   left: 0;
   z-index: 50;
 }
-
-/* line 167, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .header .header__container {
   display: flex;
   padding: 35px 15px;
   align-items: center;
 }
-
-/* line 172, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .header .header__container .header__logo {
   position: relative;
   z-index: 5;
 }
-
-/* line 177, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .header .header__container .header__menu {
   flex: 1 1 auto;
 }
-
-/* line 180, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .header .header__container .header__menu .menu__body {
   display: flex;
   justify-content: flex-end;
 }
-
-/* line 184, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .header .header__container .header__menu .menu__body .menu__list {
   display: flex;
   gap: 50px;
 }
-
-/* line 188, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .header .header__container .header__menu .menu__body .menu__list .menu__link {
   font-family: "Mulish";
   font-weight: 700;
   line-height: 2.4;
-  color: #fafafa;
+  color: rgb(250, 250, 250);
   transition: color 300ms ease-in-out;
 }
-
-/* line 195, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .header .header__container .header__menu .menu__body .menu__list .menu__link:hover {
-  color: #00c69f;
+  color: rgb(0, 198, 159);
   transition: color 300ms ease-in-out;
 }
 
 /* ============================================ */
 /* MAIN CODE */
-/* line 209, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .main {
   flex: 1 1 auto;
 }
 
 /* ============================================ */
 /* BLOCK-1 CODE */
-/* line 216, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .block-1 {
   padding: 187px 0 0 0;
 }
-
-/* line 221, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .block-1 .block-1__container .block-1__content {
   display: flex;
   flex-wrap: nowrap;
@@ -234,8 +194,6 @@ body {
   justify-content: space-between;
   gap: 50px;
 }
-
-/* line 228, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .block-1 .block-1__container .block-1__content .block-1__image {
   flex: 1 0 41%;
   display: flex;
@@ -244,31 +202,23 @@ body {
   justify-content: center;
   text-align: start;
 }
-
-/* line 236, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .block-1 .block-1__container .block-1__content .block-1__image .block-1__image-header {
   flex: 1 0 100%;
   text-align: inherit;
 }
-
-/* line 241, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .block-1 .block-1__container .block-1__content .block-1__image .block-1__image-image {
   max-height: 458px;
   max-width: 320px;
   margin: 30px 0 0 0;
   overflow: hidden;
-  filter: drop-shadow(0 31.6728px 55.4274px rgba(250, 250, 250, 0.0196802)) drop-shadow(0 13.2321px 23.1562px rgba(250, 250, 250, 0.0282725)) drop-shadow(0 7.07453px 12.3804px rgba(250, 250, 250, 0.035)) drop-shadow(0 3.96592px 6.94037px rgba(250, 250, 250, 0.0417275)) drop-shadow(0 2.10627px 3.68598px rgba(250, 250, 250, 0.0503198)) drop-shadow(0 0.87647px 1.53382px rgba(250, 250, 250, 0.07));
+  filter: drop-shadow(0 31.6728px 55.4274px rgba(250, 250, 250, 0.0196802)) drop-shadow(0 13.2321px 23.1562px rgba(250, 250, 250, 0.0282725)) drop-shadow(0 7.07453px 12.3804px rgba(250, 250, 250, 0.035)) drop-shadow(0 3.96592px 6.94037px rgba(250, 250, 250, 0.0417275)) drop-shadow(0 2.10627px 3.68598px rgba(250, 250, 250, 0.0503198)) drop-shadow(0 0.876467px 1.53382px rgba(250, 250, 250, 0.07));
   border-radius: 20px;
 }
-
-/* line 249, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .block-1 .block-1__container .block-1__content .block-1__image .block-1__image-image img {
   max-height: 458px;
   width: auto;
   object-fit: cover;
 }
-
-/* line 257, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .block-1 .block-1__container .block-1__content .block-1__text {
   max-width: 545px;
   text-align: left;
@@ -276,19 +226,14 @@ body {
 
 /* ============================================ */
 /* BLOCK-2 CODE */
-/* line 268, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .block-2 {
   padding: 200px 0 0 0;
 }
-
-/* line 273, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .block-2 .block-2__container .block-2__content {
   display: flex;
   justify-content: space-between;
   text-align: start;
 }
-
-/* line 278, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .block-2 .block-2__container .block-2__content .block-2__card {
   flex: 1 0 33%;
   display: flex;
@@ -298,32 +243,24 @@ body {
   max-width: 300px;
   max-height: 557px;
 }
-
-/* line 287, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .block-2 .block-2__container .block-2__content .block-2__card .block-2__card-picture {
   flex: 1 0 100%;
   overflow: hidden;
   max-width: 300px;
   max-height: 300px;
-  filter: drop-shadow(0 36px 63px rgba(250, 250, 250, 0.0196802)) drop-shadow(0 15.0399px 26.3199px rgba(250, 250, 250, 0.0282725)) drop-shadow(0 8.04107px 14.0719px rgba(250, 250, 250, 0.035)) drop-shadow(0 4.50776px 7.88858px rgba(250, 250, 250, 0.0417275)) drop-shadow(0 2.39404px 4.18956px rgba(250, 250, 250, 0.0503198)) drop-shadow(0 0.99621px 1.74337px rgba(250, 250, 250, 0.07));
+  filter: drop-shadow(0 36px 63px rgba(250, 250, 250, 0.0196802)) drop-shadow(0 15.0399px 26.3199px rgba(250, 250, 250, 0.0282725)) drop-shadow(0 8.04107px 14.0719px rgba(250, 250, 250, 0.035)) drop-shadow(0 4.50776px 7.88858px rgba(250, 250, 250, 0.0417275)) drop-shadow(0 2.39404px 4.18956px rgba(250, 250, 250, 0.0503198)) drop-shadow(0 0.996212px 1.74337px rgba(250, 250, 250, 0.07));
   border-radius: 20px;
 }
-
-/* line 295, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .block-2 .block-2__container .block-2__content .block-2__card .block-2__card-picture img {
   width: auto;
   max-height: 100%;
 }
-
-/* line 300, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .block-2 .block-2__container .block-2__content .block-2__card .block-2__card-picture .height-auto-image {
   max-height: none;
   height: auto;
   max-width: 100%;
   object-fit: cover;
 }
-
-/* line 308, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 .block-2 .block-2__container .block-2__content .block-2__card .block-2__card-text {
   flex: 1 0 100%;
   max-width: 300px;
@@ -332,44 +269,31 @@ body {
 
 /* ============================================ */
 /* FOOTER CODE */
-/* line 325, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 footer .footer__container {
   padding: 150px 0 0 0;
 }
-
-/* line 328, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 footer .footer__container .footer__content {
   display: flex;
   flex-wrap: wrap;
   padding: 0 0 50px 0;
 }
-
-/* line 333, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 footer .footer__container .footer__content .footer__main-block {
   flex: 1 0 48%;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-
-/* line 339, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 footer .footer__container .footer__content .footer__main-block .footer__greetings {
   flex: 1 0 90%;
 }
-
-/* line 343, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 footer .footer__container .footer__content .footer__main-block .footer__copyrights {
   flex: 1 0 10%;
 }
-
-/* line 348, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 footer .footer__container .footer__content .footer__socials {
   flex: 1 0 52%;
   justify-content: flex-end;
   display: flex;
 }
-
-/* line 353, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 footer .footer__container .footer__content .footer__socials .footer__socials-list {
   display: flex;
   flex-direction: row;
@@ -377,8 +301,6 @@ footer .footer__container .footer__content .footer__socials .footer__socials-lis
   align-items: flex-start;
   gap: 20px;
 }
-
-/* line 361, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 footer .footer__container .footer__content .footer__socials .footer__socials-list .socials-variant .social_link {
   font-family: "Red Hat Text";
   font-style: normal;
@@ -386,13 +308,11 @@ footer .footer__container .footer__content .footer__socials .footer__socials-lis
   font-size: 1rem;
   line-height: 120%;
   text-align: center;
-  color: #fafafa;
+  color: rgb(250, 250, 250);
   transition: color 300ms ease-in-out;
 }
-
-/* line 371, ../../../../../Users/ybhpg/Desktop/programming/Web/Portfolio/sass/about.scss */
 footer .footer__container .footer__content .footer__socials .footer__socials-list .socials-variant .social_link:hover {
-  color: #007dc3;
+  color: rgb(0, 125, 195);
   transition: color 300ms ease-in-out;
 }
 
