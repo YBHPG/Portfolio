@@ -38,6 +38,7 @@ html,
 body {
   height: 100%;
   line-height: 1;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -45,6 +46,23 @@ body {
   font-size: 16px;
   color: rgb(250, 250, 250);
   background-color: rgb(27, 28, 36);
+}
+
+/* ============================================ */
+body {
+  opacity: 0;
+}
+
+body.fade {
+  opacity: 1;
+  transition-duration: 1s;
+  transition-property: opacity;
+}
+
+body.fadeOut {
+  opacity: 0;
+  background: rgb(250, 250, 250);
+  transition: all 1s;
 }
 
 /* ============================================ */
@@ -152,6 +170,51 @@ body {
 
 .text__italic {
   font-style: italic;
+}
+
+.top_button {
+  opacity: 0;
+  display: flex;
+  /* Hidden by default */
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 50px;
+  /* Place the button at the bottom of the page */
+  right: 50px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  width: 70px;
+  height: 70px;
+  background: rgb(27, 28, 36);
+  border: 3px solid #272730;
+  border-radius: 50px;
+  transition: 500ms all ease;
+}
+.top_button .top-button__image {
+  padding-left: 2px;
+  width: 70px;
+  height: 70px;
+  max-width: 36px;
+  max-height: 36px;
+  filter: invert(0.2);
+  -webkit-filter: invert(0.2);
+}
+.top_button:hover {
+  background: #272730;
+  box-shadow: 15px 15px 30px #17171c, -15px -15px 30px #292b32;
+  transition: all 500ms ease;
+}
+.top_button:hover .top-button__image {
+  filter: invert(0.8);
+  -webkit-filter: invert(0.8);
+  transition: all 500ms ease;
+}
+
+.appear {
+  opacity: 1;
 }
 
 @media (max-width: 767.98px) {

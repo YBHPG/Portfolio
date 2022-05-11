@@ -1,159 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/index.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!-- <script src="javascript/index.js"></script> -->
-    <link rel="stylesheet" href="css/index.css">
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,700&family=Mulish:wght@400;600;700&family=Red+Hat+Text&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,700&family=Mulish:wght@400;600;700&family=Red+Hat+Text&display=swap"
-        rel="stylesheet">
+        <title>Vladislav Ledashchev</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    </head>
 
-    <title>Vladislav Ledashchev</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-</head>
-
-<body>
-    <header class="header">
-        <div class="header__container">
-            <a href="" class="header__logo">
-                <img src="images/index/logo_black.svg" alt="Логотип">
+    <body>
+        <script src="javascript/fade-animation.js"></script>
+        <header class="header">
+            <div class="header__container">
+                <a href="" class="header__logo">
+                    <img src="images/index/logo_black.svg" alt="Логотип" />
+                </a>
+                <div class="header__menu">
+                    <nav id="menu" class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="#" class="menu__link">Work</a></li>
+                            <li class="menu__item">
+                                <a
+                                    href="#"
+                                    class="menu__link"
+                                    id="fade-out_work-button"
+                                    onclick="fadeOutWork()"
+                                    >About</a
+                                >
+                            </li>
+                            <li class="menu__item">
+                                <a
+                                    href="https://drive.google.com/file/d/1svl-LTsWHkOU5ZcQH7hBDTCmjuVM0-8D/view?usp=sharing"
+                                    target="_blank"
+                                    class="menu__link"
+                                    >Resume</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__button">
+                    <a href="#menu" class="icon-menu"><span></span></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="block-1">
+                <div class="block-1__container">
+                    <div class="block-1__content">
+                        <h1 class="block-1__title text__title text__italic">Hi, I'm Vlad!</h1>
+                        <div class="block-1__text">
+                            <p class="text__text text-center">
+                                A designer, a student, a programmer.
+                            </p>
+                            <p class="text__text text-center">
+                                Currently studing CAD systems and web development in BMSTU.
+                            </p>
+                            <p class="text__text text-center">
+                                Designed <a class="text__link" href="#">Dicty</a> iOS app and this
+                                site.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="block-2">
+                <div class="block-2__container">
+                    <div class="block-2__content">
+                        <div class="block-2__separator"></div>
+                        <p class="block-2__text text__header">Works by me</p>
+                    </div>
+                </div>
+            </section>
+            <dection class="work-block">
+                <div class="work-block__container">
+                    <div class="work-block__content">
+                        <div class="work-block__image">
+                            <img
+                                class="work-block__image-content"
+                                src="images/index/dicty_mockup.png"
+                                alt="a Dicty app mockup"
+                            />
+                        </div>
+                        <div class="work-block__text">
+                            <h1 class="text__title">Dicty iOS app design</h1>
+                            <p class="text__text">2-in-1: dictionary and translator in one app</p>
+                            <div class="work-button">
+                                <a href="#" class="button button-green">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </dection>
+            <section class="work-block">
+                <div class="work-block__container">
+                    <div class="work-block__content">
+                        <div class="work-block__image">
+                            <img
+                                class="work-block__image-content"
+                                src="images/index/rezolut-mockup.png"
+                                alt="a Rezolut ISP website mockup"
+                            />
+                        </div>
+                        <div class="work-block__text">
+                            <h1 class="text__title">Rezolut ISP landing page</h1>
+                            <p class="text__text">
+                                A landing page for one of the biggest ISPs in Moscow oblast'.
+                            </p>
+                            <div class="work-button">
+                                <a href="#" class="button button-green">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="other-works">
+                <div class="other-works__container">
+                    <div class="other-works__content">
+                        <div class="work-button">
+                            <a href="#" class="button button-blue">Other works</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <a href="#" class="top_button" onclick="topFunction()">
+                <div class="top_button__container">
+                    <img src="images/icons8-up-2-48.png" alt="arrow up" class="top-button__image" />
+                </div>
             </a>
-            <div class="header__menu">
-                <nav id="menu" class="menu__body">
-                    <ul class="menu__list">
-                        <li class="menu__item"><a href="#" class="menu__link">Work</a></li>
-                        <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
-                        <li class="menu__item"><a href="https://drive.google.com/file/d/1svl-LTsWHkOU5ZcQH7hBDTCmjuVM0-8D/view?usp=sharing" target="_blank" class="menu__link">Resume</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header__button">
-                <a href="#menu" class="icon-menu"><span></span></a>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section class="block-1">
-            <div class="block-1__container" data-aos="fade-up">
-                <div class="block-1__content">
-                    <h1 class="block-1__title text__title text__italic">
-                        Hi, I'm Vlad!
-                    </h1>
-                    <div class="block-1__text">
-                        <p class="text__text text-center">
-                            A designer, a student, a programmer.
-                        </p>
-                        <p class="text__text text-center">
-                            Currently studing CAD systems and web development in BMSTU.
-                        </p>
-                        <p class="text__text text-center">
-                            Designed <a class="text__link" href="#">Dicty</a> iOS app and this site.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="block-2">
-            <div class="block-2__container">
-                <div class="block-2__content">
-                    <div class="block-2__separator"></div>
-                    <p class="block-2__text text__header">
-                        Works by me
-                    </p>
-                </div>
-            </div>
-        </section>
-        <dection class="work-block">
-            <div class="work-block__container">
-                <div class="work-block__content">
-                    <div class="work-block__image">
-                        <img class="work-block__image-content" src="images/index/dicty_mockup.png" alt="a Dicty app mockup">
-                    </div>
-                    <div class="work-block__text">
-                        <h1 class="text__title">Dicty iOS app design</h1>
-                        <p class="text__text">2-in-1: dictionary and translator in one app</p>
-                        <div class="work-button">
-                            <a href="#" class="button button-green">Learn more</a>
+        </main>
+        <footer>
+            <div class="footer__container">
+                <div class="footer__content">
+                    <div class="footer__main-block">
+                        <div class="footer__greetings">
+                            <p class="text__text">Thank you for showing interest in my works!</p>
+                            <p class="text__text">
+                                If you want to say hi or offer a job, feel free to send me an
+                                <a class="text__link" href="mailto:ybhpg@icloud.com">email</a>! Or
+                                you can contact me on social media.
+                            </p>
                         </div>
+                        <div class="footer__copyrights">2022, Vladislav Ledashchev</div>
+                    </div>
+                    <div class="footer__socials">
+                        <ul class="footer__socials-list">
+                            <li class="footer__socials socials-variant">
+                                <a href="https://t.me/ybhpg" class="social_link" target="_blank"
+                                    >Telegram</a
+                                >
+                            </li>
+                            <li class="socials-variant">
+                                <p class="text__text">|</p>
+                            </li>
+                            <li class="socials-variant">
+                                <a
+                                    href="https://www.instagram.com/bulbadyshka/"
+                                    class="social_link"
+                                    target="_blank"
+                                    >Instagram</a
+                                >
+                            </li>
+                            <li class="socials-variant">
+                                <p class="text__text">|</p>
+                            </li>
+                            <li class="socials-variant">
+                                <a
+                                    href="https://twitter.com/ybhpg57/"
+                                    class="social_link"
+                                    target="_blank"
+                                    >Twitter</a
+                                >
+                            </li>
+                            <li class="socials-variant">
+                                <p class="text__text">|</p>
+                            </li>
+                            <li class="socials-variant">
+                                <a
+                                    href="https://www.linkedin.com/mwlite/in/ybhpg"
+                                    class="social_link"
+                                    target="_blank"
+                                    >LinkedIn</a
+                                >
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </dection>
-        <section class="work-block">
-            <div class="work-block__container">
-                <div class="work-block__content">
-                    <div class="work-block__image">
-                        <img class="work-block__image-content" src="images/index/rezolut-mockup.png"
-                            alt="a Rezolut ISP website mockup">
-                    </div>
-                    <div class="work-block__text">
-                        <h1 class="text__title">Rezolut ISP landing page</h1>
-                        <p class="text__text">A landing page for one of the biggest ISPs in Moscow oblast'.</p>
-                        <div class="work-button">
-                            <a href="#" class="button button-green">Learn more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="other-works">
-            <div class="other-works__container">
-                <div class="other-works__content">
-                    <div class="work-button">
-                        <a href="#" class="button button-blue">Other works</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-    <footer>
-        <div class="footer__container">
-            <div class="footer__content">
-                <div class="footer__main-block">
-                    <div class="footer__greetings">
-                        <p class="text__text">Thank you for showing interest in my works!</p>
-                        <p class="text__text">If you want to say hi or offer a job, feel free to send me an <a class="text__link" href="mailto:ybhpg@icloud.com">email</a>! Or you can contact me on social media.</p>
-                    </div>
-                    <div class="footer__copyrights">
-                        2022, Vladislav Ledashchev
-                    </div>
-                </div>
-                <div class="footer__socials">
-                    <ul class="footer__socials-list">
-                        <li class="footer__socials socials-variant">
-                            <a href="https://t.me/ybhpg" class="social_link" target="_blank">Telegram</a>
-                        </li>
-                        <li class="socials-variant">
-                            <p class="text__text">|</p>
-                        </li>
-                        <li class="socials-variant">
-                            <a href="https://www.instagram.com/bulbadyshka/" class="social_link" target="_blank">Instagram</a>
-                        </li>
-                        <li class="socials-variant">
-                            <p class="text__text">|</p>
-                        </li>
-                        <li class="socials-variant">
-                            <a href="https://twitter.com/ybhpg57/" class="social_link" target="_blank">Twitter</a>
-                        </li>
-                        <li class="socials-variant">
-                            <p class="text__text">|</p>
-                        </li>
-                        <li class="socials-variant">
-                            <a href="https://www.linkedin.com/mwlite/in/ybhpg" class="social_link" target="_blank">LinkedIn</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-</body>
-
+        </footer>
+        <script src="javascript/top-button.js"></script>
+    </body>
 </html>
