@@ -132,7 +132,7 @@ body {
   font-weight: 400;
   font-size: 1rem;
   line-height: 120%;
-  text-align: center;
+  text-align: left;
   color: rgb(27, 28, 36);
 }
 
@@ -144,6 +144,10 @@ body {
 .text__link:focus, .text__link:hover {
   color: rgb(0, 198, 159);
   transition: color 300ms ease-in-out;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text__italic {
