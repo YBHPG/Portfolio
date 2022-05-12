@@ -75,7 +75,6 @@
     width: 70px;
     height: 70px;
     background: #fafafa;
-    border: 3px solid #efefef;
     border-radius: 50px;
 
     .top-button__image {
@@ -100,6 +99,47 @@
         .top-button__image {
             filter: invert(0);
             -webkit-filter: invert(0);
+            transition: all 500ms ease;
+        }
+    }
+}
+
+.top_button-dark {
+    opacity: 0;
+    display: flex; /* Hidden by default */
+    align-items: center;
+    justify-content: center;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 50px; /* Place the button at the bottom of the page */
+    right: 50px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    width: 70px;
+    height: 70px;
+    background: variables.$primary-black;
+    border-radius: 50px;
+
+    .top-button__image {
+        padding-left: 2px;
+        width: 70px;
+        height: 70px;
+
+        max-width: 36px;
+        max-height: 36px;
+
+        filter: invert(0.7);
+        -webkit-filter: invert(0.7);
+    }
+
+    transition: 500ms all ease;
+
+    &:hover {
+        background: #272730;
+        box-shadow: 15px 15px 30px #17171c, -15px -15px 30px #292b32;
+        transition: all 500ms ease;
+
+        .top-button__image {
+            filter: invert(0.8);
+            -webkit-filter: invert(0.8);
             transition: all 500ms ease;
         }
     }
