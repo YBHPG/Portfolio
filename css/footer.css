@@ -1,1 +1,75 @@
-footer .footer__container{padding-top:150px}footer .footer__container .footer__content{display:flex;flex-wrap:wrap;padding:0 0 50px 0}footer .footer__container .footer__content .footer__main-block{flex:1 0 48%;display:flex;flex-direction:column;gap:15px}footer .footer__container .footer__content .footer__main-block .footer__greetings{flex:1 0 90%}footer .footer__container .footer__content .footer__main-block .footer__copyrights{flex:1 0 10%}footer .footer__container .footer__content .footer__socials{flex:1 1 52%;justify-content:flex-end;display:flex}footer .footer__container .footer__content .footer__socials .footer__socials-list{display:flex;flex-wrap:nowrap;flex-direction:row;justify-content:flex-end;align-items:flex-start;gap:20px}footer .footer__container .footer__content .footer__socials .footer__socials-list .socials-variant .social_link{font-family:"Red Hat Text";font-style:normal;font-weight:400;font-size:1rem;line-height:120%;text-align:center;color:#1b1c24;transition:color 300ms ease-in-out}footer .footer__container .footer__content .footer__socials .footer__socials-list .socials-variant .social_link:focus,footer .footer__container .footer__content .footer__socials .footer__socials-list .socials-variant .social_link:hover{color:#007dc3;transition:color 300ms ease-in-out}@media(max-width: 767.98px){footer .footer__container .footer__content{flex-direction:column;gap:30px;align-items:flex-start}}@media(min-width: 320px)and (max-width: 599.98px){footer .footer__container .footer__content{flex-direction:column;gap:30px;align-items:flex-start}}@media(max-width: 430px){footer .footer__container .footer__content .footer__socials .footer__socials-list{flex-direction:column}footer .footer__container .footer__content .footer__socials .footer__socials-list :nth-child(even){display:none}}
+@charset "UTF-8";
+/* Цвета */
+/* Анимации */
+/* ============================================ */
+/* FOOTER CODE */
+footer .footer__container {
+  padding-top: 150px;
+}
+footer .footer__container .footer__content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 50px 0;
+}
+footer .footer__container .footer__content .footer__main-block {
+  flex: 1 0 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+footer .footer__container .footer__content .footer__main-block .footer__greetings {
+  flex: 1 0 90%;
+}
+footer .footer__container .footer__content .footer__main-block .footer__copyrights {
+  flex: 1 0 10%;
+}
+footer .footer__container .footer__content .footer__socials {
+  flex: 1 1 52%;
+  justify-content: flex-end;
+  display: flex;
+}
+footer .footer__container .footer__content .footer__socials .footer__socials-list {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 20px;
+}
+footer .footer__container .footer__content .footer__socials .footer__socials-list .socials-variant .social_link {
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 120%;
+  text-align: center;
+  color: rgb(27, 28, 36);
+  transition: color 300ms ease-in-out;
+}
+footer .footer__container .footer__content .footer__socials .footer__socials-list .socials-variant .social_link:focus, footer .footer__container .footer__content .footer__socials .footer__socials-list .socials-variant .social_link:hover {
+  color: rgb(0, 125, 195);
+  transition: color 300ms ease-in-out;
+}
+
+@media (max-width: 767.98px) {
+  footer .footer__container .footer__content {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 320px) and (max-width: 599.98px) {
+  footer .footer__container .footer__content {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 430px) {
+  footer .footer__container .footer__content .footer__socials .footer__socials-list {
+    flex-direction: column;
+  }
+  footer .footer__container .footer__content .footer__socials .footer__socials-list :nth-child(even) {
+    display: none;
+  }
+}

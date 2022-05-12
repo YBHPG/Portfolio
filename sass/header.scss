@@ -45,6 +45,22 @@
                         }
                     }
                 }
+
+                .hamburger-lines {
+                    display: none;
+                    height: 26px;
+                    width: 32px;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .line {
+                        display: block;
+                        height: 4px;
+                        width: 100%;
+                        border-radius: 10px;
+                        background: #0e2431;
+                    }
+                }
             }
         }
     }
@@ -55,7 +71,12 @@
         .header__container {
             .header__menu {
                 .menu__body {
-                    display: none;
+                    .menu__list {
+                        display: none;
+                    }
+                    .hamburger-lines {
+                        display: flex;
+                    }
                 }
             }
         }
