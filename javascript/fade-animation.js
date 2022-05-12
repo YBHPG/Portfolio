@@ -37,7 +37,7 @@ function fadeOutAbout() {
 
 window.onclick = function (event) {
     if (event.target = workButton) {
-        fadeOut();
+        fadeOutWork();
     } else if (event.target = aboutButton) {
         fadeOutAbout();
     }
