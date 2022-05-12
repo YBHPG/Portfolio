@@ -4,7 +4,15 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- CSS stylesheets -->
+        <link rel="stylesheet" href="css/zeroing.css" />
+        <link rel="stylesheet" href="css/containers.css" />
+        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/buttons.css" />
+        <link rel="stylesheet" href="css/header.css" />
         <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/footer.css" />
 
         <!-- fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,7 +26,7 @@
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     </head>
 
-    <body>
+    <body class="body_white">
         <script src="javascript/fade-animation.js"></script>
         <header class="header">
             <div class="header__container">
@@ -28,11 +36,13 @@
                 <div class="header__menu">
                     <nav id="menu" class="menu__body">
                         <ul class="menu__list">
-                            <li class="menu__item"><a href="#" class="menu__link">Work</a></li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link text-black">Work</a>
+                            </li>
                             <li class="menu__item">
                                 <a
                                     href="#"
-                                    class="menu__link"
+                                    class="menu__link text-black"
                                     id="fade-out_work-button"
                                     onclick="fadeOutWork()"
                                     >About</a
@@ -42,7 +52,7 @@
                                 <a
                                     href="https://drive.google.com/file/d/1svl-LTsWHkOU5ZcQH7hBDTCmjuVM0-8D/view?usp=sharing"
                                     target="_blank"
-                                    class="menu__link"
+                                    class="menu__link text-black"
                                     >Resume</a
                                 >
                             </li>

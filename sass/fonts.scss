@@ -1,0 +1,77 @@
+@use "variables";
+
+/* ============================================ */
+/* TEXT CODE */
+
+.text__title {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 120%;
+    color: variables.$primary-black;
+}
+
+.text__header {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    color: variables.$primary-black;
+}
+
+.text__header2 {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: variables.$primary-white;
+}
+
+.text__text {
+    font-family: "Red Hat Text";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 120%;
+    text-align: left;
+    color: variables.$primary-black;
+}
+
+.text__link {
+    text-decoration: underline;
+    color: variables.$primary-black;
+    transition: variables.$hover-transition;
+
+    &:focus,
+    &:hover {
+        color: variables.$secondary-hover;
+        transition: variables.$hover-transition;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text__italic {
+    font-style: italic;
+}
+
+.text-white {
+    color: variables.$primary-white;
+}
+
+.text-black {
+    color: variables.$primary-black;
+}
+
+/* MEDIA */
+
+@media (max-width: 599.98px) {
+    .text__title {
+        font-size: 2rem;
+    }
+}
