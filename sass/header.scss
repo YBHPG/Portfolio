@@ -45,6 +45,27 @@
                         }
                     }
                 }
+
+                .burger-button {
+                    width: 30px;
+                    height: 30px;
+
+                    .burger-button_link {
+                        text-decoration: none;
+                        height: inherit;
+                        display: block;
+                        justify-content: center;
+                        align-items: center;
+
+                        .burger-button_line {
+                            height: 4px;
+                            width: 30px;
+                            background-color: variables.$primary-black;
+                            border-radius: 2px;
+                            position: relative;
+                        }
+                    }
+                }
             }
         }
     }

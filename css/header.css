@@ -41,6 +41,24 @@
   color: rgb(0, 198, 159);
   transition: color 300ms ease-in-out;
 }
+.header .header__container .header__menu .menu__body .burger-button {
+  width: 30px;
+  height: 30px;
+}
+.header .header__container .header__menu .menu__body .burger-button .burger-button_link {
+  text-decoration: none;
+  height: inherit;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.header .header__container .header__menu .menu__body .burger-button .burger-button_link .burger-button_line {
+  height: 4px;
+  width: 30px;
+  background-color: rgb(27, 28, 36);
+  border-radius: 2px;
+  position: relative;
+}
 
 @media (max-width: 500px) {
   .header .header__container .header__menu .menu__body .menu__list {
