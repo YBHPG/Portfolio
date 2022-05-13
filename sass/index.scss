@@ -115,7 +115,7 @@ body.fadeOut {
                 max-width: 543px;
                 max-height: 407px;
                 overflow: hidden;
-                resize: vertical;
+                /* resize: vertical; */
 
                 /* fixes border-radius bug in webkit */
                 mask-image: radial-gradient(white, black);

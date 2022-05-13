@@ -70,6 +70,12 @@
 
 /* MEDIA */
 
+@media (max-width: 767.98px) {
+    .text__header2 {
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 599.98px) {
     .text__title {
         font-size: 2rem;

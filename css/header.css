@@ -41,26 +41,15 @@
   color: rgb(0, 198, 159);
   transition: color 300ms ease-in-out;
 }
-.header .header__container .header__menu .menu__body .hamburger-lines {
-  display: none;
-  height: 26px;
-  width: 32px;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.header .header__container .header__menu .menu__body .hamburger-lines .line {
-  display: block;
-  height: 4px;
-  width: 100%;
-  border-radius: 10px;
-  background: #0e2431;
-}
 
 @media (max-width: 500px) {
   .header .header__container .header__menu .menu__body .menu__list {
     display: none;
   }
   .header .header__container .header__menu .menu__body .hamburger-lines {
+    display: flex;
+  }
+  .header .header__container .header__menu .menu__body .hamburger-lines .open-button {
     display: flex;
   }
 }

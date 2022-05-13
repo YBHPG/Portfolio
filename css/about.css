@@ -114,16 +114,16 @@ body.fadeOut {
   max-height: 300px;
   filter: drop-shadow(0 36px 63px rgba(250, 250, 250, 0.0196802)) drop-shadow(0 15.0399px 26.3199px rgba(250, 250, 250, 0.0282725)) drop-shadow(0 8.04107px 14.0719px rgba(250, 250, 250, 0.035)) drop-shadow(0 4.50776px 7.88858px rgba(250, 250, 250, 0.0417275)) drop-shadow(0 2.39404px 4.18956px rgba(250, 250, 250, 0.0503198)) drop-shadow(0 0.996212px 1.74337px rgba(250, 250, 250, 0.07));
   border-radius: 20px;
+  /* .height-auto-image {
+      max-height: none;
+      height: auto;
+      max-width: 100%;
+      object-fit: cover;
+  } */
 }
 .block-2 .block-2__container .block-2__content .block-2__card .block-2__card-picture img {
   width: auto;
   max-height: 100%;
-}
-.block-2 .block-2__container .block-2__content .block-2__card .block-2__card-picture .height-auto-image {
-  max-height: none;
-  height: auto;
-  max-width: 100%;
-  object-fit: cover;
 }
 .block-2 .block-2__container .block-2__content .block-2__card .block-2__card-text {
   flex: 1 0 100%;
