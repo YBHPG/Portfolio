@@ -1,5 +1,6 @@
 function pageLoad() {
     var userLanguage = window.navigator.language;
+    console.log(userLanguage);
 
     if (userLanguage.includes('ru')) {
         window.open('../html/index-ru.html', "_top");
