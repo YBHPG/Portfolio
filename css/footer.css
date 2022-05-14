@@ -37,7 +37,7 @@ footer .footer__container .footer__content .footer__socials .footer__socials-lis
   gap: 20px;
 }
 footer .footer__container .footer__content .footer__socials .footer__socials-list .socials-variant .social_link {
-  font-family: "Red Hat Text";
+  font-family: "Red Hat Text", "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
