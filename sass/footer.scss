@@ -57,6 +57,23 @@ footer {
                                 transition: color 300ms ease-in-out;
                             }
                         }
+
+                        .social_link_white {
+                            font-family: "Red Hat Text", "Raleway", sans-serif;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 1rem;
+                            line-height: 120%;
+                            text-align: center;
+                            color: variables.$primary-white;
+                            transition: color 300ms ease-in-out;
+
+                            &:focus,
+                            &:hover {
+                                color: variables.$tertiary-hover;
+                                transition: color 300ms ease-in-out;
+                            }
+                        }
                     }
                 }
             }
