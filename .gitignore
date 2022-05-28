@@ -5,6 +5,8 @@
 *.scss.map
 prepros.config
 .DS_Store
+.dockerignore
+Dockerfile
 
 # ================================
 # Node.js:

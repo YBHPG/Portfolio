@@ -2,8 +2,8 @@ import express from 'express';
 import path from 'path';
 
 const __dirname = path.resolve();
-const adress = '127.0.0.1';
-const port = 3000;
+const adress = '0.0.0.0';
+const port = 8080;
 
 const app = express();
 app.use('/static', express.static(__dirname + '/static'))
@@ -42,6 +42,6 @@ app.get('/en/about', (req, res) => {
 /* ==================================================*/
 /* START */
 
-app.listen(port, () => {
+app.listen(port, adress, () => {
     console.log(`Server is running at http://${adress}:${port}`);
 });
