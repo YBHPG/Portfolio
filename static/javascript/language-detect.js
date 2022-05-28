@@ -3,12 +3,12 @@ function pageLoad() {
     console.log(userLanguage);
 
     if (userLanguage.includes('ru')) {
-        window.open('/Portfolio/html/index-ru.html', "_top");
-        console.log(langRu);
+        window.location.href = '/ru/work';
+        console.log('langRu');
         return 0;
     } else if (userLanguage.includes('en')) {
-        window.open('/Portfolio/html/index-en.html', '_top');
-        console.log(langEn);
+        window.location.href = '/en/work';
+        console.log('langEn');
         return 0;
     }
     return;

@@ -16,9 +16,9 @@ function fadeOutWork() {
     document.body.classList.add("fadeOut");
     window.setTimeout(function () {
         if (pageName.includes('ru')) {
-            window.location.href = "../html/about-ru.html";
+            window.location.href = "/ru/about";
         } else if (pageName.includes('en')) {
-            window.location.href = "../html/about-en.html";
+            window.location.href = "/en/about";
         }
     }, 1000);
 }
@@ -29,9 +29,9 @@ function fadeOutAbout() {
     document.body.classList.add("fadeOut");
     window.setTimeout(function () {
         if (pageName.includes('ru')) {
-            window.location.href = "../html/index-ru.html";
+            window.location.href = "/ru/work";
         } else if (pageName.includes('en')) {
-            window.location.href = "../html/index-en.html";
+            window.location.href = "/en/work";
         }
     }, 1000);
 }
