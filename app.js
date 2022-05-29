@@ -2,13 +2,8 @@ import express from 'express';
 import path from 'path';
 
 const __dirname = path.resolve();
-<<<<<<< Updated upstream
-const adress = '0.0.0.0';
-const port = 8080;
-=======
-const adress = '127.0.0.1';
+const adress = '194.169.160.214';
 const port = 80;
->>>>>>> Stashed changes
 
 const app = express();
 app.use('/static', express.static(__dirname + '/static'))
@@ -44,9 +39,13 @@ app.get('/en/about', (req, res) => {
     res.sendFile(__dirname + '/static/html/about-en.html');
 });
 
-app.get('/.well-known/pki-validation/4ABA000B996255A60A39992EA1D7CC5C.txt', (req, res) => [
+app.get('/.well-known/pki-validation/4ABA000B996255A60A39992EA1D7CC5C.txt', (req, res) => {
     res.sendFile(__dirname + '/static/txt/4ABA000B996255A60A39992EA1D7CC5C.txt')
-])
+});
+
+app.get('/.well-known/4ABA000B996255A60A39992EA1D7CC5C.txt', (req, res) => {
+	res.sendFile(__dirname + '/static/txt/4ABA000B996255A60A39992EA1D7CC5C.txt');
+});
 
 /* ==================================================*/
 /* START */
