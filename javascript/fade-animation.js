@@ -38,9 +38,9 @@ function fadeOutAbout() {
 
 // logic for menu buttons fade out
 window.onclick = function (event) {
-    if (event.target = workButton) {
+    if (event.target === workButton) {
         fadeOutWork();
-    } else if (event.target = aboutButton) {
+    } else if (event.target === aboutButton) {
         fadeOutAbout();
     }
 }
@@ -57,31 +57,34 @@ window.onbeforeunload = function (event) {
 
 // fade in burger menu from left
 /* function fadeInBurger() {
-    var menu_body = document.getElementsByClassName("menu__body");
-    if (menu_body[0].style.left == "0px") {
-        menu_body[0].style.left = "-100%";
+    var menuBody = document.getElementsByClassName("menu__body");
+    if (menuBody[0].style.left == "0px") {
+        menuBody[0].style.left = "-100%";
     } else {
-        menu_body[0].style.left = "0";
+        menuBody[0].style.left = "0";
     }
 } */
 
 
 // fade in burger menu from top
 function fadeInBurger() {
-    var menu_body = document.getElementsByClassName("menu__body");
-    for (var i = 0; i < menu_body.length; i++) {
-        if (menu_body[0].classList.contains("fade")) {
-            menu_body[0].classList.remove("fade");
-            menu_body[0].style.top = "-100%";
-            menu_body[0].style.opacity = "0";
+    var menuBody = document.getElementsByClassName("menu__body");
+    var siteBody = document.getElementsByTagName('body');
+    for (var i = 0; i < menuBody.length; i++) {
+        if (menuBody[0].classList.contains("fade")) {
+            menuBody[0].classList.remove("fade");
+            menuBody[0].style.top = "-100%";
+            menuBody[0].style.opacity = "0";
+            siteBody[0].style.overflow = "auto";
         } else {
-            menu_body[0].classList.add("fade");
-            menu_body[0].style.top = "0px";
-            menu_body[0].style.opacity = "1";
+            menuBody[0].classList.add("fade");
+            menuBody[0].style.top = "0px";
+            menuBody[0].style.opacity = "1";
+            siteBody[0].style.overflow = "hidden";
         }
 
-        if (menu_body[0].classList.contains("black")) {
-            menu_body[0].style.backgroundColor = "rgba(27, 28, 36, 1)";
+        if (menuBody[0].classList.contains("black")) {
+            menuBody[0].style.backgroundColor = "rgba(27, 28, 36, 1)";
         }
     }
 }
