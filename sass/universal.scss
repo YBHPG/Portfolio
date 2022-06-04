@@ -653,3 +653,37 @@ footer {
 .appear {
     opacity: 1;
 }
+
+/* ============================================== */
+/* Modal window */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+.modal__container {
+    background-color: variables.$primary-white;
+    width: 100%;
+    height: 70%;
+    margin: 7% auto;
+    border-radius: 60px;
+}
+.modal__content {
+}
+.modal__image {
+}
+.modal__text {
+}
+.modal__text__paragraph {
+}
+.text__header2 {
+}
+.text__text {
+}

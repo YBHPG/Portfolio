@@ -54,18 +54,6 @@ window.onbeforeunload = function (event) {
     }, 1000);
 }
 
-
-// fade in burger menu from left
-/* function fadeInBurger() {
-    var menuBody = document.getElementsByClassName("menu__body");
-    if (menuBody[0].style.left == "0px") {
-        menuBody[0].style.left = "-100%";
-    } else {
-        menuBody[0].style.left = "0";
-    }
-} */
-
-
 // fade in burger menu from top
 function fadeInBurger() {
     var menuBody = document.getElementsByClassName("menu__body");
@@ -86,5 +74,16 @@ function fadeInBurger() {
         if (menuBody[0].classList.contains("black")) {
             menuBody[0].style.backgroundColor = "rgba(27, 28, 36, 1)";
         }
+    }
+}
+
+function fadeModalWindow(index) {
+    var modalWindow = document.getElementsByClassName('modal');
+    if (index === 11) {
+        modalWindow[0].style.display = "block";
+        modalWindow[0].classList.add('fadeOut');
+    } else if (index === 12) {
+        modalWindow[1].style.display = "block";
+        modalWindow[1].classList.add('fadeOut');
     }
 }
