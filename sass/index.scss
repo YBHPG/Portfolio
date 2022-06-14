@@ -78,6 +78,7 @@ body.fadeOut {
 
     .work-block__container {
         padding-top: 50px;
+
         .work-block__content {
             padding: 20px 20px 20px 20px;
 
@@ -154,6 +155,7 @@ body.fadeOut {
 @media (min-width: 320px) and (max-width: 767.98px) {
     .work-block {
         padding: 20px 0;
+
         .work-block__container {
             .work-block__content {
                 flex-direction: column;
@@ -175,4 +177,44 @@ body.fadeOut {
     .work-button {
         margin: 0 auto;
     }
+}
+
+
+.work-block-test {
+    padding: 100px 0 50px 0;
+
+    .work-block-test__container {
+        padding-top: 50px;
+
+        .work-block-test__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 2rem;
+
+            .work-block-test__text {
+
+                h1 {
+                    max-width: 921px;
+                    margin-bottom: 35px;
+                }
+
+                div {
+                    max-width: 543px;
+                }
+            }
+
+            .work-block-test__images {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+
+                img {
+                    max-width: 77vw;
+                }
+            }
+        }
+    }
+
+
 }

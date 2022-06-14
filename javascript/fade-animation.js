@@ -9,6 +9,7 @@ var workButton = document.getElementById("fade-out_work-button");   // "work" he
 var aboutButton = document.getElementById("fade-out_about-button"); // "About" header button
 var pagePath = window.location.pathname;    // getting page URL    
 var pageName = pagePath.split("#").shift(); //Splitting page URL and getting the bit after last "/"
+var siteBody = document.getElementsByTagName('body');   // get body
 
 // fade out from "Work"
 function fadeOutWork() {
@@ -57,7 +58,6 @@ window.onbeforeunload = function (event) {
 // fade in burger menu from top
 function fadeInBurger() {
     var menuBody = document.getElementsByClassName("menu__body");
-    var siteBody = document.getElementsByTagName('body');
     for (var i = 0; i < menuBody.length; i++) {
         if (menuBody[0].classList.contains("fade")) {
             menuBody[0].classList.remove("fade");
@@ -82,8 +82,13 @@ function fadeModalWindow(index) {
     if (index === 11) {
         modalWindow[0].style.display = "block";
         modalWindow[0].classList.add('fadeOut');
+        siteBody[0].style.overflow = "hidden";
     } else if (index === 12) {
         modalWindow[1].style.display = "block";
         modalWindow[1].classList.add('fadeOut');
+        siteBody[0].style.overflow = "hidden";
+    } if (index === 21) {
+        modalWindow[0].style.display = "none";
+        siteBody[0].style.overflow = "auto";
     }
 }
