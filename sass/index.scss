@@ -14,7 +14,7 @@ body.fade {
 
 body.fadeOut {
     opacity: 0;
-    background: variables.$primary-black;
+    background: variables.$primary-white;
     transition: all 1s;
 }
 
@@ -207,10 +207,11 @@ body.fadeOut {
             .work-block-test__images {
                 display: flex;
                 flex-direction: column;
+                align-items: center;
                 gap: 50px;
 
                 img {
-                    max-width: 77vw;
+                    max-width: 100%;
                 }
             }
         }

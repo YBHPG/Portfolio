@@ -5,6 +5,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 500);
 });
 
+window.onbeforeunload = closingCode;
+function closingCode() {
+    document.body.classList.add("fade");
+    document.body.classList.remove("fadeOut");
+    return null;
+}
+
 var workButton = document.getElementById("fade-out_work-button");   // "work" header button
 var aboutButton = document.getElementById("fade-out_about-button"); // "About" header button
 var pagePath = window.location.pathname;    // getting page URL    
