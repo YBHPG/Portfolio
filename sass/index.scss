@@ -58,6 +58,29 @@ body.fadeOut {
                 background-color: variables.$primary-black;
                 margin: 0 0 75px 0;
             }
+
+            .block-2__filter-buttons__container {
+                padding-top: 50px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 40px;
+
+                .block-2__filter-buttons {
+                    background: #e8e8e8;
+                    color: variables.$primary-black;
+                    box-shadow: 5px -5px 27px -8px rgba(150, 150, 150, 0.26);
+                    border-radius: 12px;
+                    padding: 10px 25px;
+                    transition: all 500ms ease;
+
+                    &:hover {
+                        background: #d3d3d3;
+                        box-shadow: -5px 5px 27px -8px rgba(150, 150, 150, 0.26);
+                        transition: all 500ms ease;
+                    }
+                }
+            }
         }
     }
 }
@@ -179,9 +202,8 @@ body.fadeOut {
     }
 }
 
-
 .work-block-test {
-    padding: 100px 0 50px 0;
+    padding: 50px 0 50px 0;
 
     .work-block-test__container {
         padding-top: 50px;
@@ -193,7 +215,6 @@ body.fadeOut {
             gap: 2rem;
 
             .work-block-test__text {
-
                 h1 {
                     max-width: 921px;
                     margin-bottom: 35px;
@@ -216,6 +237,4 @@ body.fadeOut {
             }
         }
     }
-
-
 }

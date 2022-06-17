@@ -99,3 +99,27 @@ function fadeModalWindow(index) {
         siteBody[0].style.overflow = "auto";
     }
 }
+
+function dataSort(sortType) {
+    var dataCards = document.getElementsByClassName('work-block-test');
+    for (var i = 0; i < dataCards.length; i++) {
+        if (dataCards[i].dataset.sort === 'programming' || 'design') {
+            dataCards[i].style.display = 'block';
+            console.log(dataCards[i].dataset.sort);
+        }
+
+        if (sortType === 'design') {
+            if (dataCards[i].dataset.sort === 'programming') {
+                dataCards[i].style.display = 'none';
+                console.log(dataCards[i].dataset.sort);
+            }
+        }
+
+        if (sortType === 'programming') {
+            if (dataCards[i].dataset.sort === 'design') {
+                dataCards[i].style.display = 'none';
+                console.log(dataCards[i].dataset.sort);
+            }
+        }
+    }
+}

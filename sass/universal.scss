@@ -1,7 +1,7 @@
 /* Zeroing */
 
 @use "variables";
-@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@1,700&family=Josefin+Sans:ital,wght@1,700&family=Jost:wght@400;500&family=Montserrat:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@1,700&family=Josefin+Sans:ital,wght@1,700&family=Jost:wght@400;500&family=Montserrat:wght@600&display=swap");
 
 *,
 *::before,
@@ -130,7 +130,7 @@ body {
 }
 
 .text__header {
-    font-family: 'Jost', sans-serif;
+    font-family: "Jost", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 2rem;
@@ -380,7 +380,7 @@ body {
 
     .menu__body.fade {
         opacity: 1;
-        top: 0px;
+        top: 0;
         transition: all 0.1s ease;
     }
 }
