@@ -84,42 +84,43 @@ function fadeInBurger() {
     }
 }
 
-function fadeModalWindow(index) {
-    var modalWindow = document.getElementsByClassName('modal');
-    if (index === 11) {
-        modalWindow[0].style.display = "block";
-        modalWindow[0].classList.add('fadeOut');
-        siteBody[0].style.overflow = "hidden";
-    } else if (index === 12) {
-        modalWindow[1].style.display = "block";
-        modalWindow[1].classList.add('fadeOut');
-        siteBody[0].style.overflow = "hidden";
-    } if (index === 21) {
-        modalWindow[0].style.display = "none";
-        siteBody[0].style.overflow = "auto";
-    }
-}
-
 function dataSort(sortType) {
+    var dataContainer = document.getElementsByClassName('work-blocks__container');
     var dataCards = document.getElementsByClassName('work-block-test');
+    if (!dataContainer[0].classList.contains('is_changed')) {
+        dataContainer[0].classList.add('is_changed');
+    }
     for (var i = 0; i < dataCards.length; i++) {
         if (dataCards[i].dataset.sort === 'programming' || 'design') {
-            dataCards[i].style.display = 'block';
-            console.log(dataCards[i].dataset.sort);
+            dataCards[i].classList.remove('is_hidden');
+            dataCards[i].classList.add('is_visible');
         }
 
         if (sortType === 'design') {
             if (dataCards[i].dataset.sort === 'programming') {
-                dataCards[i].style.display = 'none';
+                toggleTwoClasses(dataCards[i], "is_visible", "is_hidden", 500);
                 console.log(dataCards[i].dataset.sort);
             }
         }
 
         if (sortType === 'programming') {
             if (dataCards[i].dataset.sort === 'design') {
-                dataCards[i].style.display = 'none';
+                toggleTwoClasses(dataCards[i], "is_visible", "is_hidden", 500);
                 console.log(dataCards[i].dataset.sort);
             }
         }
+    }
+    dataContainer[0].classList.remove('is_changed');
+}
+
+function toggleTwoClasses(element, first, second, timeOfAnimation) {
+    if (!element.classList.contains(first)) {
+        element.classList.add(first);
+        element.classList.remove(second);
+    } else {
+        element.classList.add(second);
+        window.setTimeout(function () {
+            element.classList.remove(first);
+        }, timeOfAnimation);
     }
 }
