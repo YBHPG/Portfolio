@@ -60,15 +60,19 @@ body.fadeOut {
             }
 
             .block-2__filter-buttons__container {
-                padding-top: 50px;
+                padding: 50px 0 25px 0;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
+                align-items: center;
+                flex-wrap: nowrap;
                 gap: 40px;
+
 
                 .block-2__filter-buttons {
                     background: #e8e8e8;
                     color: variables.$primary-black;
+                    white-space: nowrap;
                     box-shadow: 5px -5px 27px -8px rgba(150, 150, 150, 0.26);
                     border-radius: 12px;
                     padding: 10px 25px;
@@ -92,6 +96,58 @@ body.fadeOut {
 
         .block-2__separator {
             max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .block-2__content {
+
+        .block-2__filter-buttons__container {
+            gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 539.98px) {
+    .block-2 {
+        .block-2__container {
+            .block-2__content {
+
+                /* .block-2__filter-buttons__overflow {
+                    position: relative;
+
+                    &::before {
+                        pointer-events: none;
+                        content: '';
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        top: 0;
+                        left: 0;
+                        background: linear-gradient(to right, variables.$primary-white 0%, variables.$primary-white-transparent 9.9%, rgba(255, 255, 255, 0) 18.75%, rgba(255, 255, 255, 0) 81.25%, variables.$primary-white-transparent 91.67%, variables.$primary-white 100%);
+                    }
+
+                    .block-2__filter-buttons__container {
+                        padding: 50px 27px 25px 27px;
+                        justify-content: flex-start;
+                        overflow: auto;
+                        gap: 20px;
+                    }
+                } */
+
+                .block-2__filter-buttons__overflow {
+                    .block-2__filter-buttons__container {
+                        flex-direction: column;
+                        gap: 15px;
+
+                        .block-2__filter-buttons {
+                            width: 200px;
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -203,19 +259,22 @@ body.fadeOut {
 }
 
 .work-blocks__container {
+    display: block;
     opacity: 1;
 }
+
+/* ================================ */
+/* NEW WORK BLOCK */
 
 .work-block-test {
     padding: 50px 0 50px 0;
     display: none;
     opacity: 0;
 
-    animation: fadeInFromNone 1s ease-in-out;
-    animation-fill-mode: forwards;
-
     .work-block-test__container {
-        padding-top: 50px;
+        &:not(:first-child) {
+            padding-top: 50px;
+        }
 
         .work-block-test__content {
             display: flex;
@@ -250,25 +309,55 @@ body.fadeOut {
 
 .is_visible {
     display: block;
+    animation: fadeInFromNone 0.5s ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 .is_hidden {
-    display: none;
+    animation: fadeOutFromBlock 0.5s ease-in-out;
 }
 
 .is_changed {
-    animation: fadeInFromNone 1s ease-in-out;
-    animation-fill-mode: forwards;
+    display: block;
+    animation: fadeChanged 1s ease-in-out;
 }
 
 @keyframes fadeInFromNone {
     0% {
+        opacity: 0;
+    }
+
+    100% {
         opacity: 1;
     }
+}
+
+@keyframes fadeOutFromBlock {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeChanged {
+    0% {
+        opacity: 1;
+    }
+
     50% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
+    }
+}
+
+@media (max-width: 599.98px) {
+    .work-block-test {
+        padding: 15px 0 50px 0;
     }
 }

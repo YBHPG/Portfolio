@@ -85,42 +85,32 @@ function fadeInBurger() {
 }
 
 function dataSort(sortType) {
-    var dataContainer = document.getElementsByClassName('work-blocks__container');
-    var dataCards = document.getElementsByClassName('work-block-test');
-    if (!dataContainer[0].classList.contains('is_changed')) {
-        dataContainer[0].classList.add('is_changed');
-    }
-    for (var i = 0; i < dataCards.length; i++) {
-        if (dataCards[i].dataset.sort === 'programming' || 'design') {
-            dataCards[i].classList.remove('is_hidden');
-            dataCards[i].classList.add('is_visible');
-        }
+    var dataContainer = document.getElementById('work-blocks');
+    console.log(dataContainer);
+    var dataCard = document.getElementsByClassName('work-block-test');
 
-        if (sortType === 'design') {
-            if (dataCards[i].dataset.sort === 'programming') {
-                toggleTwoClasses(dataCards[i], "is_visible", "is_hidden", 500);
-                console.log(dataCards[i].dataset.sort);
+    if (!dataContainer.classList.contains('is_changed')) {
+        dataContainer.classList.add('is_changed');
+    }
+
+    setTimeout(() => {
+        for (let index = 0; index < dataCard.length; index++) {
+            dataCard[index].classList.add('is_visible');
+            dataCard[index].classList.remove('is_hidden');
+
+            if (dataCard[index].dataset.sort !== sortType && dataCard[index].dataset.sort !== 'all') {
+                dataCard[index].classList.add('is_hidden');
+                dataCard[index].classList.remove('is_visible');
+            }
+
+            if (sortType === 'all') {
+                dataCard[index].classList.remove('is_hidden');
+                dataCard[index].classList.add('is_visible');
             }
         }
+    }, 500);
 
-        if (sortType === 'programming') {
-            if (dataCards[i].dataset.sort === 'design') {
-                toggleTwoClasses(dataCards[i], "is_visible", "is_hidden", 500);
-                console.log(dataCards[i].dataset.sort);
-            }
-        }
-    }
-    dataContainer[0].classList.remove('is_changed');
-}
-
-function toggleTwoClasses(element, first, second, timeOfAnimation) {
-    if (!element.classList.contains(first)) {
-        element.classList.add(first);
-        element.classList.remove(second);
-    } else {
-        element.classList.add(second);
-        window.setTimeout(function () {
-            element.classList.remove(first);
-        }, timeOfAnimation);
-    }
+    setTimeout(() => {
+        dataContainer.classList.remove('is_changed');
+    }, 1000);
 }
