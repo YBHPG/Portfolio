@@ -87,7 +87,7 @@ function fadeInBurger() {
 function dataSort(sortType) {
     var dataContainer = document.getElementById('work-blocks');
     console.log(dataContainer);
-    var dataCard = document.getElementsByClassName('work-block-test');
+    var dataCard = document.getElementsByClassName('work-block');
 
     if (!dataContainer.classList.contains('is_changed')) {
         dataContainer.classList.add('is_changed');
