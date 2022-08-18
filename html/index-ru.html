@@ -1,228 +1,229 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Портфолио Владислава Ледащева" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Портфолио Владислава Ледащева" />
 
-    <!-- CSS stylesheets -->
-    <link rel="stylesheet" href="/css/universal.css">
-    <link rel="stylesheet" href="/css/index.css" />
+        <!-- CSS stylesheets -->
+        <link rel="stylesheet" href="/css/universal.css">
+        <link rel="stylesheet" href="/css/index.css" />
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,700&family=Mulish:wght@400;600;700&family=Red+Hat+Text&family=Raleway&family=Inter:wght@700&display=swap"
-        rel="stylesheet" />
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,700&family=Mulish:wght@400;600;700&family=Red+Hat+Text&family=Raleway&family=Inter:wght@700&display=swap"
+            rel="stylesheet" />
 
-    <title>Vladislav Ledashchev</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-</head>
+        <title>Vladislav Ledashchev</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    </head>
 
-<body class="body_white">
-    <script src="/javascript/fade-animation.js"></script>
-    <header class="header">
-        <div class="header__container">
-            <div class="header__logo">
-                <img src="/images/index/logo_black.svg" alt="Логотип" />
-            </div>
-            <div class="header__menu">
-                <div class="menu__body">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="#" class="menu__link text-black" onclick="fadeInBurger()">Работы</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link text-black" id="fade-out_work-button"
-                                onclick="fadeOutWork()">О себе</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="https://drive.google.com/file/d/1Uj3li3HEZPhysTWFRm8Pjlnl49S1TfCA/view?usp=sharing"
-                                target="_blank" class="menu__link text-black">Резюме</a>
-                        </li>
-                    </ul>
+    <body class="body_white">
+        <script src="/javascript/fade-animation.js"></script>
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <img src="/images/index/logo_black.svg" alt="Логотип" />
                 </div>
-                <div class="burger-button">
-                    <a href="#" class="burger-button_link" onclick="fadeInBurger()">
-                        <span class="burger-button_line"></span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section class="block-1">
-            <div class="block-1__container">
-                <div class="block-1__content">
-                    <h1 class="block-1__title text__main-title text__italic">
-                        Привет, я Влад!
-                    </h1>
-                    <div class="block-1__text">
-                        <p class="text__text text-center">Дизайнер, студент, программист.</p>
-                        <p class="text__text text-center">
-                            Обучаюсь САПР и веб разработке в МГТУ им. Баумана.
-                        </p>
-                        <p class="text__text text-center">
-                            Работал над iOS приложением
-                            <a class="text__link"
-                                href="https://www.behance.net/gallery/143770851/Dicty-App-translator-and-dictionary">Dicty</a>
-                            и этим
-                            сайтом.
-                        </p>
+                <div class="header__menu">
+                    <div class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link text-black" onclick="fadeInBurger()">Работы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link text-black" id="fade-out_work-button"
+                                    onclick="fadeOutWork()">О себе</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="https://drive.google.com/file/d/1Uj3li3HEZPhysTWFRm8Pjlnl49S1TfCA/view?usp=sharing"
+                                    target="_blank" class="menu__link text-black">Резюме и контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="burger-button">
+                        <a href="#" class="burger-button_link" onclick="fadeInBurger()">
+                            <span class="burger-button_line"></span>
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="block-2">
-            <div class="block-2__container">
-                <div class="block-2__content">
-                    <div class="block-2__separator"></div>
-                    <p class="block-2__text text__header">Мои работы</p>
-                    <div class="block-2__filter-buttons__overflow">
-                        <div class="block-2__filter-buttons__container">
-                            <a href="#!" class="block-2__filter-buttons" onclick="dataSort('all')">Все работы</a>
-                            <a href="#!" class="block-2__filter-buttons" onclick="dataSort('design')">Дизайн</a>
-                            <a href="#!" class="block-2__filter-buttons"
-                                onclick="dataSort('programming')">Программирование</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="work-blocks__container" id="work-blocks">
-            <section class="work-block-test is_visible" data-sort="design">
-                <div class="work-block-test__container">
-                    <div class="work-block-test__content">
-                        <div class="work-block-test__text">
-                            <h1 class="text__title"><a class="text__link"
-                                    href="https://www.behance.net/gallery/143770851/Dicty-App-translator-and-dictionary"
-                                    target="_blank">Dicty</a>
-                                : Переводчик и словарь</h1>
-                            <div>
-                                <p class="text__text">Зачастую люди используют переводчики находу, чтобы спокировать
-                                    и
-                                    вставить незнакомое слово, а после выхода из приложения забывают, что перевели.
-                                    Поэтому
-                                    мы решили создать своё приложение — Dicty.</p><br>
-                                <p class="text__text">Трудно открыть новое приложение, чтобы добавить в него
-                                    интересное
-                                    слово, если вы уже переводите его в другом приложении. Вот почему мы внедрили
-                                    переводчик
-                                    на наш главный экран. И даже не один, потому что мы понимаем, что разные
-                                    переводчики
-                                    хороши в разных областях.</p><br>
-                                <p class="text__text">Чтобы помочь запомнить добавленные слова, приложение будет
-                                    отправлять
-                                    интервальные напоминания. Они придут через 30 минут, час, день и неделю после
-                                    добавления.</p><br>
-                                <p class="text__text">В приложении есть как автоматические словари, сортирающие
-                                    слова по
-                                    используемым парам языков, так и возможность создать собственные.</p><br>
-                            </div>
-                        </div>
-                        <div class="work-block-test__images">
-                            <img src="/images/index/IMG_3518.png" alt="Floating phone in air">
-                            <img src="/images/index/IMG_3517.png" alt="Three different app screens levitating in air">
+        </header>
+        <main>
+            <section class="block-1">
+                <div class="block-1__container">
+                    <div class="block-1__content">
+                        <h1 class="block-1__title text__main-title text__italic">
+                            Привет, я Влад!
+                        </h1>
+                        <div class="block-1__text">
+                            <p class="text__text text-center">Дизайнер, студент, программист.</p>
+                            <p class="text__text text-center">
+                                Обучаюсь САПР и веб разработке в МГТУ им. Баумана.
+                            </p>
+                            <p class="text__text text-center">
+                                Работал над iOS приложением
+                                <a class="text__link"
+                                    href="https://www.behance.net/gallery/143770851/Dicty-App-translator-and-dictionary">Dicty</a>
+                                и этим
+                                сайтом.
+                            </p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="work-block-test is_visible" data-sort="design">
-                <div class="work-block-test__container">
-                    <div class="work-block-test__content">
-                        <div class="work-block-test__text">
-                            <h1 class="text__title">
-                                Лендинг интернет-провайдера <a class="text__link"
-                                    href="https://www.behance.net/gallery/125033977/Rezolut-internet-company-landing-page"
-                                    target="_blank">Rezolut</a></h1>
-                            <div>
-                                <p class="text__text">Концепт лендинга большого интернет-провайдера.</p><br>
+            <section class="block-2">
+                <div class="block-2__container">
+                    <div class="block-2__content">
+                        <div class="block-2__separator"></div>
+                        <p class="block-2__text text__header">Мои работы</p>
+                        <div class="block-2__filter-buttons__overflow">
+                            <div class="block-2__filter-buttons__container">
+                                <a href="#!" class="block-2__filter-buttons" onclick="dataSort('all')">Все работы</a>
+                                <a href="#!" class="block-2__filter-buttons" onclick="dataSort('design')">Дизайн</a>
+                                <a href="#!" class="block-2__filter-buttons"
+                                    onclick="dataSort('programming')">Программирование</a>
                             </div>
-                        </div>
-                        <div class="work-block-test__images">
-                            <img src="/images/index/rezolut-mockup.png" alt="Floating phone in air">
-                            <img src="/images/index/Rozelut presentation.png"
-                                alt="Three different app screens levitating in air">
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="work-block-test is_visible" data-sort="programming">
-                <div class="work-block-test__container">
-                    <div class="work-block-test__content">
-                        <div class="work-block-test__text">
-                            <h1 class="text__title">
-                                Лендинг IT-компании <a class="text__link"
-                                    href="https://www.behance.net/gallery/125037427/CarrotIT-landing-page-concept"
-                                    target="_blank">CarrotIT</a>
-                            </h1>
-                            <div>
-                                <p class="text__text">Концепт лендинга IT-компании, разраатывающей приложения.</p>
-                                <br>
+            <div class="work-blocks__container" id="work-blocks">
+                <section class="work-block-test is_visible" data-sort="design">
+                    <div class="work-block-test__container">
+                        <div class="work-block-test__content">
+                            <div class="work-block-test__text">
+                                <h1 class="text__title"><a class="text__link"
+                                        href="https://www.behance.net/gallery/143770851/Dicty-App-translator-and-dictionary"
+                                        target="_blank">Dicty</a>
+                                    : Переводчик и словарь</h1>
+                                <div>
+                                    <p class="text__text">Зачастую люди используют переводчики находу, чтобы спокировать
+                                        и
+                                        вставить незнакомое слово, а после выхода из приложения забывают, что перевели.
+                                        Поэтому
+                                        мы решили создать своё приложение — Dicty.</p><br>
+                                    <p class="text__text">Трудно открыть новое приложение, чтобы добавить в него
+                                        интересное
+                                        слово, если вы уже переводите его в другом приложении. Вот почему мы внедрили
+                                        переводчик
+                                        на наш главный экран. И даже не один, потому что мы понимаем, что разные
+                                        переводчики
+                                        хороши в разных областях.</p><br>
+                                    <p class="text__text">Чтобы помочь запомнить добавленные слова, приложение будет
+                                        отправлять
+                                        интервальные напоминания. Они придут через 30 минут, час, день и неделю после
+                                        добавления.</p><br>
+                                    <p class="text__text">В приложении есть как автоматические словари, сортирающие
+                                        слова по
+                                        используемым парам языков, так и возможность создать собственные.</p><br>
+                                </div>
+                            </div>
+                            <div class="work-block-test__images">
+                                <img src="/images/index/IMG_3518.png" alt="Floating phone in air">
+                                <img src="/images/index/IMG_3517.png"
+                                    alt="Three different app screens levitating in air">
                             </div>
                         </div>
-                        <div class="work-block-test__images">
-                            <img src="/images/index/CarrotIT present.png" alt="Floating phone in air">
+                    </div>
+                </section>
+                <section class="work-block-test is_visible" data-sort="design">
+                    <div class="work-block-test__container">
+                        <div class="work-block-test__content">
+                            <div class="work-block-test__text">
+                                <h1 class="text__title">
+                                    Лендинг интернет-провайдера <a class="text__link"
+                                        href="https://www.behance.net/gallery/125033977/Rezolut-internet-company-landing-page"
+                                        target="_blank">Rezolut</a></h1>
+                                <div>
+                                    <p class="text__text">Концепт лендинга большого интернет-провайдера.</p><br>
+                                </div>
+                            </div>
+                            <div class="work-block-test__images">
+                                <img src="/images/index/rezolut-mockup.png" alt="Floating phone in air">
+                                <img src="/images/index/Rozelut presentation.png"
+                                    alt="Three different app screens levitating in air">
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-        </div>
+                </section>
+                <section class="work-block-test is_visible" data-sort="programming">
+                    <div class="work-block-test__container">
+                        <div class="work-block-test__content">
+                            <div class="work-block-test__text">
+                                <h1 class="text__title">
+                                    Лендинг IT-компании <a class="text__link"
+                                        href="https://www.behance.net/gallery/125037427/CarrotIT-landing-page-concept"
+                                        target="_blank">CarrotIT</a>
+                                </h1>
+                                <div>
+                                    <p class="text__text">Концепт лендинга IT-компании, разраатывающей приложения.</p>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="work-block-test__images">
+                                <img src="/images/index/CarrotIT present.png" alt="Floating phone in air">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
 
-        <a href="#" class="top_button" onclick="topFunction()">
-            <div class="top_button__container">
-                <img src="/images/icons8-up-2-48.webp" alt="arrow up" class="top-button__image" />
-            </div>
-        </a>
-    </main>
-    <footer>
-        <div class="footer__container">
-            <div class="footer__content">
-                <div class="footer__main-block">
-                    <div class="footer__greetings">
-                        <p class="text__text">Спасибо за ознакомление с моими работами!</p>
-                        <p class="text__text">
-                            Если у тебя есть предложение работы, можешь написать мне на
-                            <a class="text__link" href="mailto:hello@vladl.space">почту</a>! Или
-                            связаться со мной в социальных сетях.
-                        </p>
+            <a href="#" class="top_button" onclick="topFunction()">
+                <div class="top_button__container">
+                    <img src="/images/icons8-up-2-48.webp" alt="arrow up" class="top-button__image" />
+                </div>
+            </a>
+        </main>
+        <footer>
+            <div class="footer__container">
+                <div class="footer__content">
+                    <div class="footer__main-block">
+                        <div class="footer__greetings">
+                            <p class="text__text">Спасибо за ознакомление с моими работами!</p>
+                            <p class="text__text">
+                                Если у тебя есть предложение работы, можешь написать мне на
+                                <a class="text__link" href="mailto:hello@vladl.space">почту</a>! Или
+                                связаться со мной в социальных сетях.
+                            </p>
+                        </div>
+                        <div class="footer__copyrights text__text">2022, Владислав Ледащев</div>
                     </div>
-                    <div class="footer__copyrights text__text">2022, Владислав Ледащев</div>
-                </div>
-                <div class="footer__socials">
-                    <ul class="footer__socials-list">
-                        <li class="footer__socials socials-variant">
-                            <a href="https://t.me/ybhpg" class="social_link" target="_blank">Telegram</a>
-                        </li>
-                        <li class="socials-variant">
-                            <p class="text__text">|</p>
-                        </li>
-                        <li class="socials-variant">
-                            <a href="https://www.instagram.com/bulbadyshka/" class="social_link"
-                                target="_blank">Instagram</a>
-                        </li>
-                        <li class="socials-variant">
-                            <p class="text__text">|</p>
-                        </li>
-                        <li class="socials-variant">
-                            <a href="https://twitter.com/ybhpg57/" class="social_link" target="_blank">Twitter</a>
-                        </li>
-                        <li class="socials-variant">
-                            <p class="text__text">|</p>
-                        </li>
-                        <li class="socials-variant">
-                            <a href="https://www.linkedin.com/mwlite/in/ybhpg" class="social_link"
-                                target="_blank">LinkedIn</a>
-                        </li>
-                    </ul>
+                    <div class="footer__socials">
+                        <ul class="footer__socials-list">
+                            <li class="footer__socials socials-variant">
+                                <a href="https://t.me/ybhpg" class="social_link" target="_blank">Telegram</a>
+                            </li>
+                            <li class="socials-variant">
+                                <p class="text__text">|</p>
+                            </li>
+                            <li class="socials-variant">
+                                <a href="https://www.instagram.com/bulbadyshka/" class="social_link"
+                                    target="_blank">Instagram</a>
+                            </li>
+                            <li class="socials-variant">
+                                <p class="text__text">|</p>
+                            </li>
+                            <li class="socials-variant">
+                                <a href="https://twitter.com/ybhpg57/" class="social_link" target="_blank">Twitter</a>
+                            </li>
+                            <li class="socials-variant">
+                                <p class="text__text">|</p>
+                            </li>
+                            <li class="socials-variant">
+                                <a href="https://www.linkedin.com/mwlite/in/ybhpg" class="social_link"
+                                    target="_blank">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <script src="/javascript/top-button.js"></script>
-</body>
+        </footer>
+        <script src="/javascript/top-button.js"></script>
+    </body>
 
 </html>
