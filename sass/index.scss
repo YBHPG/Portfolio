@@ -68,7 +68,6 @@ body.fadeOut {
                 flex-wrap: nowrap;
                 gap: 40px;
 
-
                 .block-2__filter-buttons {
                     background: #e8e8e8;
                     color: variables.$primary-black;
@@ -77,11 +76,19 @@ body.fadeOut {
                     border-radius: 12px;
                     padding: 10px 25px;
                     transition: all 500ms ease;
+                    overflow: visible;
 
                     &:hover {
-                        background: #d3d3d3;
-                        box-shadow: -5px 5px 27px -8px rgba(150, 150, 150, 0.26);
+                        box-shadow: 7px 5px 20px -8px rgba(150, 150, 150, 0.6);
                         transition: all 500ms ease;
+
+                        /* &:nth-child(odd) {
+                            background: variables.$secondary;
+                        }
+
+                        &:nth-child(even) {
+                            background: variables.$tertiary;
+                        } */
                     }
                 }
             }
@@ -102,7 +109,6 @@ body.fadeOut {
 
 @media (max-width: 767.98px) {
     .block-2__content {
-
         .block-2__filter-buttons__container {
             gap: 20px;
         }
@@ -113,7 +119,6 @@ body.fadeOut {
     .block-2 {
         .block-2__container {
             .block-2__content {
-
                 /* .block-2__filter-buttons__overflow {
                     position: relative;
 
