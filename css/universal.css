@@ -50,14 +50,13 @@ body {
   background-color: rgb(250, 250, 250);
 }
 
-.body_white {
-  background-color: rgb(250, 250, 250);
+/* .body_white {
+    background-color: variables.$primary-white;
 }
 
 .body_black {
-  background-color: rgb(27, 28, 36);
-}
-
+    background-color: variables.$primary-black;
+} */
 /* ============================================== */
 /* Containers  */
 /* WHOLE PAGE WRAPPER */
