@@ -3,11 +3,11 @@ function pageLoad() {
     console.log(userLanguage);
 
     if (userLanguage.includes('ru')) {
-        window.location.href = './html/index-ru.html';
+        window.location.href = "/ru/work";
         console.log('langRu');
         return 0;
     } else if (userLanguage.includes('en')) {
-        window.location.href = './html/index-en.html';
+        window.location.href = "/en/work";
         console.log('langEn');
         return 0;
     }
