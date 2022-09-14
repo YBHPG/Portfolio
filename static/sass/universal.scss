@@ -107,6 +107,20 @@ body {
     flex: 1 1 auto;
 }
 
+* {
+    cursor: none;
+}
+
+*::selection {
+    background: variables.$secondary;
+    mix-blend-mode: difference;
+}
+
+*::-moz-selection {
+    background: variables.$secondary;
+    mix-blend-mode: difference;
+}
+
 /* ============================================== */
 /* Fonts */
 
@@ -152,6 +166,15 @@ body {
     text-decoration: underline;
     color: variables.$primary-black;
     transition: variables.$hover-transition;
+
+    .pointer {
+        &:hover {
+            width: 20px;
+            height: 20px;
+            background-color: rgba($color: #383838, $alpha: 0.5);
+            transition: all 300ms ease-out;
+        }
+    }
 
     &:focus,
     &:hover {
@@ -668,4 +691,29 @@ footer {
 }
 
 /* ============================================== */
-/* TEST */
+/* CURSOR */
+
+@media screen and (pointer: fine) {
+    .cursor {
+        z-index: 99999;
+        position: fixed;
+        width: 15px;
+        height: 15px;
+        transform: translate(-50%, 50%);
+        -webkit-transform: translate(-50%, 50%);
+        background-color: #fff;
+        mix-blend-mode: difference;
+        border-radius: 50%;
+        pointer-events: none;
+        transition: height 0.1s, width 0.1s;
+        -webkit-transition: height 0.1s, width 0.1s;
+        mask-image: radial-gradient(white, black);
+        -webkit-mask-image: -webkit-radial-gradient(white, black);
+    }
+
+    .cursor.grow {
+        width: 30px;
+        height: 30px;
+        transition: height 0.1s, width 0.1s;
+    }
+}

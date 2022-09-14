@@ -102,6 +102,20 @@ body {
   flex: 1 1 auto;
 }
 
+* {
+  cursor: none;
+}
+
+*::selection {
+  background: rgb(124, 244, 221);
+  mix-blend-mode: difference;
+}
+
+*::-moz-selection {
+  background: rgb(124, 244, 221);
+  mix-blend-mode: difference;
+}
+
 /* ============================================== */
 /* Fonts */
 /* TEXT CODE */
@@ -146,6 +160,12 @@ body {
   text-decoration: underline;
   color: rgb(27, 28, 36);
   transition: color 300ms ease-in-out;
+}
+.text__link .pointer:hover {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(56, 56, 56, 0.5);
+  transition: all 300ms ease-out;
 }
 .text__link:focus, .text__link:hover {
   color: rgb(0, 198, 159);
@@ -555,4 +575,27 @@ footer .footer__container .footer__content .footer__socials .footer__socials-lis
 }
 
 /* ============================================== */
-/* TEST */
+/* CURSOR */
+@media screen and (pointer: fine) {
+  .cursor {
+    z-index: 99999;
+    position: fixed;
+    width: 15px;
+    height: 15px;
+    transform: translate(-50%, 50%);
+    -webkit-transform: translate(-50%, 50%);
+    background-color: #fff;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: height 0.1s, width 0.1s;
+    -webkit-transition: height 0.1s, width 0.1s;
+    mask-image: radial-gradient(white, black);
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+  }
+  .cursor.grow {
+    width: 30px;
+    height: 30px;
+    transition: height 0.1s, width 0.1s;
+  }
+}
