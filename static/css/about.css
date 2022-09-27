@@ -148,9 +148,6 @@ body.fadeOut {
     flex: 1 0 33%;
     gap: 18px;
   }
-  .block-2 .block-2__container .block-2__content .card-3 {
-    padding-top: 60px;
-  }
 }
 @media (max-width: 767.98px) {
   .block-2 {

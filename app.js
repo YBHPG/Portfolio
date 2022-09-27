@@ -42,6 +42,8 @@ app.get('/en/about', (req, res) => {
 /* ==================================================*/
 /* START */
 
-app.listen(port, () => {
-    console.log(`Server is running at http://${adress}:${port}`);
+app.set('port', process.env.PORT || 8080);
+
+app.listen(app.get('port'), () => {
+    console.log(`Server is running at http://${adress}:${app.get('port')}`);
 });

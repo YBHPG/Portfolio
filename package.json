@@ -1,28 +1,8 @@
 {
-  "type": "module",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19",
+    "simple-parallax-js": "^5.6.2"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.16"
-  },
-  "name": "portfolio",
-  "version": "1.0.0",
-  "main": "app.js",
-  "scripts": {
-    "debug": "nodemon app.js",
-    "prod": "node app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/YBHPG/Portfolio.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/YBHPG/Portfolio/issues"
-  },
-  "homepage": "https://github.com/YBHPG/Portfolio#readme",
-  "description": ""
+  "type": "module"
 }

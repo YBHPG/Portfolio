@@ -1,56 +1,62 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Портфолио Владислава Ледащева" />
 
-        <!-- CSS stylesheets -->
-        <link rel="stylesheet" href="/static/css/zeroing.css" />
-        <link rel="stylesheet" href="/static/css/containers.css" />
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="/static/css/universal.css">
+    <link rel="stylesheet" href="/static/css/about.css" />
 
-        <link rel="stylesheet" href="/static/css/buttons.css" />
-        <link rel="stylesheet" href="/static/css/header.css" />
-        <link rel="stylesheet" href="/static/css/about.css" />
-        <link rel="stylesheet" href="/static/css/footer.css" />
-        <link rel="stylesheet" href="/static/css/fonts.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,700&family=Mulish:wght@400;600;700&family=Red+Hat+Text&family=Raleway&family=Inter:wght@700&display=swap"
+        rel="stylesheet" />
 
-        <!-- fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,700&family=Mulish:wght@400;600;700&family=Red+Hat+Text&family=Raleway&family=Inter:wght@700&display=swap"
-            rel="stylesheet" />
+    <title>Обо мне</title>
+    <link rel="icon" type="image/x-icon" href="/static/images/other/favicon.ico" />
+</head>
 
-        <title>About bulbadyshka</title>
-        <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-    </head>
-
-    <body class="body_black">
-        <script src="/static/javascript/fade-animation.js"></script>
+<body class="body_white">
+    <div class="cursor"></div>
+    <script src="/static/javascript/butter.js"></script>
+    <div id="butter">
+        <script>
+            butter.init();
+        </script>
+        <script src="/static/javascript/beforeLoadAnimations.js"></script>
         <header class="header">
             <div class="header__container">
                 <div class="header__logo">
-                    <img src="/static/images/about/logo_white.svg" alt="Логотип" />
+                    <a href="#" onclick="fadeOutAbout()">
+                        <img src="/static/images/other/logo.svg" alt="Логотип" />
+                    </a>
                 </div>
                 <div class="header__menu">
-                    <div class="menu__body black">
+                    <div class="menu__body">
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="#" class="menu__link text-white" onclick="fadeOutAbout()">Работы</a>
+                                <a href="#" class="menu__link text-black" onclick="fadeOutAbout()">Работы</a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link text-white" id="fade-out_work-button"
+                                <a href="#" class="menu__link text-black" id="fade-out_work-button"
                                     onclick="fadeInBurger()">О себе</a>
                             </li>
                             <li class="menu__item">
                                 <a href="https://drive.google.com/file/d/1Uj3li3HEZPhysTWFRm8Pjlnl49S1TfCA/view?usp=sharing"
-                                    target="_blank" class="menu__link text-white">Резюме</a>
+                                    target="_blank" class="menu__link text-black">Резюме и контакты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="/en/about" target="" class="menu__link text-black">Switch to English</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="burger-button_white">
+                    <div class="burger-button">
                         <a href="#" class="burger-button_link" onclick="fadeInBurger()">
                             <span class="burger-button_line"></span>
                         </a>
@@ -64,13 +70,13 @@
                     <div class="block-1__content">
                         <div class="block-1__image">
                             <div class="block-1__image-header text__header">
-                                <p class="text__italic text-white">Вау, я заинтересовал тебя~~</p>
+                                <p class="text__italic text-black">Вау, я заинтересовал тебя~~</p>
                             </div>
                             <div class="block-1__image-image">
-                                <img src="/static/images/about/aboutMe_mainImage.jpg" alt="" />
+                                <img src="/static/images/about/aboutMe_mainImage.webp" alt="" />
                             </div>
                         </div>
-                        <div class="block-1__text text__text text-white">
+                        <div class="block-1__text text__text">
                             <p>
                                 Привет! Очень приятно видеть тебя здесь. Меня зовут Влад, я веб
                                 дизайнер и программист. Моя главная цель - создавать креативные и
@@ -104,8 +110,9 @@
                             <br />
                             <p>
                                 Если хочется больше узнать о моём опыте в программировании, добро
-                                пожаловать на страничку на <a class="text__link text-white"
-                                    href="https://github.com/YBHPG">Github</a>. Многие проекты в
+                                пожаловать на страничку на <a class="text__link text-black"
+                                    href="https://github.com/YBHPG">Github</a>.
+                                Многие проекты в
                                 профиле закрыты,
                                 но на основе публичных репозиториев и README можно оценить знания в
                                 разных областях. Если в двух словах: больше всего опыта у меня в
@@ -120,9 +127,9 @@
                     <div class="block-2__content">
                         <div class="block-2__card card-1">
                             <div class="block-2__card-picture">
-                                <img src="/static/images/about/aboutMe_image1.png" alt="" />
+                                <img src="/static/images/about/aboutMe_image1.webp" alt="" />
                             </div>
-                            <div class="block-2__card-text text__header2">
+                            <div class="block-2__card-text text__text">
                                 <p>
                                     В свободное от учёбы, дизайна и программирования время я люблю
                                     фотографировать. Иногда я беру телефон и иду снимать городские
@@ -134,9 +141,9 @@
                         </div>
                         <div class="block-2__card card-2">
                             <div class="block-2__card-picture">
-                                <img class="height-auto-image" src="/static/images/about/aboutMe_image2.png" alt="" />
+                                <img class="height-auto-image" src="/static/images/about/aboutMe_image2.webp" alt="" />
                             </div>
-                            <div class="block-2__card-text text__header2">
+                            <div class="block-2__card-text text__text">
                                 <p>
                                     Если говорить о развлечениях, то я не особо смотрю сериалы.
                                     Вместо них предпочитаю смотреть аниме. Самое любимое - OreGairu,
@@ -147,9 +154,9 @@
                         </div>
                         <div class="block-2__card card-3">
                             <div class="block-2__card-picture">
-                                <img src="/static/images/about/aboutMe_image3.png" alt="" />
+                                <img src='/static/images/about/aboutMe_image3.webp' alt="" />
                             </div>
-                            <div class="block-2__card-text text__header2">
+                            <div class="block-2__card-text text__text">
                                 <p>
                                     Также, мне нравится чтение. Из-за влияния аниме, сейчас я в
                                     основном читаю мангу или ранобе, но не забываю и про обучающую
@@ -163,58 +170,57 @@
                 </div>
             </div>
         </main>
-        <a href="#" class="top_button-dark" onclick="topFunction()">
-            <img src="/static/images/icons8-up-2-48.png" alt="arrow up" class="top-button__image" />
+        <a href="#" class="top_button" onclick="topFunction()">
+            <img src="/static/images/other/icons8-up-2-48.webp" alt="arrow up" class="top-button__image" />
         </a>
         <footer>
             <div class="footer__container">
                 <div class="footer__content">
                     <div class="footer__main-block">
                         <div class="footer__greetings">
-                            <p class="text__text text-white">
+                            <p class="text__text">
                                 Спасибо за ознакомление с моими работами!
                             </p>
-                            <p class="text__text text-white">
+                            <p class="text__text">
                                 Если у тебя есть предложение работы, можешь написать мне на
-                                <a class="text__link text-white" href="mailto:ybhpg@icloud.com">почту</a>! Или связаться
+                                <a class="text__link text-black" href="mailto:ybhpg@icloud.com">почту</a>! Или
+                                связаться
                                 со
                                 мной в социальных сетях.
                             </p>
                         </div>
-                        <div class="footer__copyrights text__text text-white">
+                        <div class="footer__copyrights text__text">
                             2022, Владислав Ледащев
                         </div>
                     </div>
                     <div class="footer__socials">
                         <ul class="footer__socials-list">
                             <li class="footer__socials socials-variant">
-                                <a href="https://t.me/ybhpg" class="social_link_white" target="_blank">
+                                <a href="https://t.me/ybhpg" class="social_link" target="_blank">
                                     <p class="">Telegram</p>
                                 </a>
                             </li>
                             <li class="socials-variant">
-                                <p class="text__text social_link_white">|</p>
+                                <p class="text__text social_link">|</p>
                             </li>
                             <li class="socials-variant">
-                                <a href="https://www.instagram.com/bulbadyshka/" class="social_link_white"
-                                    target="_blank">
+                                <a href="https://www.instagram.com/bulbadyshka/" class="social_link" target="_blank">
                                     <p class="">Instagram</p>
                                 </a>
                             </li>
                             <li class="socials-variant">
-                                <p class="text__text social_link_white">|</p>
+                                <p class="text__text social_link">|</p>
                             </li>
                             <li class="socials-variant">
-                                <a href="https://twitter.com/ybhpg57/" class="social_link_white" target="_blank">
+                                <a href="https://twitter.com/ybhpg57/" class="social_link" target="_blank">
                                     <p class="">Twitter</p>
                                 </a>
                             </li>
                             <li class="socials-variant">
-                                <p class="text__text social_link_white">|</p>
+                                <p class="text__text social_link">|</p>
                             </li>
-                            <li class="socials-variant social_link_white">
-                                <a href="https://www.linkedin.com/mwlite/in/ybhpg" class="social_link_white"
-                                    target="_blank">
+                            <li class="socials-variant">
+                                <a href="https://www.linkedin.com/mwlite/in/ybhpg" class="social_link" target="_blank">
                                     <p class="">LinkedIn</p>
                                 </a>
                             </li>
@@ -224,6 +230,8 @@
             </div>
         </footer>
         <script src="/static/javascript/top-button.js"></script>
-    </body>
+        <script src="/static/javascript/afterLoadAnimations.js"></script>
+    </div>
+</body>
 
 </html>
