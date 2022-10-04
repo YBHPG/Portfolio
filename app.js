@@ -42,7 +42,7 @@ app.get('/en/about', (req, res) => {
 /* ==================================================*/
 /* START */
 
-app.set('port', process.env.PORT || 8080);
+app.set('port', process.env.PORT || 7777);
 
 app.listen(app.get('port'), () => {
     console.log(`Server is running at http://${adress}:${app.get('port')}`);
