@@ -39,6 +39,10 @@ app.get('/en/about', (req, res) => {
     res.sendFile(__dirname + '/static/html/about-en.html');
 });
 
+app.get('/love', (req, res) => {
+    res.sendFile(__dirname + '/static/html/love.html')
+});
+
 /* ==================================================*/
 /* START */
 
