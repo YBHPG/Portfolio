@@ -165,7 +165,7 @@ body {
 	left: 10%;
 }
 
-.card > img {
+.card > img, .card > a {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
@@ -174,11 +174,20 @@ body {
 	transition: opacity 800ms ease, transform 800ms ease;
 }
 
-.card:hover > img {
+.card:hover > img, .card:hover > a {
 	opacity: 1;
 	transform: scale(1.01);
 }
 
 .card:hover {
 	transform: scale(1.1);
+}
+
+
+.inner-text {
+	position: absolute;
+	top: 93%;
+	left: 15px;
+
+	color: white;
 }

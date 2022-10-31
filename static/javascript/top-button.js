@@ -1,7 +1,7 @@
 /* "Back to top" button */
 
 myButtonLight = document.getElementsByClassName("top_button")[0];
-myButtonDark = document.getElementsByClassName("top_button-dark")[0];
+// myButtonDark = document.getElementsByClassName("top_button-dark")[0];
 
 window.onscroll = function () { scrollFunction() };
 

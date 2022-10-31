@@ -43,6 +43,10 @@ app.get('/love', (req, res) => {
     res.sendFile(__dirname + '/static/html/love.html')
 });
 
+app.get('/tiles-demo', (req, res) => {
+    res.sendFile(__dirname + '/static/html/tiles-demo.html')
+});
+
 /* ==================================================*/
 /* START */
 

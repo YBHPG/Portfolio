@@ -1,0 +1,198 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* Zeroing */
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Jost", sans-serif;
+    font-size: 1rem;
+    color: rgb(27, 28, 36);
+    background-color: rgb(250, 250, 250);
+}
+
+/* Page code */
+
+body {
+	background-color: rgb(255, 255, 255);
+	height: 100vh;
+	margin: 0;
+	overflow: hidden;
+}
+
+#view-area {
+	height: 140vmax;
+	width: 140vmax;
+	position: absolute;
+}
+
+#text-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.text {
+	font-family: 'Great Vibes', sans-serif;
+	font-size: 5rem;
+}
+
+.card {
+	overflow: hidden;
+	position: absolute;
+	border-radius: 1vmax;
+	filter: drop-shadow(2px 4px 34px rgba(50, 50, 50, 0.15));
+	transition: transform 800ms ease;
+}
+
+.card-1 {
+	background-color: #2A3B2E;
+	width: 15%;
+	height: 20%;
+	top: 30%;
+	left: 67%;
+}
+
+.card-2 {
+	background-color: #6A833F;
+	width: 12%;
+	height: 15%;
+	top: 75%;
+	left: 50%;
+}
+
+.card-3 {
+	background-color: #CBCFB9;
+	width: 10%;
+	height: 13%;
+	top: 10%;
+	left: 15%;
+}
+
+.card-4 {
+	background-color: #CB7951;
+	width: 25%;
+	height: 12%;
+	top: 55%;
+	left: 65%;
+}
+
+.card-5 {
+	background-color: #0E2627;
+	width: 17%;
+	height: 13%;
+	top: 85%;
+	left: 75%;
+}
+
+.card-6 {
+	background-color: #D3D9DB;
+	width: 20%;
+	height: 15%;
+	top: 7%;
+	left: 35%;
+}
+
+.card-7 {
+	background-color: #F9730D;
+	width: 24%;
+	height: 15%;
+	top: 80%;
+	left: 15%;
+}
+
+.card-8 {
+	background-color: #121315;
+	width: 15%;
+	height: 15%;
+	top: 56%;
+	left: 27%;
+}
+
+.card-9 {
+	background-color: #F5D0A6;
+	width: 15%;
+	height: 15%;
+	top: 13%;
+	left:80%;
+}
+
+.card-10 {
+	background-color: #1F5C73;
+	width: 20%;
+	height: 25%;
+	top: 28%;
+	left: 10%;
+}
+
+.card > img, .card > a {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: inherit;
+	opacity: 0;
+	transition: opacity 800ms ease, transform 800ms ease;
+}
+
+.card:hover > img, .card:hover > a {
+	opacity: 1;
+	transform: scale(1.01);
+}
+
+.card:hover {
+	transform: scale(1.1);
+}
+
+
+.inner-text {
+	position: absolute;
+	top: 93%;
+	left: 15px;
+
+	color: white;
+}
+
+.card-7 > img {
+	margin-bottom: 10%;
+}
