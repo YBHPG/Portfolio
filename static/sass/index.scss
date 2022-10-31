@@ -319,6 +319,18 @@ body.fadeOut {
                 img {
                     max-width: 100%;
                 }
+
+                video {
+                    max-width: 100%;
+                }
+
+                .work-block-test__images:has(#tiles-video) {
+                    box-shadow: inset -40px 44px 55px -20px rgba(0, 0, 0, 0.5);
+                }
+
+                #tiles-video {
+                    border-radius: 30px;
+                }
             }
         }
     }
