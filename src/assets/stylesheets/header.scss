@@ -1,0 +1,199 @@
+@use 'variables';
+@import '@/assets/stylesheets/zeroing.css';
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+
+  .header__container {
+    display: flex;
+    padding: 35px 15px;
+    align-items: center;
+    color: variables.$primary-black;
+
+    .header__logo {
+      position: relative;
+      z-index: 0;
+    }
+
+    .header__menu {
+      flex: 1 1 auto;
+
+      .menu__body {
+        display: flex;
+        justify-content: flex-end;
+
+        .menu__list {
+          display: flex;
+          gap: 50px;
+
+          .menu__item {
+            list-style: none;
+          }
+
+          .menu__link {
+            font-family: "Jost";
+            font-weight: 400;
+            line-height: 120%;
+            transition: variables.$hover-transition;
+
+            &:focus,
+            &:hover {
+              color: variables.$secondary-hover;
+              transition: variables.$hover-transition;
+            }
+          }
+        }
+      }
+
+      .burger-button {
+        position: relative;
+        right: 15px;
+        float: right;
+
+        .burger-button_link {
+          position: relative;
+          height: 24px;
+          width: 30px;
+          display: none;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .burger-button_line {
+            height: 4px;
+            width: 30px;
+            background-color: variables.$primary-black;
+            border-radius: 2px;
+
+            &:target {
+              background-color: variables.$secondary;
+            }
+          }
+
+          &::before,
+          &::after {
+            content: "";
+            background-color: variables.$primary-black;
+            height: 4px;
+            border-radius: 2px;
+
+            &:target {
+              background-color: variables.$secondary;
+            }
+          }
+
+          &::before {
+            position: relative;
+            left: 7px;
+          }
+
+          &::after {
+            position: relative;
+            left: -7px;
+          }
+        }
+      }
+
+      .burger-button_white {
+        position: relative;
+        right: 15px;
+        float: right;
+
+        .burger-button_link {
+          position: relative;
+          height: 24px;
+          width: 30px;
+          display: none;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .burger-button_line {
+            height: 4px;
+            width: 30px;
+            background-color: variables.$primary-white;
+            border-radius: 2px;
+
+            &:target {
+              background-color: variables.$secondary;
+            }
+          }
+
+          &::before,
+          &::after {
+            content: "";
+            background-color: variables.$primary-white;
+            height: 4px;
+            border-radius: 2px;
+
+            &:target {
+              background-color: variables.$secondary;
+            }
+          }
+
+          &::before {
+            position: relative;
+            left: 7px;
+          }
+
+          &::after {
+            position: relative;
+            left: -7px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 499.98px) {
+  .header {
+    .header__container {
+      .header__menu {
+        .menu__body {
+          opacity: 0;
+          position: fixed;
+          top: -100%;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: stretch;
+          justify-content: center;
+          background-color: variables.$primary-white;
+          transition: all 1s ease;
+
+          .menu__list {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .menu__link {
+              font-size: 2rem;
+            }
+          }
+        }
+
+        .burger-button {
+          .burger-button_link {
+            display: flex;
+          }
+        }
+
+        .burger-button_white {
+          .burger-button_link {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+
+  .menu__body.fade {
+    opacity: 1;
+    top: 0;
+    transition: all 0.1s ease;
+  }
+}

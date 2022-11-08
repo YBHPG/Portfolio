@@ -1,0 +1,33 @@
+/* ============================================ */
+/* BLOCK-1 CODE */
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.block-1 {
+  padding-top: 199px;
+
+  .block-1__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .block-1__content {
+      text-align: center;
+
+      .block-1__title {
+        padding: 0 0 16px 0;
+      }
+    }
+  }
+}
