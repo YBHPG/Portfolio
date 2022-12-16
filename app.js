@@ -1,51 +1,14 @@
 import express from 'express';
 import path from 'path';
+import { router } from './routes.js';
 
 const __dirname = path.resolve();
 const adress = '127.0.0.1';
 const port = 3000;
 
 const app = express();
-app.use('/static', express.static(__dirname + '/static'))
-
-/* ==================================================*/
-/* GETTERS */
-
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
-});
-
-app.get('/ru', (req, res) => {
-    res.sendFile(__dirname + '/static/html/index-ru.html');
-});
-
-app.get('/ru/work', (req, res) => {
-    res.sendFile(__dirname + '/static/html/index-ru.html');
-});
-
-app.get('/ru/about', (req, res) => {
-    res.sendFile(__dirname + '/static/html/about-ru.html');
-});
-
-app.get('/en', (req, res) => {
-    res.sendFile(__dirname + '/static/html/index-en.html');
-});
-
-app.get('/en/work', (req, res) => {
-    res.sendFile(__dirname + '/static/html/index-en.html');
-});
-
-app.get('/en/about', (req, res) => {
-    res.sendFile(__dirname + '/static/html/about-en.html');
-});
-
-app.get('/love', (req, res) => {
-    res.sendFile(__dirname + '/static/html/love.html')
-});
-
-app.get('/tiles-demo', (req, res) => {
-    res.sendFile(__dirname + '/static/html/tiles-demo.html')
-});
+app.use('/static', express.static(__dirname + '/static'));
+app.use('/', router);
 
 /* ==================================================*/
 /* START */
