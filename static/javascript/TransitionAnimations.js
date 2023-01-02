@@ -84,6 +84,7 @@ function fadeInBurger() {
     }
 }
 
+// filtering projects
 function dataSort(sortType) {
     var dataContainer = document.getElementById('work-blocks');
     var dataCard = document.getElementsByClassName('work-block-test');
