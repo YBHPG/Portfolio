@@ -1,321 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Vladislav Ledashchev's portfolio" />
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Vladislav Ledashchev's portfolio" />
 
-        <!-- CSS stylesheets -->
-        <link rel="stylesheet" href="/static/css/universal.css">
-        <link rel="stylesheet" href="/static/css/index.css" />
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="/static/css/universal.css">
+    <link rel="stylesheet" href="/static/css/index.css" />
+    <link rel="stylesheet" href="/static/css/color_themes.css">
 
-        <!-- fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,700&family=Mulish:wght@400;600;700&family=Red+Hat+Text&family=Raleway&family=Inter:wght@700&display=swap"
-            rel="stylesheet" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,700&family=Mulish:wght@400;600;700&family=Red+Hat+Text&family=Raleway&family=Inter:wght@700&display=swap"
+        rel="stylesheet" />
 
-        <title>Vladislav Ledashchev</title>
-        <link rel="icon" type="image/x-icon" href="/static/images/other/favicon.ico" />
-    </head>
+    <title>Vladislav Ledashchev</title>
+    <link rel="icon" type="image/x-icon" href="/static/images/other/favicon.ico" />
+</head>
 
-    <body class="body_white">
-        <div class="cursor"></div>
-        <div class="trailing-cursor" id="trailing-cursor"></div>
-        <script src="/static/javascript/TransitionAnimations.js"></script>
-        <!-- <video id="background-video" autoplay muted loop src="/images/index/AbstColor.mov"></video> -->
-        <div class="header">
-            <div class="header__container">
-                <div class="header__logo">
-                    <img src="/static/images/other/logo.svg" alt="Логотип" />
+<body class="body_white">
+    <div class="cursor"></div>
+    <div class="trailing-cursor" id="trailing-cursor"></div>
+    <script src="/static/javascript/TransitionAnimations.js"></script>
+    <!-- <video id="background-video" autoplay muted loop src="/images/index/AbstColor.mov"></video> -->
+    <div class="header">
+        <div class="header__container">
+            <div class="header__logo">
+            </div>
+            <div class="header__menu">
+                <div class="menu__body">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#!" class="menu__link text-black" onclick="fadeInBurger()">Work</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#!" class="menu__link text-black" id="fade-out_work-button"
+                                onclick="fadeOutWork()">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="https://drive.google.com/file/d/1_VcdNftFEpfdRJQkow040KL7gblfO4UE/view?usp=share_link"
+                                target="_blank" class="menu__link text-black">Resume and contacts</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/ru/work" target="" class="menu__link text-black">Переключиться на
+                                Русский</a>
+                        </li>
+                        <!--<li class="menu__item">
+                            <a href="#!" id="switch-theme-button" target="" class="menu__link text-black">Switch theme</a>
+                        </li>-->
+                    </ul>
                 </div>
-                <div class="header__menu">
-                    <div class="menu__body">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a href="#!" class="menu__link text-black" onclick="fadeInBurger()">Work</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#!" class="menu__link text-black" id="fade-out_work-button"
-                                    onclick="fadeOutWork()">About</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="https://drive.google.com/file/d/1_VcdNftFEpfdRJQkow040KL7gblfO4UE/view?usp=share_link"
-                                    target="_blank" class="menu__link text-black">Resume and contacts</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="/ru/work" target="" class="menu__link text-black">Переключиться на
-                                    Русский</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="burger-button">
-                        <a href="#!" class="burger-button_link" onclick="fadeInBurger()">
-                            <span class="burger-button_line"></span>
-                        </a>
-                    </div>
+                <div class="burger-button">
+                    <a href="#!" class="burger-button_link" onclick="fadeInBurger()">
+                        <span class="burger-button_line"></span>
+                    </a>
                 </div>
             </div>
         </div>
-        <main>
-            <section class="block-1">
-                <div class="block-1__container">
-                    <div class="block-1__content">
-                        <h1 class="block-1__title text__main-title text__italic">Hi, I'm Vlad!</h1>
-                        <div class="block-1__text">
-                            <p class="text__text text-center">
-                                A designer, a student, a programmer.
-                            </p>
-                            <p class="text__text text-center">
-                                Currently studing CAD systems and web development in BMSTU.
-                            </p>
-                            <p class="text__text text-center">
-                                Designed <a class="text__link"
-                                    href="https://www.behance.net/gallery/143770851/Dicty-App-translator-and-dictionary">Dicty</a>
-                                iOS app and this
-                                site.
-                            </p>
-                        </div>
+    </div>
+    <main>
+        <section class="block-1">
+            <div class="block-1__container">
+                <div class="block-1__content">
+                    <h1 class="block-1__title text__main-title text__italic">Hi, I'm Vlad!</h1>
+                    <div class="block-1__text">
+                        <p class="text__text text-center">
+                            A designer, a student, a programmer.
+                        </p>
+                        <p class="text__text text-center">
+                            Currently studing CAD systems and web development in BMSTU.
+                        </p>
+                        <p class="text__text text-center">
+                            Designed <a class="text__link"
+                                href="https://www.behance.net/gallery/143770851/Dicty-App-translator-and-dictionary">Dicty</a>
+                            iOS app and this
+                            site.
+                        </p>
                     </div>
                 </div>
-            </section>
-            <section class="block-2">
-                <div class="block-2__container">
-                    <div class="block-2__content">
-                        <div class="block-2__separator"></div>
-                        <p class="block-2__text text__header">Works by me</p>
-                        <div class="block-2__filter-buttons__overflow">
-                            <div class="block-2__filter-buttons__container">
-                                <a href="#!" class="block-2__filter-buttons" onclick="dataSort('all')">All works</a>
-                                <a href="#!" class="block-2__filter-buttons" onclick="dataSort('design')">Design</a>
-                                <a href="#!" class="block-2__filter-buttons"
-                                    onclick="dataSort('programming')">Programming</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="work-blocks__container" id="work-blocks">
-                <section class="work-block-test is_visible" data-sort="programming">
-                    <div class="work-block-test__container">
-                        <div class="work-block-test__content">
-                            <div class="work-block-test__text">
-                                <h1 class="text__title"><a class="text__link" href="/tiles-demo"
-                                        target="_blank">Tiles</a>: a demo project with JS and CSS</h1>
-                                <span>
-                                    <p class="text__text">
-                                        This is a small demo project where the page content moves depending on the
-                                        cursor position on the page. Built with plain JavaScript and CSS.</p>
-                                </span>
-                            </div>
-                            <div class="work-block-test__images">
-                                <video id="tiles-video" playsinline autoplay muted loop
-                                    src="/static/images/index/tiles-video_1.webm"></video>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="work-block-test is_visible" data-sort="design">
-                    <div class="work-block-test__container">
-                        <div class="work-block-test__content">
-                            <div class="work-block-test__text">
-                                <h1 class="text__title"><a class="text__link"
-                                        href="https://www.behance.net/gallery/143770851/Dicty-App-translator-and-dictionary"
-                                        target="_blank">Dicty</a>
-                                    app. Translation & Dictionary</h1>
-                                <div>
-                                    <p class="text__text">People use translator apps to copy and paste unknown
-                                        words,
-                                        but
-                                        they
-                                        don't memorise them. So we thought about it and came up with the app —
-                                        Dicty.
-                                    </p>
-                                    <br>
-                                    <p class="text__text">It's difficult to open another app to add something to it
-                                        after
-                                        you
-                                        already opened the translator and input the word. That's why we implemented
-                                        translator
-                                        to our main screen. And not even one, because we understand one translator
-                                        can
-                                        be
-                                        better
-                                        than another in different situations.</p><br>
-                                    <p class="text__text">To help user memorise added words the app will send
-                                        interval
-                                        notifications. They will be sent in 30 minutes, an hour, a day and a week
-                                        after
-                                        adding
-                                        the word.</p><br>
-                                    <p class="text__text">The app also has intelligent dictionaries to store all
-                                        saved
-                                        by
-                                        user
-                                        words. They are sorted by a pair of used languages. But if you want to
-                                        organise
-                                        words by
-                                        ourself, it lets you create your own custom folders.</p><br>
-                                </div>
-                            </div>
-                            <div class="work-block-test__images">
-                                <img src="/static/images/index/dicty-image_1.webp" alt="Floating phone in air">
-                                <img src="/static/images/index/dicty-image_2.webp"
-                                    alt="Three different app screens levitating in air">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="work-block-test is_visible" data-sort="design">
-                    <div class="work-block-test__container">
-                        <div class="work-block-test__content">
-                            <div class="work-block-test__text">
-                                <h1 class="text__title"><a class="text__link"
-                                        href="https://www.behance.net/gallery/125033977/Rezolut-internet-company-landing-page"
-                                        target="_blank">Rezolut</a>
-                                    ISP landing page</h1>
-                                <div>
-                                    <p class="text__text">A concept of a landing page for a big IPS company.</p><br>
-                                </div>
-                            </div>
-                            <div class="work-block-test__images">
-                                <img src="/static/images/index/rezolut-image_1.webp"
-                                    alt="Rezolut landing blocks presentation">
-                                <img src="/static/images/index/rezolut-image_2.webp"
-                                    alt="Front page of Rezolut landing">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="work-block-test is_visible" data-sort="design">
-                    <div class="work-block-test__container">
-                        <div class="work-block-test__content">
-                            <div class="work-block-test__text">
-                                <h1 class="text__title"><a class="text__link"
-                                        href="https://www.behance.net/gallery/125037427/CarrotIT-landing-page-concept"
-                                        target="_blank">CarrotIT</a>
-                                    landing page</h1>
-                                <div>
-                                    <p class="text__text">A concept of a landing page for an app development and IT
-                                        consalting
-                                        company.</p>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="work-block-test__images">
-                                <img src="/static/images/index/carrot_it-image_1.webp" alt="Floating phone in air">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="work-block-test is_visible" data-sort="design">
-                    <div class="work-block-test__container">
-                        <div class="work-block-test__content">
-                            <div class="work-block-test__text">
-                                <h1 class="text__title">
-                                    <a class="text__link"
-                                        href="https://www.behance.net/gallery/125101961/RentiOne-company-landing-page"
-                                        target="_blank">RentiOne</a> office rent out company landing page
-                                </h1>
-                                <div>
-                                    <p class="text__text"> A concept of landing page for a comapany that rents out
-                                        offices in New York.
-                                    </p>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="work-block-test__images">
-                                <img src="/static/images/index/rentione-image-1.webp" alt="">
-                            </div>
-                            <div class="work-block-test__images">
-                                <img src="/static/images/index/rentione-image-2.webp" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="work-block-test is_visible" data-sort="design">
-                    <div class="work-block-test__container">
-                        <div class="work-block-test__content">
-                            <div class="work-block-test__text">
-                                <h1 class="text__title">
-                                    <a class="text__link"
-                                        href="https://www.behance.net/gallery/159726407/Tyshop-typography-shop-landing-page"
-                                        target="_blank">Tyshop</a>: typography shop landing page.
-                                </h1>
-                                <div>
-                                    <p class="text__text"> <b>Tyshop</b> is an imaginary typograhpy shop. This landing page desing contains 
-                                        information about production, store adresses, work examples and a form to place a custom order.
-                                    </p>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="work-block-test__images">
-                                <img src="/static/images/index/typography-image_1.webp" alt="">
-                            </div>
-                            <div class="work-block-test__images">
-                                <img src="/static/images/index/typography-image_2.webp" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </section>
             </div>
+        </section>
+        <section class="block-2">
+            <div class="block-2__container">
+                <div class="block-2__content">
+                    <div class="block-2__separator"></div>
+                    <p class="block-2__text text__header">Works by me</p>
+                    <div class="block-2__filter-buttons__overflow">
+                        <div class="block-2__filter-buttons__container">
+                            <a href="#!" class="block-2__filter-buttons" onclick="dataSort('all')">All works</a>
+                            <a href="#!" class="block-2__filter-buttons" onclick="dataSort('design')">Design</a>
+                            <a href="#!" class="block-2__filter-buttons"
+                                onclick="dataSort('programming')">Programming</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="work-blocks__container" id="work-blocks">
+            <section class="work-block-test is_visible" data-sort="programming">
+                <div class="work-block-test__container">
+                    <div class="work-block-test__content">
+                        <div class="work-block-test__text">
+                            <h1 class="text__title"><a class="text__link" href="/tiles-demo" target="_blank">Tiles</a>:
+                                a demo project with JS and CSS</h1>
+                            <span>
+                                <p class="text__text">
+                                    This is a small demo project where the page content moves depending on the
+                                    cursor position on the page. Built with plain JavaScript and CSS.</p>
+                            </span>
+                        </div>
+                        <div class="work-block-test__images">
+                            <video id="tiles-video" playsinline autoplay muted loop
+                                src="/static/images/index/tiles-video_1.webm"></video>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="work-block-test is_visible" data-sort="design">
+                <div class="work-block-test__container">
+                    <div class="work-block-test__content">
+                        <div class="work-block-test__text">
+                            <h1 class="text__title"><a class="text__link"
+                                    href="https://www.behance.net/gallery/143770851/Dicty-App-translator-and-dictionary"
+                                    target="_blank">Dicty</a>
+                                app. Translation & Dictionary</h1>
+                            <div>
+                                <p class="text__text">People use translator apps to copy and paste unknown
+                                    words,
+                                    but
+                                    they
+                                    don't memorise them. So we thought about it and came up with the app —
+                                    Dicty.
+                                </p>
+                                <br>
+                                <p class="text__text">It's difficult to open another app to add something to it
+                                    after
+                                    you
+                                    already opened the translator and input the word. That's why we implemented
+                                    translator
+                                    to our main screen. And not even one, because we understand one translator
+                                    can
+                                    be
+                                    better
+                                    than another in different situations.</p><br>
+                                <p class="text__text">To help user memorise added words the app will send
+                                    interval
+                                    notifications. They will be sent in 30 minutes, an hour, a day and a week
+                                    after
+                                    adding
+                                    the word.</p><br>
+                                <p class="text__text">The app also has intelligent dictionaries to store all
+                                    saved
+                                    by
+                                    user
+                                    words. They are sorted by a pair of used languages. But if you want to
+                                    organise
+                                    words by
+                                    ourself, it lets you create your own custom folders.</p><br>
+                            </div>
+                        </div>
+                        <div class="work-block-test__images">
+                            <img src="/static/images/index/dicty-image_1.webp" alt="Floating phone in air">
+                            <img src="/static/images/index/dicty-image_2.webp"
+                                alt="Three different app screens levitating in air">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="work-block-test is_visible" data-sort="design">
+                <div class="work-block-test__container">
+                    <div class="work-block-test__content">
+                        <div class="work-block-test__text">
+                            <h1 class="text__title"><a class="text__link"
+                                    href="https://www.behance.net/gallery/125033977/Rezolut-internet-company-landing-page"
+                                    target="_blank">Rezolut</a>
+                                ISP landing page</h1>
+                            <div>
+                                <p class="text__text">A concept of a landing page for a big IPS company.</p><br>
+                            </div>
+                        </div>
+                        <div class="work-block-test__images">
+                            <img src="/static/images/index/rezolut-image_1.webp"
+                                alt="Rezolut landing blocks presentation">
+                            <img src="/static/images/index/rezolut-image_2.webp" alt="Front page of Rezolut landing">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="work-block-test is_visible" data-sort="design">
+                <div class="work-block-test__container">
+                    <div class="work-block-test__content">
+                        <div class="work-block-test__text">
+                            <h1 class="text__title"><a class="text__link"
+                                    href="https://www.behance.net/gallery/125037427/CarrotIT-landing-page-concept"
+                                    target="_blank">CarrotIT</a>
+                                landing page</h1>
+                            <div>
+                                <p class="text__text">A concept of a landing page for an app development and IT
+                                    consalting
+                                    company.</p>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="work-block-test__images">
+                            <img src="/static/images/index/carrot_it-image_1.webp" alt="Floating phone in air">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="work-block-test is_visible" data-sort="design">
+                <div class="work-block-test__container">
+                    <div class="work-block-test__content">
+                        <div class="work-block-test__text">
+                            <h1 class="text__title">
+                                <a class="text__link"
+                                    href="https://www.behance.net/gallery/125101961/RentiOne-company-landing-page"
+                                    target="_blank">RentiOne</a> office rent out company landing page
+                            </h1>
+                            <div>
+                                <p class="text__text"> A concept of landing page for a comapany that rents out
+                                    offices in New York.
+                                </p>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="work-block-test__images">
+                            <img src="/static/images/index/rentione-image-1.webp" alt="">
+                        </div>
+                        <div class="work-block-test__images">
+                            <img src="/static/images/index/rentione-image-2.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="work-block-test is_visible" data-sort="design">
+                <div class="work-block-test__container">
+                    <div class="work-block-test__content">
+                        <div class="work-block-test__text">
+                            <h1 class="text__title">
+                                <a class="text__link"
+                                    href="https://www.behance.net/gallery/159726407/Tyshop-typography-shop-landing-page"
+                                    target="_blank">Tyshop</a>: typography shop landing page.
+                            </h1>
+                            <div>
+                                <p class="text__text"> <b>Tyshop</b> is an imaginary typograhpy shop. This landing page
+                                    desing contains
+                                    information about production, store adresses, work examples and a form to place a
+                                    custom order.
+                                </p>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="work-block-test__images">
+                            <img src="/static/images/index/typography-image_1.webp" alt="">
+                        </div>
+                        <div class="work-block-test__images">
+                            <img src="/static/images/index/typography-image_2.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-            <a href="#" class="top_button" onclick="topFunction()">
-                <div class="top_button__container">
-                    <img src="/static/images/other/icons8-up-2-48.webp" alt="arrow up" class="top-button__image" />
+        <a href="#" class="top_button" onclick="topFunction()">
+            <div class="top_button__container">
+                <img src="/static/images/other/icons8-up-2-48.webp" alt="arrow up" class="top-button__image" />
+            </div>
+        </a>
+    </main>
+    <footer>
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__main-block">
+                    <div class="footer__greetings">
+                        <p class="text__text">Thank you for showing interest in my works!</p>
+                        <p class="text__text">
+                            If you want to say hi or offer a job, feel free to send me an
+                            <a class="text__link" href="mailto:ybhpg@icloud.com">email</a>! Or
+                            you can contact me on social media.
+                        </p>
+                    </div>
+                    <div class="footer__copyrights">2022, Vladislav Ledashchev</div>
                 </div>
-            </a>
-        </main>
-        <footer>
-            <div class="footer__container">
-                <div class="footer__content">
-                    <div class="footer__main-block">
-                        <div class="footer__greetings">
-                            <p class="text__text">Thank you for showing interest in my works!</p>
-                            <p class="text__text">
-                                If you want to say hi or offer a job, feel free to send me an
-                                <a class="text__link" href="mailto:ybhpg@icloud.com">email</a>! Or
-                                you can contact me on social media.
-                            </p>
-                        </div>
-                        <div class="footer__copyrights">2022, Vladislav Ledashchev</div>
-                    </div>
-                    <div class="footer__socials">
-                        <ul class="footer__socials-list">
-                            <li class="footer__socials socials-variant">
-                                <a href="https://t.me/ybhpg" class="social_link" target="_blank">Telegram</a>
-                            </li>
-                            <li class="socials-variant">
-                                <p class="text__text">|</p>
-                            </li>
-                            <li class="socials-variant">
-                                <a href="https://www.instagram.com/bulbadyshka/" class="social_link"
-                                    target="_blank">Instagram</a>
-                            </li>
-                            <li class="socials-variant">
-                                <p class="text__text">|</p>
-                            </li>
-                            <li class="socials-variant">
-                                <a href="https://twitter.com/ybhpg57/" class="social_link" target="_blank">Twitter</a>
-                            </li>
-                            <li class="socials-variant">
-                                <p class="text__text">|</p>
-                            </li>
-                            <li class="socials-variant">
-                                <a href="https://www.linkedin.com/mwlite/in/ybhpg" class="social_link"
-                                    target="_blank">LinkedIn</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="footer__socials">
+                    <ul class="footer__socials-list">
+                        <li class="footer__socials socials-variant">
+                            <a href="https://t.me/ybhpg" class="social_link" target="_blank">Telegram</a>
+                        </li>
+                        <li class="socials-variant">
+                            <p class="text__text">|</p>
+                        </li>
+                        <li class="socials-variant">
+                            <a href="https://www.instagram.com/bulbadyshka/" class="social_link"
+                                target="_blank">Instagram</a>
+                        </li>
+                        <li class="socials-variant">
+                            <p class="text__text">|</p>
+                        </li>
+                        <li class="socials-variant">
+                            <a href="https://twitter.com/ybhpg57/" class="social_link" target="_blank">Twitter</a>
+                        </li>
+                        <li class="socials-variant">
+                            <p class="text__text">|</p>
+                        </li>
+                        <li class="socials-variant">
+                            <a href="https://www.linkedin.com/mwlite/in/ybhpg" class="social_link"
+                                target="_blank">LinkedIn</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-        <script src="/static/javascript/top-button.js"></script>
-        <script type="module" src="/static/javascript/CursorAnimation.js"></script>
-        <script src="/static/javascript/filterButtons.js"></script>
-    </body>
+        </div>
+    </footer>
+    <script src="/static/javascript/backToTopButton.js"></script>
+    <script type="module" src="/static/javascript/CursorAnimation.js"></script>
+    <script src="/static/javascript/filterButtons.js"></script>
+    <script src="/static/javascript/themeChange.js"></script>
+</body>
 
 </html>

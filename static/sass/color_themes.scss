@@ -1,0 +1,173 @@
+@use "variables";
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: variables.$primary-white;
+    background-color: variables.$primary-white;
+    transition: color, background-color ease-in-out 500ms;
+  }
+
+  .text__main-title {
+    color: variables.$primary-black;
+    transition: color ease-in-out 500ms;
+  }
+
+  .text__title {
+    color: variables.$primary-black;
+    transition: color ease-in-out 500ms;
+  }
+
+  .text__header {
+    color: variables.$primary-black;
+    transition: color ease-in-out 500ms;
+  }
+
+  .text__text {
+    color: variables.$primary-black;
+    transition: color ease-in-out 500ms;
+  }
+
+  .text__link {
+    color: variables.$primary-black;
+    transition: color ease-in-out 500ms;
+  }
+
+  .text-black {
+    color: variables.$primary-black;
+    transition: color ease-in-out 500ms;
+  }
+
+  .header {
+    .header__container {
+      color: variables.$primary-black;
+      transition: color ease-in-out 500ms;
+
+      .header__menu {
+        .burger-button {
+          .burger-button_link {
+            .burger-button_line {
+              background-color: variables.$primary-black;
+              transition: background-color ease-in-out 500ms;
+
+              &::before,
+              &::after {
+                background-color: variables.$primary-black;
+                transition: background-color ease-in-out 500ms;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .footer__container {
+      .footer__content {
+        .footer__socials {
+          .footer__socials-list {
+            .socials-variant {
+              .social_link {
+                color: variables.$primary-black;
+                transition: color ease-in-out 500ms;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .work-button {
+    .button-green {
+      color: variables.$primary-black;
+      transition: color ease-in-out 500ms;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: variables.$primary-black;
+    background-color: variables.$primary-black;
+    transition: color, background-color ease-in-out 500ms;
+  }
+
+  .text__main-title {
+    color: variables.$primary-white;
+    transition: color ease-in-out 500ms;
+  }
+
+  .text__title {
+    color: variables.$primary-white;
+    transition: color ease-in-out 500ms;
+  }
+
+  .text__header {
+    color: variables.$primary-white;
+    transition: color ease-in-out 500ms;
+  }
+
+  .text__text {
+    color: variables.$primary-white;
+    transition: color ease-in-out 500ms;
+  }
+
+  .text__link {
+    color: variables.$primary-white;
+    transition: color ease-in-out 500ms;
+  }
+
+  .text-black {
+    color: variables.$primary-white;
+    transition: color ease-in-out 500ms;
+  }
+
+  .header {
+    .header__container {
+      color: variables.$primary-white;
+      transition: color ease-in-out 500ms;
+
+      .header__menu {
+        .burger-button {
+          .burger-button_link {
+            .burger-button_line {
+              background-color: variables.$primary-white;
+              transition: background-color ease-in-out 500ms;
+
+              &::before,
+              &::after {
+                background-color: variables.$primary-white;
+                transition: background-color ease-in-out 500ms;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .footer__container {
+      .footer__content {
+        .footer__socials {
+          .footer__socials-list {
+            .socials-variant {
+              .social_link {
+                color: variables.$primary-white;
+                transition: color ease-in-out 500ms;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .work-button {
+    .button-green {
+      color: variables.$primary-white;
+      transition: color ease-in-out 500ms;
+    }
+  }
+}

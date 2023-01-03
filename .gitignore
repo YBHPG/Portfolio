@@ -9,6 +9,7 @@ prepros.config
 Dockerfile
 /docker
 /ssl
+/.idea/
 
 # ================================
 # Node.js:
