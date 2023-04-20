@@ -47,3 +47,8 @@ router.get('/love', (req, res) => {
 router.get('/tiles-demo', (req, res) => {
     res.sendFile(__dirname + '/static/html/tiles-demo.html')
 });
+
+router.get('/i18-test', (req, res) => {
+    console.log(res.__('header.work'));
+    res.render(__dirname + '/static/html/index.ejs')
+});
