@@ -49,6 +49,5 @@ router.get('/tiles-demo', (req, res) => {
 });
 
 router.get('/i18-test', (req, res) => {
-    console.log(res.__('header.work'));
     res.render(__dirname + '/static/html/index.ejs')
 });
