@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Vladislav Ledashchev's portfolio" />
+    <meta name="description" content="Портфолио Владислава Ледащева" />
 
     <!-- CSS stylesheets -->
     <link rel="stylesheet" href="/static/css/universal.css">
@@ -19,7 +19,9 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,700&family=Mulish:wght@400;600;700&family=Red+Hat+Text&family=Raleway&family=Inter:wght@700&display=swap"
         rel="stylesheet" />
 
-    <title>Vladislav Ledashchev</title>
+    <title>
+        <%= __('work-page-title') %>
+    </title>
     <link rel="icon" type="image/x-icon" href="/static/images/other/favicon.ico" />
 
     <script src="/static/javascript/lazyVideo.js"></script>
@@ -29,8 +31,7 @@
     <div class="cursor"></div>
     <div class="trailing-cursor" id="trailing-cursor"></div>
     <script src="/static/javascript/TransitionAnimations.js"></script>
-    <!-- <video id="background-video" autoplay muted loop src="/images/index/AbstColor.mov"></video> -->
-    <div class="header">
+    <header class="header">
         <div class="header__container">
             <div class="header__logo">
             </div>
@@ -38,50 +39,55 @@
                 <div class="menu__body">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a href="#!" class="menu__link text-black" onclick="fadeInBurger()">Work</a>
+                            <a href="#" class="menu__link text-black" onclick="fadeInBurger()">
+                                <%= __('header-work') %>
+                            </a>
                         </li>
                         <li class="menu__item">
-                            <a href="#!" class="menu__link text-black" id="fade-out_work-button"
-                                onclick="fadeOutWork()">About</a>
+                            <a href="#" class="menu__link text-black" id="fade-out_work-button" onclick="fadeOutWork()">
+                                <%= __('header-about') %>
+                            </a>
                         </li>
                         <li class="menu__item">
-                            <a href="https://drive.google.com/file/d/1_VcdNftFEpfdRJQkow040KL7gblfO4UE/view?usp=share_link"
-                                target="_blank" class="menu__link text-black">Resume and contacts</a>
+                            <a onclick="resumeLink()" target="_blank" class="menu__link text-black">
+                                <%= __('header-resume') %>
+                            </a>
                         </li>
                         <li class="menu__item">
-                            <a href="/ru/work" target="" class="menu__link text-black">Переключиться на
-                                Русский</a>
+                            <a target="" class="menu__link text-black" onclick="changeLanguage('userLang')">
+                                <%= __('header-switch-language') %>
+                            </a>
                         </li>
-                        <!--<li class="menu__item">
-                            <a href="#!" id="switch-theme-button" target="" class="menu__link text-black">Switch theme</a>
-                        </li>-->
                     </ul>
                 </div>
                 <div class="burger-button">
-                    <a href="#!" class="burger-button_link" onclick="fadeInBurger()">
+                    <a href="#" class="burger-button_link" onclick="fadeInBurger()">
                         <span class="burger-button_line"></span>
                     </a>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
     <main>
         <section class="block-1">
             <div class="block-1__container">
                 <div class="block-1__content">
-                    <h1 class="block-1__title text__main-title text__italic">Hi, I'm Vlad!</h1>
+                    <h1 class="block-1__title text__main-title text__italic">
+                        <%= __('block-1-title') %>
+                    </h1>
                     <div class="block-1__text">
                         <p class="text__text text-center">
-                            A designer, a student, a programmer.
+                            <%= __('block-1-subtitle-1') %>
                         </p>
                         <p class="text__text text-center">
-                            Currently studing CAD systems and web development in BMSTU.
+                            <%= __('block-1-subtitle-2') %>
                         </p>
                         <p class="text__text text-center">
-                            Designed <a class="text__link"
-                                href="https://www.behance.net/gallery/143770851/Dicty-App-translator-and-dictionary">Dicty</a>
-                            iOS app and this
-                            site.
+                            <%= __('block-1-subtitle-3') %> <a class="text__link"
+                                    href="https://www.behance.net/gallery/143770851/Dicty-App-translator-and-dictionary"
+                                    target="_blank">
+                                    Dicty</a>
+                                <%= __('block-1-subtitle-4') %>
                         </p>
                     </div>
                 </div>
@@ -91,13 +97,20 @@
             <div class="block-2__container">
                 <div class="block-2__content">
                     <div class="block-2__separator"></div>
-                    <p class="block-2__text text__header">Works by me</p>
+                    <p class="block-2__text text__header">
+                        <%= __('block-2-title') %>
+                    </p>
                     <div class="block-2__filter-buttons__overflow">
                         <div class="block-2__filter-buttons__container">
-                            <a href="#!" class="block-2__filter-buttons" onclick="dataSort('all')">All works</a>
-                            <a href="#!" class="block-2__filter-buttons" onclick="dataSort('design')">Design</a>
-                            <a href="#!" class="block-2__filter-buttons"
-                                onclick="dataSort('programming')">Programming</a>
+                            <a href="#!" class="block-2__filter-buttons" onclick="dataSort('all')">
+                                <%= __('block-2-filter-all') %>
+                            </a>
+                            <a href="#!" class="block-2__filter-buttons" onclick="dataSort('design')">
+                                <%= __('block-2-filter-design') %>
+                            </a>
+                            <a href="#!" class="block-2__filter-buttons" onclick="dataSort('programming')">
+                                <%= __('block-2-filter-programming') %>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -108,17 +121,19 @@
                 <div class="work-block-test__container">
                     <div class="work-block-test__content">
                         <div class="work-block-test__text">
-                            <h1 class="text__title"><a class="text__link" href="/tiles-demo" target="_blank">Tiles</a>:
-                                a demo project with JS and CSS</h1>
+                            <h1 class="text__title"><a class="text__link" href="/tiles-demo" target="_blank">Tiles</a>
+                                <%= __('work-block-tiles-title') %>
+                            </h1>
                             <span>
                                 <p class="text__text">
-                                    This is a small demo project where the page content moves depending on the
-                                    cursor position on the page. Built with plain JavaScript and CSS.</p>
+                                    <%= __('work-block-tiles-text') %>
+                                </p>
                             </span>
                         </div>
                         <div class="work-block-test__images">
                             <video id="tiles-video" playsinline autoplay muted loop
-                                src="/static/images/index/tiles-video_1.mp4"></video>
+                                src="/static/images/index/tiles-video_1.mp4"
+                                poster="/static/images/index/video-preview-poster.webp"></video>
                         </div>
                     </div>
                 </div>
@@ -130,40 +145,21 @@
                             <h1 class="text__title"><a class="text__link"
                                     href="https://www.behance.net/gallery/143770851/Dicty-App-translator-and-dictionary"
                                     target="_blank">Dicty</a>
-                                app. Translation & Dictionary</h1>
+                                <%= __('work-block-dicty-title') %>
+                            </h1>
                             <div>
-                                <p class="text__text">People use translator apps to copy and paste unknown
-                                    words,
-                                    but
-                                    they
-                                    don't memorise them. So we thought about it and came up with the app —
-                                    Dicty.
-                                </p>
-                                <br>
-                                <p class="text__text">It's difficult to open another app to add something to it
-                                    after
-                                    you
-                                    already opened the translator and input the word. That's why we implemented
-                                    translator
-                                    to our main screen. And not even one, because we understand one translator
-                                    can
-                                    be
-                                    better
-                                    than another in different situations.</p><br>
-                                <p class="text__text">To help user memorise added words the app will send
-                                    interval
-                                    notifications. They will be sent in 30 minutes, an hour, a day and a week
-                                    after
-                                    adding
-                                    the word.</p><br>
-                                <p class="text__text">The app also has intelligent dictionaries to store all
-                                    saved
-                                    by
-                                    user
-                                    words. They are sorted by a pair of used languages. But if you want to
-                                    organise
-                                    words by
-                                    ourself, it lets you create your own custom folders.</p><br>
+                                <p class="text__text">
+                                    <%= __('work-block-dicty-text-1') %>
+                                </p><br>
+                                <p class="text__text">
+                                    <%= __('work-block-dicty-text-2') %>
+                                </p><br>
+                                <p class="text__text">
+                                    <%= __('work-block-dicty-text-3') %>
+                                </p><br>
+                                <p class="text__text">
+                                    <%= __('work-block-dicty-text-4') %>
+                                </p><br>
                             </div>
                         </div>
                         <div class="work-block-test__images">
@@ -182,10 +178,13 @@
                             <h1 class="text__title"><a class="text__link"
                                     href="https://www.behance.net/gallery/125033977/Rezolut-internet-company-landing-page"
                                     target="_blank">Rezolut</a>
-                                ISP landing page</h1>
-                            <div>
-                                <p class="text__text">A concept of a landing page for a big IPS company.</p><br>
-                            </div>
+                                <%= __('work-block-rezolut-title') %>
+                            </h1>
+                            <span>
+                                <p class="text__text">
+                                    <%= __('work-block-rezolut-text') %>
+                                </p><br>
+                            </span>
                         </div>
                         <div class="work-block-test__images">
                             <img loading="lazy" src="/static/images/index/rezolut-image_1.webp"
@@ -203,13 +202,14 @@
                             <h1 class="text__title"><a class="text__link"
                                     href="https://www.behance.net/gallery/125037427/CarrotIT-landing-page-concept"
                                     target="_blank">CarrotIT</a>
-                                landing page</h1>
-                            <div>
-                                <p class="text__text">A concept of a landing page for an app development and IT
-                                    consalting
-                                    company.</p>
+                                <%= __('work-block-carrotit-title') %>
+                            </h1>
+                            <span>
+                                <p class="text__text">
+                                    <%= __('work-block-carrotit-text') %>
+                                </p>
                                 <br>
-                            </div>
+                            </span>
                         </div>
                         <div class="work-block-test__images">
                             <img loading="lazy" src="/static/images/index/carrot_it-image_1.webp"
@@ -219,20 +219,21 @@
                 </div>
             </section>
             <section class="work-block-test is_visible" data-sort="design">
-                <div class="work-block-test__container">
+                <div class=" work-block-test__container">
                     <div class="work-block-test__content">
                         <div class="work-block-test__text">
                             <h1 class="text__title">
                                 <a class="text__link"
                                     href="https://www.behance.net/gallery/125101961/RentiOne-company-landing-page"
-                                    target="_blank">RentiOne</a> office rent out company landing page
+                                    target="_blank">RentiOne</a>
+                                <%= __('work-block-rentione-title') %>
                             </h1>
-                            <div>
-                                <p class="text__text"> A concept of landing page for a comapany that rents out
-                                    offices in New York.
+                            <span>
+                                <p class="text__text">
+                                    <%= __('work-block-rentione-text') %>
                                 </p>
                                 <br>
-                            </div>
+                            </span>
                         </div>
                         <div class="work-block-test__images">
                             <img loading="lazy" src="/static/images/index/rentione-image-1.webp" alt="">
@@ -250,13 +251,12 @@
                             <h1 class="text__title">
                                 <a class="text__link"
                                     href="https://www.behance.net/gallery/159726407/Tyshop-typography-shop-landing-page"
-                                    target="_blank">Tyshop</a>: typography shop landing page.
+                                    target="_blank">Tyshop</a>
+                                <%= __('work-block-tyshop-title') %>
                             </h1>
                             <div>
-                                <p class="text__text"> <b>Tyshop</b> is an imaginary typograhpy shop. This landing page
-                                    desing contains
-                                    information about production, store adresses, work examples and a form to place a
-                                    custom order.
+                                <p class="text__text">
+                                    <%- __('work-block-tyshop-text') %>
                                 </p>
                                 <br>
                             </div>
@@ -284,14 +284,20 @@
             <div class="footer__content">
                 <div class="footer__main-block">
                     <div class="footer__greetings">
-                        <p class="text__text">Thank you for showing interest in my works!</p>
                         <p class="text__text">
-                            If you want to say hi or offer a job, feel free to send me an
-                            <a class="text__link" href="mailto:ybhpg@icloud.com">email</a>! Or
-                            you can contact me on social media.
+                            <%= __('footer-greeting') %>
+                        </p>
+                        <p class="text__text">
+                            <%= __('footer-email-1') %>
+                                <a class="text__link" href="mailto:hello@vladl.space">
+                                    <%= __('footer-email-2') %>
+                                </a>
+                                <%= __('footer-email-3') %>
                         </p>
                     </div>
-                    <div class="footer__copyrights">2022, Vladislav Ledashchev</div>
+                    <div class="footer__copyrights text__text">
+                        <%= __('footer-copyright') %>
+                    </div>
                 </div>
                 <div class="footer__socials">
                     <ul class="footer__socials-list">
@@ -324,9 +330,11 @@
         </div>
     </footer>
     <script src="/static/javascript/backToTopButton.js"></script>
-    <script type="module" src="/static/javascript/cursorAnimation.js"></script>
+    <script src="/static/javascript/cursorAnimation.js"></script>
     <script src="/static/javascript/filterButtons.js"></script>
     <script src="/static/javascript/themeChange.js"></script>
+    <script src="/static/javascript/changeLanguage.js"></script>
+    </div>
 </body>
 
 </html>

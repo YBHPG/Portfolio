@@ -23,26 +23,18 @@ function fadeOutWork() {
   document.body.classList.remove("fade");
   document.body.classList.add("fadeOut");
   window.setTimeout(function () {
-    if (pageName.includes("ru")) {
-      window.location.href = "/ru/about";
-    } else if (pageName.includes("en")) {
-      window.location.href = "/en/about";
-    }
+    window.location.href = "/about";
   }, 1000);
-}
+};
 
 // fade out from "About"
 function fadeOutAbout() {
   document.body.classList.remove("fade");
   document.body.classList.add("fadeOut");
   window.setTimeout(function () {
-    if (pageName.includes("ru")) {
-      window.location.href = "/ru/work";
-    } else if (pageName.includes("en")) {
-      window.location.href = "/en/work";
-    }
+    window.location.href = "/work";
   }, 1000);
-}
+};
 
 // logic for menu buttons fade out
 window.onclick = function (event) {
