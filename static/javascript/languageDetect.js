@@ -3,10 +3,10 @@ function pageLoad() {
 
   if (document.cookie.length === 0) {
     document.cookie = `userLang=${userLang}; max-age=${365 * 24 * 60 * 60}; path=/; secure`;
-    window.location.href = "./i18-test";
+    window.location.href = "./work";
     return;
   } else {
-    window.location.href = "./i18-test";
+    window.location.href = "./work";
     return;
   }
 

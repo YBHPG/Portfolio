@@ -22,3 +22,12 @@ function getCookie(name) {
     }
     return ''
 }
+
+function resumeLink() {
+    const userLang = getCookie('userLang');
+    if (userLang.includes('en')) {
+        window.open('https://drive.google.com/file/d/1_VcdNftFEpfdRJQkow040KL7gblfO4UE/view?usp=share_link', '_blank');
+    } else if (userLang.includes('ru')) {
+        window.open('https://drive.google.com/file/d/14nk-URMaCb9GHfnNgpOPo5901SUDkLfy/view?usp=share_link', '_blank');
+    }
+}

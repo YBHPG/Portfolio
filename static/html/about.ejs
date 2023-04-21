@@ -19,7 +19,9 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,700&family=Mulish:wght@400;600;700&family=Red+Hat+Text&family=Raleway&family=Inter:wght@700&display=swap"
         rel="stylesheet" />
 
-    <title>Обо мне</title>
+    <title>
+        <%= __('about-page-title') %>
+    </title>
     <link rel="icon" type="image/x-icon" href="/static/images/other/favicon.ico" />
 </head>
 
@@ -35,18 +37,25 @@
                 <div class="menu__body">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a href="#" class="menu__link text-black" onclick="fadeOutAbout()">Работы</a>
+                            <a href="#" class="menu__link text-black" onclick="fadeOutAbout()">
+                                <%= __('header-work') %>
+                            </a>
                         </li>
                         <li class="menu__item">
                             <a href="#" class="menu__link text-black" id="fade-out_work-button"
-                                onclick="fadeInBurger()">О себе</a>
+                                onclick="fadeInBurger()">
+                                <%= __('header-about') %>
+                            </a>
                         </li>
                         <li class="menu__item">
-                            <a href="https://drive.google.com/file/d/14nk-URMaCb9GHfnNgpOPo5901SUDkLfy/view?usp=share_link"
-                                target="_blank" class="menu__link text-black">Резюме и контакты</a>
+                            <a onclick="resumeLink()" target="_blank" class="menu__link text-black">
+                                <%= __('header-resume') %>
+                            </a>
                         </li>
                         <li class="menu__item">
-                            <a href="/en/about" target="" class="menu__link text-black">Switch to English</a>
+                            <a target="" class="menu__link text-black" onclick="changeLanguage('userLang')">
+                                <%= __('header-switch-language') %>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -64,7 +73,9 @@
                 <div class="block-1__content">
                     <div class="block-1__image">
                         <div class="block-1__image-header text__header">
-                            <p class="text__italic text-black">Вау, я заинтересовал тебя~~</p>
+                            <p class="text__italic text-black">
+                                <%= __('about-header') %>
+                            </p>
                         </div>
                         <div class="block-1__image-image">
                             <img loading="lazy" src="/static/images/about/aboutMe_mainImage.webp" alt="" />
@@ -72,45 +83,25 @@
                     </div>
                     <div class="block-1__text text__text">
                         <p>
-                            Привет! Очень приятно видеть тебя здесь. Меня зовут Влад, я веб
-                            дизайнер и программист. Моя главная цель - создавать креативные и
-                            полезные решения, которые могут принести людям пользу.
+                            <%= __('about-block-1-text-1') %>
                         </p>
                         <br />
                         <p>
-                            Сейчас я учусь в МГТУ им. Баумана, а моя специальность - САПР
-                            (Системы автоматизированного проектирования) и программирование на
-                            C++/Python.
+                            <%= __('about-block-1-text-2') %>
                         </p>
                         <br />
                         <p>
-                            Хотя университетская программа никак не связана с продуктовым и веб
-                            дизайном, в последние годы эти области были моей основной страстью.
-                            Отрисовка страниц и интерфейсов всегда приносит мне удовльствие, а
-                            тот факт, что я делаю что-то полезное, делает меня счастливым.
+                            <%= __('about-block-1-text-3') %>
                         </p>
                         <br />
                         <p>
-                            <b>Об опыте:</b><br />
-                            Сначала я был заинтересован в графическом дизайне, поэтому перед
-                            переходом в фигму работал в Adobe Illustrator (и даже рисовал первые
-                            макеты в нём). В связи с большой любовью к анимациям, пытался играть
-                            с After Effects и Premiere Pro. К сажелению, несмотря на то, что все
-                            эти опыты начались ещё в 2019, портфолио у меня пока не особо
-                            большое, большинство работ делалось "в стол". Но я уверен, что
-                            обладаю достаточным объёмом знаний, чтобы оценить себя как "джуна" в
-                            мобильном и веб дизайне.
+                            <%- __('about-block-1-text-4') %>
                         </p>
                         <br />
                         <p>
-                            Если хочется больше узнать о моём опыте в программировании, добро
-                            пожаловать на страничку на <a class="text__link text-black"
-                                href="https://github.com/YBHPG">Github</a>.
-                            Многие проекты в
-                            профиле закрыты,
-                            но на основе публичных репозиториев и README можно оценить знания в
-                            разных областях. Если в двух словах: больше всего опыта у меня в
-                            работе с HTML/CSS/JS, Swift, также есть опыт работы с Python, C/C++.
+                            <%= __('about-block-1-text-5') %> <a class="text__link text-black"
+                                    href="https://github.com/YBHPG">Github</a>.
+                                <%= __('about-block-1-text-6') %>
                         </p>
                     </div>
                 </div>
@@ -125,11 +116,7 @@
                         </div>
                         <div class="block-2__card-text text__text">
                             <p>
-                                В свободное от учёбы, дизайна и программирования время я люблю
-                                фотографировать. Иногда я беру телефон и иду снимать городские
-                                пейзажи, но больше люблю "виртуальную фотографию" в гоночных
-                                играх. Если интересно, можешь проверить мой второй аккаунт в
-                                Twitter, посвящённый только этим красивым кадрам.
+                                <%= __('about-block-2-text-1') %>
                             </p>
                         </div>
                     </div>
@@ -140,10 +127,7 @@
                         </div>
                         <div class="block-2__card-text text__text">
                             <p>
-                                Если говорить о развлечениях, то я не особо смотрю сериалы.
-                                Вместо них предпочитаю смотреть аниме. Самое любимое - OreGairu,
-                                но, в целом, я смотрю всё что угодно, от "повседневности" до
-                                "ужасов" ^_^
+                                <%= __('about-block-2-text-2') %>
                             </p>
                         </div>
                     </div>
@@ -153,11 +137,7 @@
                         </div>
                         <div class="block-2__card-text text__text">
                             <p>
-                                Также, мне нравится чтение. Из-за влияния аниме, сейчас я в
-                                основном читаю мангу или ранобе, но не забываю и про обучающую
-                                литературу. Конечно же, никуда и без русской классики. Если
-                                хотите что-нибудь прочитать, очень рекомендую "Героя нашего
-                                времени" Лермонтова.
+                                <%= __('about-block-2-text-3') %>
                             </p>
                         </div>
                     </div>
@@ -174,18 +154,18 @@
                 <div class="footer__main-block">
                     <div class="footer__greetings">
                         <p class="text__text">
-                            Спасибо за ознакомление с моими работами!
+                            <%= __('footer-greeting') %>
                         </p>
                         <p class="text__text">
-                            Если у тебя есть предложение работы, можешь написать мне на
-                            <a class="text__link text-black" href="mailto:ybhpg@icloud.com">почту</a>! Или
-                            связаться
-                            со
-                            мной в социальных сетях.
+                            <%= __('footer-email-1') %>
+                                <a class="text__link text-black" href="mailto:ybhpg@icloud.com">
+                                    <%= __('footer-email-2') %>
+                                </a>
+                                <%= __('footer-email-3') %>
                         </p>
                     </div>
                     <div class="footer__copyrights text__text">
-                        2022, Владислав Ледащев
+                        <%= __('footer-copyright') %>
                     </div>
                 </div>
                 <div class="footer__socials">
@@ -227,6 +207,7 @@
     <script src="/static/javascript/backToTopButton.js"></script>
     <script src="/static/javascript/cursorAnimation.js"></script>
     <script src="/static/javascript/themeChange.js"></script>
+    <script src="/static/javascript/changeLanguage.js"></script>
     </div>
 </body>
 

@@ -19,7 +19,9 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,700&family=Mulish:wght@400;600;700&family=Red+Hat+Text&family=Raleway&family=Inter:wght@700&display=swap"
         rel="stylesheet" />
 
-    <title>Vladislav Ledashchev</title>
+    <title>
+        <%= __('work-page-title') %>
+    </title>
     <link rel="icon" type="image/x-icon" href="/static/images/other/favicon.ico" />
 
     <script src="/static/javascript/lazyVideo.js"></script>
@@ -47,8 +49,7 @@
                             </a>
                         </li>
                         <li class="menu__item">
-                            <a href="https://drive.google.com/file/d/14nk-URMaCb9GHfnNgpOPo5901SUDkLfy/view?usp=share_link"
-                                target="_blank" class="menu__link text-black">
+                            <a onclick="resumeLink()" target="_blank" class="menu__link text-black">
                                 <%= __('header-resume') %>
                             </a>
                         </li>
@@ -255,7 +256,7 @@
                             </h1>
                             <div>
                                 <p class="text__text">
-                                    <%= __('work-block-tyshop-text') %>
+                                    <%- __('work-block-tyshop-text') %>
                                 </p>
                                 <br>
                             </div>
