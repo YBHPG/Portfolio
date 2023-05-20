@@ -3,7 +3,7 @@
   "description": "A portfolio site",
   "license": "UNLICENSED",
   "scripts": {
-    "prod": "pm2 start app.js",
+    "prod": "sass -w static/sass:static/css --no-source-map -s compressed && pm2 start app.js",
     "dev": "nodemon app.js"
   },
   "dependencies": {
