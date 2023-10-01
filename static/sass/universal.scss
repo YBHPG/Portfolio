@@ -216,15 +216,22 @@ body {
 /* Header */
 
 .header {
-    position: absolute;
+    position: sticky;
     width: 100%;
-    top: 0;
+    top: 15px;
     left: 0;
     z-index: 50;
 
     .header__container {
+
+        /* Эффект акрилового стекла */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+
         display: flex;
-        padding: 35px 15px;
+        padding: 15px 10px;
         align-items: center;
         color: variables.$primary-black;
 
@@ -361,6 +368,9 @@ body {
 @media (max-width: 499.98px) {
     .header {
         .header__container {
+            width: 90%;
+            padding: 10px 10px;
+
             .header__menu {
                 .menu__body {
                     opacity: 0;
