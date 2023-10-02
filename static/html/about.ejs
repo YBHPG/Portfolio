@@ -37,45 +37,45 @@
     <div class="cursor"></div>
     <div class="trailing-cursor" id="trailing-cursor"></div>
     <script src="/static/javascript/TransitionAnimations.js"></script>
-    <header class="header">
-        <div class="header__container">
-            <div class="header__logo">
-            </div>
-            <div class="header__menu">
-                <div class="menu__body">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="#" class="menu__link text-black" onclick="fadeOutAbout()">
-                                <%= __('header-work') %>
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link text-black" id="fade-out_work-button"
-                                onclick="fadeInBurger()">
-                                <%= __('header-about') %>
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a onclick="resumeLink()" target="_blank" class="menu__link text-black">
-                                <%= __('header-resume') %>
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a target="" class="menu__link text-black" onclick="changeLanguage('userLang')">
-                                <%= __('header-switch-language') %>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="burger-button">
-                    <a href="#" class="burger-button_link" onclick="fadeInBurger()">
-                        <span class="burger-button_line"></span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
     <main>
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                </div>
+                <div class="header__menu">
+                    <div class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link text-black" onclick="fadeOutAbout()">
+                                    <%= __('header-work') %>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link text-black" id="fade-out_work-button"
+                                    onclick="fadeInBurger()">
+                                    <%= __('header-about') %>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a onclick="resumeLink()" target="_blank" class="menu__link text-black">
+                                    <%= __('header-resume') %>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a target="" class="menu__link text-black" onclick="changeLanguage('userLang')">
+                                    <%= __('header-switch-language') %>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="burger-button">
+                        <a href="#" class="burger-button_link" onclick="fadeInBurger()">
+                            <span class="burger-button_line"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
         <div class="block-1">
             <div class="block-1__container">
                 <div class="block-1__content">
