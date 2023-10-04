@@ -3,9 +3,9 @@
   "description": "A portfolio site",
   "license": "UNLICENSED",
   "scripts": {
-    "prod": "npm run sass && pm2 start app.js",
     "sass": "sass -w static/sass:static/css --no-source-map -s compressed &",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "prod": "npm run sass && pm2 start app.js"
   },
   "dependencies": {
     "cookie-parser": "^1.4.6",
