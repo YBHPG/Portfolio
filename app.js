@@ -19,7 +19,6 @@ const i18n = new I18n({
 
 app.use(cookieParser());
 app.use(i18n.init);
-app.use('/', express.static('app', { index: "/index.html" }));
 app.use('/static', express.static(__dirname + '/static'));
 app.use('/', router);
 app.set('view engine', 'ejs');
