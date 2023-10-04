@@ -17,7 +17,7 @@ router.get('/tiles-demo', (req, res) => {
 });
 
 router.get('/work', (req, res) => {
-    res.render(__dirname + '/static/html/index.ejs')
+    res.render(__dirname + '/static/html/work.ejs')
 });
 
 router.get('/about', (req, res) => {

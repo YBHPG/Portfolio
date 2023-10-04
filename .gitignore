@@ -1,6 +1,9 @@
 .sass-cache/
 static/css
 package-lock.json
+static/images/index/small
+
+
 *.map
 *.css.map
 *.sass.map
