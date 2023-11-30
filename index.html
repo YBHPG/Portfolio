@@ -2,22 +2,34 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="/static/javascript/languageDetect.js"></script>
-    <link rel="icon" type="image/x-icon" href="/static/images/other/favicon.ico" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- <script src="/static/javascript/languageDetect.js"></script> -->
+  <link rel="icon" type="image/x-icon" href="/static/images/other/favicon.ico" />
 
-    <!-- Yandex.Metrika counter -->
-    <!-- <script
-        type="text/javascript"> (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } } k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(93650657, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true }); </script>
-    <noscript>
-        <div><img src="https://mc.yandex.ru/watch/93650657" style="position:absolute; left:-9999px;" alt="" /></div>
-    </noscript> -->
-    <!-- /Yandex.Metrika counter -->
+  <script>
+    function pageLoad() {
+      var userLang = navigator.language || navigator.userLanguage;
+      console.log("navigator")
+
+      if (document.cookie.length > 0) {
+        console.log("return")
+        window.location.href = "./work";
+        console.log("return 200 OK");
+      } else {
+        console.log("cookie create")
+        document.cookie = `userLang=${userLang}; max-age=${365 * 24 * 60 * 60}; path=/; secure`;
+        console.log("cookie")
+        window.location.href = "./work";
+      }
+    }
+  </script>
 </head>
 
-<body onload="pageLoad()"></body>
+<body onload="pageLoad()" style="background: red;">
+  <h1 style="font-size: 150px; color: aqua; background-color: blueviolet;">TEST</h1>
+</body>
 
 </html>
