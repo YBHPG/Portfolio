@@ -26,7 +26,7 @@ function getCookie(name) {
 function resumeLink() {
     const userLang = getCookie('userLang');
     if (userLang.includes('en')) {
-        window.open('https://drive.google.com/file/d/1_VcdNftFEpfdRJQkow040KL7gblfO4UE/view?usp=share_link', '_blank');
+        window.open('https://drive.google.com/file/d/1_VcdNftFEpfdRJQkow040KL7gblfO4UE/view?usp=sharing', '_blank');
     } else if (userLang.includes('ru')) {
         window.open('https://drive.google.com/file/d/14nk-URMaCb9GHfnNgpOPo5901SUDkLfy/view?usp=share_link', '_blank');
     }
