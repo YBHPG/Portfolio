@@ -8,9 +8,9 @@ router.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 });
 
-router.get('/love', (req, res) => {
+/* router.get('/love', (req, res) => {
     res.sendFile(__dirname + '/static/html/love.html')
-});
+}); */
 
 router.get('/tiles-demo', (req, res) => {
     res.sendFile(__dirname + '/static/html/tiles-demo.html')
