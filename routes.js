@@ -23,3 +23,7 @@ router.get('/work', (req, res) => {
 router.get('/about', (req, res) => {
     res.render(__dirname + '/static/html/about.ejs')
 });
+
+router.get('/.well-known/discord', (req, res) => {
+    res.sendFile(__dirname + '/static/html/discord')
+});
