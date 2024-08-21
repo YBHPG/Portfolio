@@ -25,5 +25,5 @@ router.get('/about', (req, res) => {
 });
 
 router.get('/.well-known/discord', (req, res) => {
-    res.render(__dirname + '/static/html/discord')
+    res.sendFile(__dirname + '/static/html/discord')
 });
