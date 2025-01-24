@@ -13,6 +13,8 @@
 	"block-2-filter-all": "All works",
 	"block-2-filter-design": "Design",
 	"block-2-filter-programming": "Programming",
+	"work-block-slozhno-sosredotochitsya-title": "\"Difficult to concentrate\"",
+	"work-block-slozhno-sosredotochitsya-text": "A training project aimed at teaching how to work with HTML and CSS, how to create clean HTML code structure and how to use adaptive layout.",
 	"work-block-tiles-title": "- a demo project with JS and CSS",
 	"work-block-tiles-text": "This is a small demo project where the page content moves depending on the cursor position on the page. Built with plain JavaScript and CSS.",
 	"work-block-dicty-title": "app. Translation & Dictionary",

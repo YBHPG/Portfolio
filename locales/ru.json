@@ -13,6 +13,8 @@
 	"block-2-filter-all": "Все работы",
 	"block-2-filter-design": "Дизайн",
 	"block-2-filter-programming": "Программирование",
+	"work-block-slozhno-sosredotochitsya-title": "\"Сложно сосредоточиться\"",
+	"work-block-slozhno-sosredotochitsya-text": "Учебный проект, направленный на изучение HTML и CSS, создание корректной структуры кода и освоение адаптивной вёрстки.",
 	"work-block-tiles-title": "- демонстрация работы",
 	"work-block-tiles-text": "Демонстрационный проект, где контент страницы перемещается в зависимости от положения курсора на странице. Написан с использованием JavaScript и CSS без использования фреймворков.",
 	"work-block-dicty-title": "- переводчик и словарь",
